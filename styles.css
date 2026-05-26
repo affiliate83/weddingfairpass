@@ -277,11 +277,37 @@ h3 {
   margin-top: 30px;
 }
 
+.detail-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  width: min(1120px, calc(100% - 36px));
+  margin: 42px auto 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.detail-breadcrumb a {
+  color: #4f5968;
+}
+
+.detail-breadcrumb strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
 .detail-showcase {
   display: grid;
   grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.6fr);
   gap: 22px;
   align-items: start;
+  margin-top: 24px;
+}
+
+.detail-main-column {
+  display: grid;
+  gap: 18px;
 }
 
 .detail-image-panel {
@@ -295,9 +321,25 @@ h3 {
 
 .detail-image-panel img {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 9.1;
   display: block;
   object-fit: cover;
+}
+
+.detail-title-block {
+  display: grid;
+  gap: 14px;
+}
+
+.detail-title-block h1 {
+  max-width: none;
+  font-size: clamp(28px, 4vw, 38px);
+  line-height: 1.16;
+}
+
+.detail-title-block p {
+  margin: 0;
+  color: var(--muted);
 }
 
 .detail-info-card {
@@ -306,6 +348,8 @@ h3 {
   background: var(--white);
   padding: 22px;
   box-shadow: 0 8px 28px rgba(39, 30, 24, 0.07);
+  position: sticky;
+  top: 86px;
 }
 
 .detail-info-card h2 {
@@ -316,6 +360,10 @@ h3 {
   display: grid;
   gap: 16px;
   margin: 18px 0;
+}
+
+.detail-info-card .secondary-action {
+  margin-top: 12px;
 }
 
 .detail-info-card div {
@@ -339,6 +387,7 @@ h3 {
   grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.95fr);
   gap: 28px;
   align-items: start;
+  margin-top: 34px;
 }
 
 .detail-copy {
@@ -973,6 +1022,10 @@ h3 {
 
   .footer {
     display: grid;
+  }
+
+  .detail-info-card {
+    position: static;
   }
 
   .fair-search {

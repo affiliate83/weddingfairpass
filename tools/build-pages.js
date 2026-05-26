@@ -333,19 +333,26 @@ for (const fair of fairs.filter(isDetailFair)) {
       },
     ],
   };
-  const body = `      <section class="page-hero">
-        <p class="eyebrow">${escapeHtml(fair.region)} wedding fair</p>
-        <h1>${escapeHtml(fair.title)}</h1>
-        <p>${escapeHtml(fair.summary)}</p>
-        <a class="primary-action" href="${escapeHtml(fair.affiliateUrl)}" data-track="detail_fair_apply">무료입장 신청하기</a>
+  const body = `      <section class="detail-breadcrumb" aria-label="현재 위치">
+        <a href="../index.html">홈</a>
+        <span>/</span>
+        <a href="../regions/${escapeHtml(regionCode)}.html">${escapeHtml(fair.region)} 웨딩박람회</a>
+        <span>/</span>
+        <strong>${escapeHtml(fair.title)}</strong>
       </section>
       <section class="section detail-showcase">
-        <div class="detail-image-panel">
-          <img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(fair.title)}">
-          <div class="fair-media-badges">
-            <span class="status-badge">진행중</span>
-            <span class="light-badge">무료입장</span>
+        <div class="detail-main-column">
+          <div class="detail-image-panel">
+            <img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(fair.title)}">
+            <div class="fair-media-badges">
+              <span class="status-badge">진행중</span>
+              <span class="light-badge">무료입장</span>
+            </div>
           </div>
+          <article class="detail-title-block">
+            <h1>${escapeHtml(fair.title)}</h1>
+            <p>${escapeHtml(fair.summary)}</p>
+          </article>
         </div>
         <aside class="detail-info-card">
           <p class="eyebrow">Fair info</p>
@@ -356,21 +363,8 @@ for (const fair of fairs.filter(isDetailFair)) {
             <div><dt>지역</dt><dd>${escapeHtml(fair.region)}</dd></div>
           </dl>
           <a class="fair-cta full" href="${escapeHtml(fair.affiliateUrl)}" data-track="detail_fair_apply">사전예약 신청</a>
+          <a class="secondary-action full" href="../regions/${escapeHtml(regionCode)}.html">${escapeHtml(fair.region)} 웨딩박람회 더보기</a>
         </aside>
-      </section>
-      <section class="quick-panel detail-panel" aria-label="박람회 요약">
-        <div>
-          <strong>${escapeHtml(fair.region)}</strong>
-          <span>지역</span>
-        </div>
-        <div>
-          <strong>${escapeHtml(fair.date)}</strong>
-          <span>일정</span>
-        </div>
-        <div>
-          <strong>${escapeHtml(fair.badge || fair.region)}</strong>
-          <span>구분</span>
-        </div>
       </section>
       <section class="section detail-content-grid">
         <article class="detail-copy">
