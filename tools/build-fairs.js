@@ -92,6 +92,7 @@ const fairs = records
     summary: fair.summary,
     badge: fair.badge || fair.region,
     affiliateUrl: fair.affiliateUrl,
+    imageUrl: fair.imageUrl || "assets/wedding-fair-hero.png",
     regionPath: regionCodes[fair.region] ? `regions/${regionCodes[fair.region]}.html` : "",
     detailPath: hasDetailPage(fair) ? `fairs/${detailSlug(fair.id)}.html` : "",
   }));

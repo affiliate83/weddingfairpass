@@ -24,3 +24,4 @@ docs/
 tools/apply-enriched-fairs.js
 tools/convert-ripplealba.js
 tools/enrich-replyalba-intros.js
+tools/update-fair-images.js

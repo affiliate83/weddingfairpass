@@ -58,6 +58,7 @@ const renderFairs = (region = "전체") => {
   selectedRegion = region;
   const normalizedSearch = searchTerm.trim().toLowerCase();
   const visible = fairs.filter((fair) => {
+    if (!fair.detailPath) return false;
     const regionMatch = selectedRegion === "전체" || fair.region === selectedRegion;
     const searchMatch =
       !normalizedSearch ||
@@ -72,6 +73,13 @@ const renderFairs = (region = "전체") => {
     .map(
       (fair) => `
         <article class="fair-card">
+          <a class="fair-media" href="${fair.detailPath || buildAffiliateUrl(fair.id)}" aria-label="${fair.title}">
+            <img src="${fair.imageUrl || "assets/wedding-fair-hero.png"}" alt="${fair.title}">
+            <div class="fair-media-badges">
+              <span class="status-badge">진행중</span>
+              <span class="light-badge">무료입장</span>
+            </div>
+          </a>
           <div class="fair-top">
             <span class="badge">${fair.badge}</span>
             <span class="badge">${fair.region}</span>

@@ -15,6 +15,7 @@ window.WEDDING_FAIRS = [
     "summary": "서울 지역 웨딩박람회 무료입장 일정과 혜택을 확인하세요.",
     "badge": "서울",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/QguXBOoowJ/seoul/hit",
+    "imageUrl": "assets/wedding-fair-hero.png",
     "regionPath": "regions/seoul.html",
     "detailPath": ""
   },
@@ -34,6 +35,7 @@ window.WEDDING_FAIRS = [
     "summary": "경기 지역 웨딩박람회 무료입장 일정과 혜택을 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/QguXBOoowJ/gyeonggi/hit",
+    "imageUrl": "assets/wedding-fair-hero.png",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": ""
   },
@@ -53,6 +55,7 @@ window.WEDDING_FAIRS = [
     "summary": "인천 지역 웨딩박람회 무료입장 일정과 혜택을 확인하세요.",
     "badge": "인천",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/QguXBOoowJ/incheon/hit",
+    "imageUrl": "assets/wedding-fair-hero.png",
     "regionPath": "regions/incheon.html",
     "detailPath": ""
   },
@@ -72,6 +75,7 @@ window.WEDDING_FAIRS = [
     "summary": "부산 지역 웨딩박람회 무료입장 일정과 혜택을 확인하세요.",
     "badge": "부산",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/QguXBOoowJ/busan/hit",
+    "imageUrl": "assets/wedding-fair-hero.png",
     "regionPath": "regions/busan.html",
     "detailPath": ""
   },
@@ -91,6 +95,7 @@ window.WEDDING_FAIRS = [
     "summary": "충청 지역 웨딩박람회 무료입장 일정과 혜택을 확인하세요.",
     "badge": "충청",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/QguXBOoowJ/chungcheong/hit",
+    "imageUrl": "assets/wedding-fair-hero.png",
     "regionPath": "regions/chungcheong.html",
     "detailPath": ""
   },
@@ -110,6 +115,7 @@ window.WEDDING_FAIRS = [
     "summary": "전라 지역 웨딩박람회 무료입장 일정과 혜택을 확인하세요.",
     "badge": "전라",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/QguXBOoowJ/jeolla/hit",
+    "imageUrl": "assets/wedding-fair-hero.png",
     "regionPath": "regions/jeolla.html",
     "detailPath": ""
   },
@@ -129,6 +135,7 @@ window.WEDDING_FAIRS = [
     "summary": "강원 지역 웨딩박람회 무료입장 일정과 혜택을 확인하세요.",
     "badge": "강원",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/QguXBOoowJ/gangwon/hit",
+    "imageUrl": "assets/wedding-fair-hero.png",
     "regionPath": "regions/gangwon.html",
     "detailPath": ""
   },
@@ -148,6 +155,7 @@ window.WEDDING_FAIRS = [
     "summary": "경상 지역 웨딩박람회 무료입장 일정과 혜택을 확인하세요.",
     "badge": "경상",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/QguXBOoowJ/gyeongsang/hit",
+    "imageUrl": "assets/wedding-fair-hero.png",
     "regionPath": "regions/gyeongsang.html",
     "detailPath": ""
   },
@@ -167,6 +175,7 @@ window.WEDDING_FAIRS = [
     "summary": "제주 지역 웨딩박람회 무료입장 일정과 혜택을 확인하세요.",
     "badge": "제주",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/QguXBOoowJ/jeju/hit",
+    "imageUrl": "assets/wedding-fair-hero.png",
     "regionPath": "regions/jeju.html",
     "detailPath": ""
   },
@@ -186,6 +195,7 @@ window.WEDDING_FAIRS = [
     "summary": "수원컨벤션센터 초대형 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/V3WNI34BdB",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wedcrowd_sw/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/812.html"
   },
@@ -205,6 +215,7 @@ window.WEDDING_FAIRS = [
     "summary": "aT센터 서울 대형 웨딩페스티벌 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "서울",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/wwDTTAYSrZ",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wedcrowd_at/img/og.jpg",
     "regionPath": "regions/seoul.html",
     "detailPath": "fairs/1223-at.html"
   },
@@ -224,6 +235,7 @@ window.WEDDING_FAIRS = [
     "summary": "청주 오스코 초대형 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "충청",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/xGgxzXcQrs",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wedcrowd_cjosco/img/og.jpg",
     "regionPath": "regions/chungcheong.html",
     "detailPath": "fairs/1178.html"
   },
@@ -243,6 +255,7 @@ window.WEDDING_FAIRS = [
     "summary": "롯데백화점 부산본점 웨딩엑스포 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "부산",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/10dEWM9CkXo",
+    "imageUrl": "https://www.replyalba.co.kr/intros/charles_gb2/img/og.jpg",
     "regionPath": "regions/busan.html",
     "detailPath": "fairs/916.html"
   },
@@ -262,6 +275,7 @@ window.WEDDING_FAIRS = [
     "summary": "인천 송도컨벤시아 대형 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "인천",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/ZE3pf6d3oI",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wedcrowd_icsd/img/og.jpg",
     "regionPath": "regions/incheon.html",
     "detailPath": "fairs/827.html"
   },
@@ -281,6 +295,7 @@ window.WEDDING_FAIRS = [
     "summary": "KNN 부산 웨딩엑스포 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경상",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/EaZwuEwlGC",
+    "imageUrl": "https://www.replyalba.co.kr/intros/charles_land/img/og.jpg",
     "regionPath": "regions/gyeongsang.html",
     "detailPath": "fairs/1026-knn.html"
   },
@@ -300,6 +315,7 @@ window.WEDDING_FAIRS = [
     "summary": "일산킨텍스 최대규모 대형 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/E3XCCyTGoT",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wedcrowd_iss/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/811.html"
   },
@@ -319,6 +335,7 @@ window.WEDDING_FAIRS = [
     "summary": "대전 컨벤션센터 대형 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "충청",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/AXkoCPAEwI",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wedcrowd_dj/img/og.jpg",
     "regionPath": "regions/chungcheong.html",
     "detailPath": "fairs/1045.html"
   },
@@ -338,6 +355,7 @@ window.WEDDING_FAIRS = [
     "summary": "서울 웨딩드레스 페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "서울",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/BlKMJ8IVT1",
+    "imageUrl": "https://www.replyalba.co.kr/intros/planon_stwd/img/og.jpg",
     "regionPath": "regions/seoul.html",
     "detailPath": "fairs/910.html"
   },
@@ -357,6 +375,7 @@ window.WEDDING_FAIRS = [
     "summary": "수원메쎄 대형 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/AiJnROF6yJ",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wedcrowd_swms/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/813.html"
   },
@@ -376,6 +395,7 @@ window.WEDDING_FAIRS = [
     "summary": "W웨딩시티 부산웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "부산",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/N5lkpHCUOh",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wwcity/img/og.jpg",
     "regionPath": "regions/busan.html",
     "detailPath": "fairs/724-w.html"
   },
@@ -395,6 +415,7 @@ window.WEDDING_FAIRS = [
     "summary": "BEXCO 부산웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "부산",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/x8YlZYTbx2",
+    "imageUrl": "https://www.replyalba.co.kr/intros/knn_bexco/img/og.jpg",
     "regionPath": "regions/busan.html",
     "detailPath": "fairs/771-bexco.html"
   },
@@ -414,6 +435,7 @@ window.WEDDING_FAIRS = [
     "summary": "울산 플래너 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경상",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/xdnqdUBEZc",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wwed_us/img/og.jpg",
     "regionPath": "regions/gyeongsang.html",
     "detailPath": "fairs/901.html"
   },
@@ -433,6 +455,7 @@ window.WEDDING_FAIRS = [
     "summary": "창원 롯데백화점 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경상",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/wqVkCtuJyd",
+    "imageUrl": "https://www.replyalba.co.kr/intros/w_cwlt/img/og.jpg",
     "regionPath": "regions/gyeongsang.html",
     "detailPath": "fairs/802.html"
   },
@@ -452,6 +475,7 @@ window.WEDDING_FAIRS = [
     "summary": "BWC 부산 벡스코 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "부산",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/ViiHyEZViN",
+    "imageUrl": "https://www.replyalba.co.kr/intros/bwc24/img/og.jpg",
     "regionPath": "regions/busan.html",
     "detailPath": "fairs/793-bwc.html"
   },
@@ -471,6 +495,7 @@ window.WEDDING_FAIRS = [
     "summary": "강남 코엑스 원조 웨덱스 웨딩페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "서울",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/UEA9rJTq6u",
+    "imageUrl": "https://www.replyalba.co.kr/intros/weddex/img/og.jpg",
     "regionPath": "regions/seoul.html",
     "detailPath": "fairs/940.html"
   },
@@ -490,6 +515,7 @@ window.WEDDING_FAIRS = [
     "summary": "부산 웨딩박람회 in KNN 방송국 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "부산",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/CPMQ9vG6ho",
+    "imageUrl": "https://www.replyalba.co.kr/intros/knn_bc/img/og.jpg",
     "regionPath": "regions/busan.html",
     "detailPath": "fairs/761-in-knn.html"
   },
@@ -509,6 +535,7 @@ window.WEDDING_FAIRS = [
     "summary": "AK플라자 원주 그랜드 웨딩페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "강원",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/Dr4AX19dP9",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wnco_wj/img/og.jpg",
     "regionPath": "regions/gangwon.html",
     "detailPath": "fairs/1234-ak.html"
   },
@@ -528,6 +555,7 @@ window.WEDDING_FAIRS = [
     "summary": "SETEC 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "서울",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/Up5Mej42FH",
+    "imageUrl": "https://www.replyalba.co.kr/intros/howto_setec/img/og.jpg",
     "regionPath": "regions/seoul.html",
     "detailPath": "fairs/1130-setec.html"
   },
@@ -547,6 +575,7 @@ window.WEDDING_FAIRS = [
     "summary": "강릉 세인트존스 레브웨딩박람회 2 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "강원",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/PE20E9hevw",
+    "imageUrl": "https://www.replyalba.co.kr/intros/revew_gn2/img/og.jpg",
     "regionPath": "regions/gangwon.html",
     "detailPath": "fairs/1219-2.html"
   },
@@ -566,6 +595,7 @@ window.WEDDING_FAIRS = [
     "summary": "강릉 위드유 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "강원",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/vPJOqyYpRl",
+    "imageUrl": "https://www.replyalba.co.kr/intros/withu_gr/img/og.jpg",
     "regionPath": "regions/gangwon.html",
     "detailPath": "fairs/843.html"
   },
@@ -585,6 +615,7 @@ window.WEDDING_FAIRS = [
     "summary": "광명 AK 대형 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/wGclk5qOH6",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wedcrowd_gmak/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/1142-ak.html"
   },
@@ -604,6 +635,7 @@ window.WEDDING_FAIRS = [
     "summary": "광명 위드유 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/PoJXW1JOKW",
+    "imageUrl": "https://www.replyalba.co.kr/intros/withu_gm/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/859.html"
   },
@@ -623,6 +655,7 @@ window.WEDDING_FAIRS = [
     "summary": "광주 컨벤션 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "전라",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/10r3ADojtw8",
+    "imageUrl": "https://www.replyalba.co.kr/intros/gjwshow/img/og.jpg",
     "regionPath": "regions/jeolla.html",
     "detailPath": "fairs/1134.html"
   },
@@ -642,6 +675,7 @@ window.WEDDING_FAIRS = [
     "summary": "광주스타일링페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "전라",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/Zye6oFVlnB",
+    "imageUrl": "https://www.replyalba.co.kr/intros/gjstyling/img/og.jpg",
     "regionPath": "regions/jeolla.html",
     "detailPath": "fairs/718.html"
   },
@@ -661,6 +695,7 @@ window.WEDDING_FAIRS = [
     "summary": "김해 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경상",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/C2mqYywCx5",
+    "imageUrl": "https://www.replyalba.co.kr/intros/w_ghssg/img/og.jpg",
     "regionPath": "regions/gyeongsang.html",
     "detailPath": "fairs/957.html"
   },
@@ -680,6 +715,7 @@ window.WEDDING_FAIRS = [
     "summary": "당진 그랜드 웨딩페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "전국",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/CmobZB0waN",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wnco_dj/img/og.jpg",
     "regionPath": "",
     "detailPath": "fairs/1236.html"
   },
@@ -699,6 +735,7 @@ window.WEDDING_FAIRS = [
     "summary": "대구 대결모 대규모 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경상",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/R73Iusspbe",
+    "imageUrl": "https://www.replyalba.co.kr/intros/daegyulmo/img/og.jpg",
     "regionPath": "regions/gyeongsang.html",
     "detailPath": "fairs/1205.html"
   },
@@ -718,6 +755,7 @@ window.WEDDING_FAIRS = [
     "summary": "대구 대박웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경상",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/HfrRj0xtBs",
+    "imageUrl": "https://www.replyalba.co.kr/intros/daegu_daebak/img/og.jpg",
     "regionPath": "regions/gyeongsang.html",
     "detailPath": "fairs/1351.html"
   },
@@ -737,6 +775,7 @@ window.WEDDING_FAIRS = [
     "summary": "대구 연웨딩갤러리 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경상",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/TQe6KwQaBq",
+    "imageUrl": "https://www.replyalba.co.kr/intros/yeonwed_gall/img/og.jpg",
     "regionPath": "regions/gyeongsang.html",
     "detailPath": "fairs/1218.html"
   },
@@ -756,6 +795,7 @@ window.WEDDING_FAIRS = [
     "summary": "대전 NC백화점 대형 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "충청",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/IcQ3sv4QoX",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wedcrowd_nc/img/og.jpg",
     "regionPath": "regions/chungcheong.html",
     "detailPath": "fairs/950-nc.html"
   },
@@ -775,6 +815,7 @@ window.WEDDING_FAIRS = [
     "summary": "대전 위드유 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "충청",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/I6qfgoV1jS",
+    "imageUrl": "https://www.replyalba.co.kr/intros/withu_dj/img/og.jpg",
     "regionPath": "regions/chungcheong.html",
     "detailPath": "fairs/870.html"
   },
@@ -794,6 +835,7 @@ window.WEDDING_FAIRS = [
     "summary": "더셜리 수원 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/10Ov0Ax0FzB",
+    "imageUrl": "https://www.replyalba.co.kr/intros/shirley_sw/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/1360.html"
   },
@@ -813,6 +855,7 @@ window.WEDDING_FAIRS = [
     "summary": "더셜리 인천 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "인천",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/x39YYtKEol",
+    "imageUrl": "https://www.replyalba.co.kr/intros/shirley_ic/img/og.jpg",
     "regionPath": "regions/incheon.html",
     "detailPath": "fairs/1375.html"
   },
@@ -832,6 +875,7 @@ window.WEDDING_FAIRS = [
     "summary": "동탄 롯데백화점 그랜드 웨딩페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/xqL8wPPmVo",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wnco_dt/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/1246.html"
   },
@@ -851,6 +895,7 @@ window.WEDDING_FAIRS = [
     "summary": "동해현진호텔 레브웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "전국",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/whojxeuILe",
+    "imageUrl": "https://www.replyalba.co.kr/intros/revew_dhhj/img/og.jpg",
     "regionPath": "",
     "detailPath": "fairs/1362.html"
   },
@@ -870,6 +915,7 @@ window.WEDDING_FAIRS = [
     "summary": "부산 더블혜택 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "부산",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/CK4uiK1Mmx",
+    "imageUrl": "https://www.replyalba.co.kr/intros/charles_gb/img/og.jpg",
     "regionPath": "regions/busan.html",
     "detailPath": "fairs/817.html"
   },
@@ -889,6 +935,7 @@ window.WEDDING_FAIRS = [
     "summary": "부산 라모르 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "부산",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/DEAbOjdB5q",
+    "imageUrl": "https://www.replyalba.co.kr/intros/lamour_lmbs/img/og.jpg",
     "regionPath": "regions/busan.html",
     "detailPath": "fairs/1293.html"
   },
@@ -908,6 +955,7 @@ window.WEDDING_FAIRS = [
     "summary": "부산 찰스 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "부산",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/CrXs79pAAi",
+    "imageUrl": "https://www.replyalba.co.kr/intros/charles2/img/og.jpg",
     "regionPath": "regions/busan.html",
     "detailPath": "fairs/772.html"
   },
@@ -927,6 +975,7 @@ window.WEDDING_FAIRS = [
     "summary": "부산 투어민 허니문초대전 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "충청",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/FLV1HRYpBG",
+    "imageUrl": "https://www.replyalba.co.kr/intros/tourmin/img/og.jpg",
     "regionPath": "regions/chungcheong.html",
     "detailPath": "fairs/1277.html"
   },
@@ -946,6 +995,7 @@ window.WEDDING_FAIRS = [
     "summary": "부천 롯데백화점 위드유 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/Une5JJ9uyf",
+    "imageUrl": "https://www.replyalba.co.kr/intros/withu_bccl/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/857.html"
   },
@@ -965,6 +1015,7 @@ window.WEDDING_FAIRS = [
     "summary": "부천 위드유 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/DxJ8gqd72W",
+    "imageUrl": "https://www.replyalba.co.kr/intros/withu_bcss/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/946.html"
   },
@@ -984,6 +1035,7 @@ window.WEDDING_FAIRS = [
     "summary": "서울 롯데월드타워 대형 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "서울",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/CJ82BE4S0Z",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wedcrowd_slt/img/og.jpg",
     "regionPath": "regions/seoul.html",
     "detailPath": "fairs/1358.html"
   },
@@ -1003,6 +1055,7 @@ window.WEDDING_FAIRS = [
     "summary": "서울 명동 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "서울",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/w38sjknD2E",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wedcrowd_ssg/img/og.jpg",
     "regionPath": "regions/seoul.html",
     "detailPath": "fairs/1049.html"
   },
@@ -1022,6 +1075,7 @@ window.WEDDING_FAIRS = [
     "summary": "서울 신혼여행 박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "서울",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/wsUwSfKRA7",
+    "imageUrl": "https://www.replyalba.co.kr/intros/planon_sth/img/og.jpg",
     "regionPath": "regions/seoul.html",
     "detailPath": "fairs/966.html"
   },
@@ -1041,6 +1095,7 @@ window.WEDDING_FAIRS = [
     "summary": "서울 웨딩홀 박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "서울",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/L0mJGPIdWD",
+    "imageUrl": "https://www.replyalba.co.kr/intros/planon_stwh/img/og.jpg",
     "regionPath": "regions/seoul.html",
     "detailPath": "fairs/958.html"
   },
@@ -1060,6 +1115,7 @@ window.WEDDING_FAIRS = [
     "summary": "세텍 웨딩 페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "서울",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/LU9KnqTUfI",
+    "imageUrl": "https://www.replyalba.co.kr/intros/st_wdf/img/og.jpg",
     "regionPath": "regions/seoul.html",
     "detailPath": "fairs/1101.html"
   },
@@ -1079,6 +1135,7 @@ window.WEDDING_FAIRS = [
     "summary": "세텍 웨딩홀 페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "서울",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/MjUTkz9Okk",
+    "imageUrl": "https://www.replyalba.co.kr/intros/st_whf/img/og.jpg",
     "regionPath": "regions/seoul.html",
     "detailPath": "fairs/1102.html"
   },
@@ -1098,6 +1155,7 @@ window.WEDDING_FAIRS = [
     "summary": "세텍 허니문 페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "서울",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/EBN2LYn7w5",
+    "imageUrl": "https://www.replyalba.co.kr/intros/st_hnf/img/og.jpg",
     "regionPath": "regions/seoul.html",
     "detailPath": "fairs/1103.html"
   },
@@ -1117,6 +1175,7 @@ window.WEDDING_FAIRS = [
     "summary": "수원 갤러리아 광교 대형 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/DKQJRiHhPq",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wedcrowd_swgg/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/903.html"
   },
@@ -1136,6 +1195,7 @@ window.WEDDING_FAIRS = [
     "summary": "수원 메쎄 하우투 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/EPqNgqzCXM",
+    "imageUrl": "https://www.replyalba.co.kr/intros/howto_sww/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/1292.html"
   },
@@ -1155,6 +1215,7 @@ window.WEDDING_FAIRS = [
     "summary": "수원 메쎄 하우투 허니문박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/RDegQTT7BC",
+    "imageUrl": "https://www.replyalba.co.kr/intros/howto_swms/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/939.html"
   },
@@ -1174,6 +1235,7 @@ window.WEDDING_FAIRS = [
     "summary": "수원 웨딩거리 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/SvzZ4mGPnz",
+    "imageUrl": "https://www.replyalba.co.kr/intros/paris_swwt/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/868.html"
   },
@@ -1193,6 +1255,7 @@ window.WEDDING_FAIRS = [
     "summary": "수원 컨벤션 하우투 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/xWWBFYB0Te",
+    "imageUrl": "https://www.replyalba.co.kr/intros/howto_swcon/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/1063.html"
   },
@@ -1212,6 +1275,7 @@ window.WEDDING_FAIRS = [
     "summary": "수원 컨벤션 하우투 허니문박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/ywSFXP7whK",
+    "imageUrl": "https://www.replyalba.co.kr/intros/howto_swchnm2/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/1373.html"
   },
@@ -1231,6 +1295,7 @@ window.WEDDING_FAIRS = [
     "summary": "수원 타임빌라스 웨딩박람회 0523 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/zACz7E9YrA",
+    "imageUrl": "https://www.replyalba.co.kr/intros/paris_swlt0504/img/09w.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/904-0523.html"
   },
@@ -1250,6 +1315,7 @@ window.WEDDING_FAIRS = [
     "summary": "수원 타임빌라스 웨딩박람회 0530 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/YlienVoWN6",
+    "imageUrl": "https://www.replyalba.co.kr/intros/paris_swlt/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/900-0530.html"
   },
@@ -1269,6 +1335,7 @@ window.WEDDING_FAIRS = [
     "summary": "수원 패밀리 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/XG6yigbHLF",
+    "imageUrl": "https://www.replyalba.co.kr/intros/familytour_sw/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/1146.html"
   },
@@ -1288,6 +1355,7 @@ window.WEDDING_FAIRS = [
     "summary": "스타필드 고양 그랜드 웨딩페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/G63MamJcoq",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wnco_gyg/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/1289.html"
   },
@@ -1307,6 +1375,7 @@ window.WEDDING_FAIRS = [
     "summary": "시흥 프리미엄아울렛 그랜드 웨딩페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/Q1XVxou1J7",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wnco_sh/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/1245.html"
   },
@@ -1326,6 +1395,7 @@ window.WEDDING_FAIRS = [
     "summary": "안산 롯데백화점 그랜드 웨딩페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/Q8QA92rE1K",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wnco_aslt/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/1372.html"
   },
@@ -1345,6 +1415,7 @@ window.WEDDING_FAIRS = [
     "summary": "안산 삼성 고잔점 위드유 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/UNff1lRhP5",
+    "imageUrl": "https://www.replyalba.co.kr/intros/withu_asss/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/1104.html"
   },
@@ -1364,6 +1435,7 @@ window.WEDDING_FAIRS = [
     "summary": "안양 롯데백화점 평촌 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/V9Ktdl0dcW",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wedcrowd_pc/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/949.html"
   },
@@ -1383,6 +1455,7 @@ window.WEDDING_FAIRS = [
     "summary": "안양평촌 롯데백화점 레브웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/U5LGTWaAQS",
+    "imageUrl": "https://www.replyalba.co.kr/intros/revew_bg/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/1264.html"
   },
@@ -1402,6 +1475,7 @@ window.WEDDING_FAIRS = [
     "summary": "용산 아이파크 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "서울",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/DkrwKcysjV",
+    "imageUrl": "https://www.replyalba.co.kr/intros/planon_yiwf/img/og.jpg",
     "regionPath": "regions/seoul.html",
     "detailPath": "fairs/1338.html"
   },
@@ -1421,6 +1495,7 @@ window.WEDDING_FAIRS = [
     "summary": "용산 아이파크 혼수박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "서울",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/CWwM2x74oa",
+    "imageUrl": "https://www.replyalba.co.kr/intros/planon_yihf/img/og.jpg",
     "regionPath": "regions/seoul.html",
     "detailPath": "fairs/1339.html"
   },
@@ -1440,6 +1515,7 @@ window.WEDDING_FAIRS = [
     "summary": "용산 아이파크몰 대형 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "서울",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/w8QGX3cUCH",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wedcrowd_ys/img/og.jpg",
     "regionPath": "regions/seoul.html",
     "detailPath": "fairs/840.html"
   },
@@ -1459,6 +1535,7 @@ window.WEDDING_FAIRS = [
     "summary": "원주 삼성스토어 위드유 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "강원",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/wfoONMUrIJ",
+    "imageUrl": "https://www.replyalba.co.kr/intros/withu_wjss/img/og.jpg",
     "regionPath": "regions/gangwon.html",
     "detailPath": "fairs/986.html"
   },
@@ -1478,6 +1555,7 @@ window.WEDDING_FAIRS = [
     "summary": "웨딩더하기 원주 LG베스트샵 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "강원",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/xoUbOBdpfo",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wplus_wjak/img/og.jpg",
     "regionPath": "regions/gangwon.html",
     "detailPath": "fairs/1005-lg.html"
   },
@@ -1497,6 +1575,7 @@ window.WEDDING_FAIRS = [
     "summary": "웨딩더하기 일산 킨텍스 현대백화점 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/LZY29ThPKh",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wplus_is/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/995.html"
   },
@@ -1516,6 +1595,7 @@ window.WEDDING_FAIRS = [
     "summary": "웨딩하람 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경상",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/M6x5FUF1tL",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wedding_haram2/img/og.jpg",
     "regionPath": "regions/gyeongsang.html",
     "detailPath": "fairs/212.html"
   },
@@ -1535,6 +1615,7 @@ window.WEDDING_FAIRS = [
     "summary": "이본한복 상담신청 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "전국",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/Es7vx1B2af",
+    "imageUrl": "https://www.replyalba.co.kr/intros/paris_ebon/img/og.jpg",
     "regionPath": "",
     "detailPath": "fairs/1167.html"
   },
@@ -1554,6 +1635,7 @@ window.WEDDING_FAIRS = [
     "summary": "이천 위드유 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/DMIK5H6BoN",
+    "imageUrl": "https://www.replyalba.co.kr/intros/withu_icjp/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/1147.html"
   },
@@ -1573,6 +1655,7 @@ window.WEDDING_FAIRS = [
     "summary": "인천 롯데백화점 그랜드 웨딩페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "인천",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/EJJ1pUwzXW",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wnco_ic/img/og.jpg",
     "regionPath": "regions/incheon.html",
     "detailPath": "fairs/1378.html"
   },
@@ -1592,6 +1675,7 @@ window.WEDDING_FAIRS = [
     "summary": "잠실 롯데백화점 레브웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "전국",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/Si4ffPhvBF",
+    "imageUrl": "https://www.replyalba.co.kr/intros/revew_jsw/img/og.jpg",
     "regionPath": "",
     "detailPath": "fairs/1365.html"
   },
@@ -1611,6 +1695,7 @@ window.WEDDING_FAIRS = [
     "summary": "전국 웨딩 박람회 일정 - 가나다순 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "서울",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/QguXBOoowJ",
+    "imageUrl": "https://www.replyalba.co.kr/intros/weddingA/img/og.jpg",
     "regionPath": "regions/seoul.html",
     "detailPath": "fairs/705.html"
   },
@@ -1630,6 +1715,7 @@ window.WEDDING_FAIRS = [
     "summary": "전국 웨딩 박람회 일정 - 인기순 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "서울",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/Jk1KV29KEE",
+    "imageUrl": "https://www.replyalba.co.kr/intros/weddingB/img/og.jpg",
     "regionPath": "regions/seoul.html",
     "detailPath": "fairs/711.html"
   },
@@ -1649,6 +1735,7 @@ window.WEDDING_FAIRS = [
     "summary": "제주 라마다호텔 초대형 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "제주",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/NmOYxGsinK",
+    "imageUrl": "https://www.replyalba.co.kr/intros/jejurmd/img/og.jpg",
     "regionPath": "regions/jeju.html",
     "detailPath": "fairs/1208.html"
   },
@@ -1668,6 +1755,7 @@ window.WEDDING_FAIRS = [
     "summary": "제주 제이유 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "제주",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/LmFbqJYWsu",
+    "imageUrl": "https://www.replyalba.co.kr/intros/ktop_jeju3/img/og.jpg",
     "regionPath": "regions/jeju.html",
     "detailPath": "fairs/690.html"
   },
@@ -1687,6 +1775,7 @@ window.WEDDING_FAIRS = [
     "summary": "중동 롯데백화점 레브웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "전국",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/KKTEBW4HON",
+    "imageUrl": "https://www.replyalba.co.kr/intros/revew_jdw/img/og.jpg",
     "regionPath": "",
     "detailPath": "fairs/1334.html"
   },
@@ -1706,6 +1795,7 @@ window.WEDDING_FAIRS = [
     "summary": "창원 최대규모 대형 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경상",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/wIaCkwIxLk",
+    "imageUrl": "https://www.replyalba.co.kr/intros/cwonfair2/img/og.jpg",
     "regionPath": "regions/gyeongsang.html",
     "detailPath": "fairs/1323.html"
   },
@@ -1725,6 +1815,7 @@ window.WEDDING_FAIRS = [
     "summary": "창원 최대규모 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경상",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/V0VUIVN46h",
+    "imageUrl": "https://www.replyalba.co.kr/intros/cwonfair/img/og.jpg",
     "regionPath": "regions/gyeongsang.html",
     "detailPath": "fairs/993.html"
   },
@@ -1744,6 +1835,7 @@ window.WEDDING_FAIRS = [
     "summary": "창원 프리마베라 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경상",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/UW408C41xZ",
+    "imageUrl": "https://www.replyalba.co.kr/intros/w_cwpri/img/og.jpg",
     "regionPath": "regions/gyeongsang.html",
     "detailPath": "fairs/803.html"
   },
@@ -1763,6 +1855,7 @@ window.WEDDING_FAIRS = [
     "summary": "천안 갤러리아 그랜드 웨딩페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "충청",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/V0VUIUeNbc",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wnco_ca/img/og.jpg",
     "regionPath": "regions/chungcheong.html",
     "detailPath": "fairs/1233.html"
   },
@@ -1782,6 +1875,7 @@ window.WEDDING_FAIRS = [
     "summary": "천안 갤러리아 대형 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "충청",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/UW408Cum4i",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wedcrowd_ca/img/og.jpg",
     "regionPath": "regions/chungcheong.html",
     "detailPath": "fairs/909.html"
   },
@@ -1801,6 +1895,7 @@ window.WEDDING_FAIRS = [
     "summary": "천안 아일랜드유 위드유 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "충청",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/UWNLGu7JOC",
+    "imageUrl": "https://www.replyalba.co.kr/intros/withu_ca/img/og.jpg",
     "regionPath": "regions/chungcheong.html",
     "detailPath": "fairs/838.html"
   },
@@ -1820,6 +1915,7 @@ window.WEDDING_FAIRS = [
     "summary": "청량리 롯데백화점 대형 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "서울",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/RPDmqREaLQ",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wedcrowd_cnn/img/og.jpg",
     "regionPath": "regions/seoul.html",
     "detailPath": "fairs/1172.html"
   },
@@ -1839,6 +1935,7 @@ window.WEDDING_FAIRS = [
     "summary": "청주 OSCO 패밀리 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "충청",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/F5MuinPsLn",
+    "imageUrl": "https://www.replyalba.co.kr/intros/familytour_cj/img/og.jpg",
     "regionPath": "regions/chungcheong.html",
     "detailPath": "fairs/1145-osco.html"
   },
@@ -1858,6 +1955,7 @@ window.WEDDING_FAIRS = [
     "summary": "청주 오스코 하우투 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "충청",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/FgL6CdPZcK",
+    "imageUrl": "https://www.replyalba.co.kr/intros/howto_cjosco/img/og.jpg",
     "regionPath": "regions/chungcheong.html",
     "detailPath": "fairs/1192.html"
   },
@@ -1877,6 +1975,7 @@ window.WEDDING_FAIRS = [
     "summary": "청주 오스코 허니문박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "충청",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/Lt2DkCltXG",
+    "imageUrl": "https://www.replyalba.co.kr/intros/howto_hnm/img/og.jpg",
     "regionPath": "regions/chungcheong.html",
     "detailPath": "fairs/1087.html"
   },
@@ -1896,6 +1995,7 @@ window.WEDDING_FAIRS = [
     "summary": "청주 율랑점 엘지 위드유 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "충청",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/KEwc7P3Ctj",
+    "imageUrl": "https://www.replyalba.co.kr/intros/withu_cjyr/img/og.jpg",
     "regionPath": "regions/chungcheong.html",
     "detailPath": "fairs/1273.html"
   },
@@ -1915,6 +2015,7 @@ window.WEDDING_FAIRS = [
     "summary": "청주 커넥트 현대 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "충청",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/xQDYbAdJ4b",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wedcrowd_cjc/img/og.jpg",
     "regionPath": "regions/chungcheong.html",
     "detailPath": "fairs/1283.html"
   },
@@ -1934,6 +2035,7 @@ window.WEDDING_FAIRS = [
     "summary": "초대형 인천 하이어 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "인천",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/yvBKyNlOyV",
+    "imageUrl": "https://www.replyalba.co.kr/intros/higher_ic2/img/og.jpg",
     "regionPath": "regions/incheon.html",
     "detailPath": "fairs/1314.html"
   },
@@ -1953,6 +2055,7 @@ window.WEDDING_FAIRS = [
     "summary": "춘천 더테라리움 위드유 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "강원",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/10wu6cnVKCT",
+    "imageUrl": "https://www.replyalba.co.kr/intros/withu_cc/img/og.jpg",
     "regionPath": "regions/gangwon.html",
     "detailPath": "fairs/861.html"
   },
@@ -1972,6 +2075,7 @@ window.WEDDING_FAIRS = [
     "summary": "춘천퇴계점 LG베스트샵 위드유 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "강원",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/zFdzEIjbv6",
+    "imageUrl": "https://www.replyalba.co.kr/intros/withu_cclg/img/og.jpg",
     "regionPath": "regions/gangwon.html",
     "detailPath": "fairs/1232-lg.html"
   },
@@ -1991,6 +2095,7 @@ window.WEDDING_FAIRS = [
     "summary": "충주 위드유 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "전국",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/CWk6Fwc6pR",
+    "imageUrl": "https://www.replyalba.co.kr/intros/withu_cj/img/og.jpg",
     "regionPath": "",
     "detailPath": "fairs/837.html"
   },
@@ -2010,6 +2115,7 @@ window.WEDDING_FAIRS = [
     "summary": "타임빌라스 수원 대형 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/W1X8U9cz6s",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wnco_sw/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/1235.html"
   },
@@ -2029,6 +2135,7 @@ window.WEDDING_FAIRS = [
     "summary": "평택 LG베스트샵 위드유 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/PXlv3LGopx",
+    "imageUrl": "https://www.replyalba.co.kr/intros/withu_ptlg/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/1310-lg.html"
   },
@@ -2048,6 +2155,7 @@ window.WEDDING_FAIRS = [
     "summary": "평택 그랜드 웨딩페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/EWojsS76ot",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wnco_pt/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/1238.html"
   },
@@ -2067,6 +2175,7 @@ window.WEDDING_FAIRS = [
     "summary": "평택 패밀리 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/Q5Trhi74Lj",
+    "imageUrl": "https://www.replyalba.co.kr/intros/familytour_pt/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/1186.html"
   },
@@ -2086,6 +2195,7 @@ window.WEDDING_FAIRS = [
     "summary": "성남/용인 그랜드 웨딩페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/E976oNZbUJ",
+    "imageUrl": "https://www.replyalba.co.kr/intros/wnco_sn/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/1237.html"
   },
@@ -2105,6 +2215,7 @@ window.WEDDING_FAIRS = [
     "summary": "수원 타임빌라스 웨딩박람회 0607 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/G9ZewImur9",
+    "imageUrl": "https://www.replyalba.co.kr/intros/paris_swlt0607/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
     "detailPath": "fairs/1383-0607.html"
   },
@@ -2124,6 +2235,7 @@ window.WEDDING_FAIRS = [
     "summary": "신한카드 직거래 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "서울",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/SNksCAPUVO",
+    "imageUrl": "https://www.replyalba.co.kr/intros/shinhan_p/img/og.jpg",
     "regionPath": "regions/seoul.html",
     "detailPath": "fairs/1381.html"
   },
@@ -2143,6 +2255,7 @@ window.WEDDING_FAIRS = [
     "summary": "춘천 레브웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "강원",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/AdND0hr4Vs",
+    "imageUrl": "https://www.replyalba.co.kr/intros/revew_ccw/img/og.jpg",
     "regionPath": "regions/gangwon.html",
     "detailPath": "fairs/1382.html"
   },
@@ -2162,6 +2275,7 @@ window.WEDDING_FAIRS = [
     "summary": "포항 라모르 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경상",
     "affiliateUrl": "https://www.replyalba.co.kr/pt/UNwAbYB8K8",
+    "imageUrl": "https://www.replyalba.co.kr/intros/lamour_ph/img/og.jpg",
     "regionPath": "regions/gyeongsang.html",
     "detailPath": "fairs/1312.html"
   }
