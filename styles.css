@@ -334,6 +334,61 @@ h3 {
   color: #3f444b;
 }
 
+.detail-content-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.95fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.detail-copy {
+  color: #3f444b;
+}
+
+.detail-copy .section-head {
+  margin-bottom: 18px;
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 20px 0 18px;
+}
+
+.benefit-grid article {
+  display: grid;
+  gap: 8px;
+  min-height: 128px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  padding: 16px;
+  box-shadow: 0 8px 24px rgba(39, 30, 24, 0.06);
+}
+
+.benefit-grid strong {
+  color: var(--ink);
+  font-size: 16px;
+}
+
+.benefit-grid span {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.detail-note {
+  max-width: 900px;
+  margin-top: 54px;
+  border-top: 1px solid var(--line);
+  padding-top: 34px;
+}
+
+.detail-note p:not(.eyebrow) {
+  margin: 12px 0 0;
+  color: #3f444b;
+}
+
 .plain-list {
   margin: 16px 0 22px;
   padding-left: 20px;
@@ -891,6 +946,7 @@ h3 {
   .quick-panel,
   .fair-grid,
   .detail-showcase,
+  .detail-content-grid,
   .fortune-layout,
   .saju-grid,
   .split-section,
@@ -906,8 +962,13 @@ h3 {
   }
 
   .fair-grid,
-  .check-grid {
+  .check-grid,
+  .benefit-grid {
     display: grid;
+  }
+
+  .benefit-grid {
+    grid-template-columns: 1fr;
   }
 
   .footer {

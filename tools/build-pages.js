@@ -372,15 +372,29 @@ for (const fair of fairs.filter(isDetailFair)) {
           <span>구분</span>
         </div>
       </section>
-      <section class="section split-section alt">
-        <div>
+      <section class="section detail-content-grid">
+        <article class="detail-copy">
           <div class="section-head">
             <p class="eyebrow">Venue</p>
             <h2>장소와 혜택</h2>
-            <p>${escapeHtml(fair.venue)}</p>
+            <p>${escapeHtml(fair.title)}은 ${escapeHtml(fair.venue)}에서 확인할 수 있는 웨딩박람회입니다. 방문 전 무료입장 신청을 해두면 현장 안내와 상담 절차를 더 빠르게 확인할 수 있습니다.</p>
+          </div>
+          <div class="benefit-grid">
+            <article>
+              <strong>무료입장 신청</strong>
+              <span>사전예약 페이지에서 방문 정보를 남기고 입장 가능 여부와 안내 연락을 확인하세요.</span>
+            </article>
+            <article>
+              <strong>결혼 준비 항목 비교</strong>
+              <span>${fair.tags.map((tag) => escapeHtml(tag)).join(", ")} 관련 상담 포인트를 한 번에 비교하기 좋습니다.</span>
+            </article>
+            <article>
+              <strong>방문 전 최종 확인</strong>
+              <span>실제 일정, 운영 시간, 제공 혜택은 신청 페이지와 주최사 안내 기준으로 확인하세요.</span>
+            </article>
           </div>
           <div class="tag-row">${fair.tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>
-        </div>
+        </article>
         <article class="tool-surface">
           <h3>방문 전 체크</h3>
           <ul class="plain-list">
@@ -390,6 +404,11 @@ for (const fair of fairs.filter(isDetailFair)) {
           </ul>
           <a class="fair-cta" href="${escapeHtml(fair.affiliateUrl)}">신청 페이지로 이동</a>
         </article>
+      </section>
+      <section class="section detail-copy detail-note">
+        <p class="eyebrow">Guide</p>
+        <h2>${escapeHtml(fair.title)} 신청 안내</h2>
+        <p>${escapeHtml(fair.region)} 지역에서 웨딩홀, 스드메, 혼수, 예물, 예복을 함께 비교하려는 예비부부라면 방문 전에 희망 예식 시기와 예산 범위를 정리해두는 것이 좋습니다. 신청 후에는 리플알바 제휴 신청 페이지에서 제공하는 안내를 기준으로 실제 방문 가능 일정과 혜택을 확인하세요.</p>
       </section>`;
   fs.writeFileSync(path.join(root, "fairs", `${slug}.html`), layout({ title, description, pathName, body, jsonLd, imageUrl }), "utf8");
   detailUrls.push(pathName);
