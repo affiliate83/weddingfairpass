@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>전국 웨딩박람회 일정 2026 | 웨딩페어패스 무료입장 신청</title>
+    <meta name="description" content="서울, 경기, 인천, 부산 등 전국 웨딩박람회 일정을 지역별로 비교하고 무료입장 신청 전 커플 성향과 예산을 확인하세요.">
+    <link rel="canonical" href="https://weddingfairpass.com/">
+    <meta property="og:title" content="전국 웨딩박람회 무료입장 일정 모음">
+    <meta property="og:description" content="내 지역 웨딩박람회 일정, 커플 성향 테스트, 결혼 예산 계산기를 한 번에 확인하세요.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://weddingfairpass.com/">
+    <meta property="og:image" content="assets/wedding-fair-hero.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="웨딩페어패스 홈">
+        <span class="brand-mark">W</span>
+        <span>웨딩페어패스</span>
+      </a>
+      <nav class="nav" aria-label="주요 메뉴">
+        <a href="#fairs">박람회</a>
+        <a href="#quiz">성향 테스트</a>
+        <a href="#fortune">무료 운세</a>
+        <a href="#budget">예산 계산</a>
+      </nav>
+      <button class="menu-button" type="button" aria-label="메뉴 열기" data-menu-button>
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <img class="hero-image" src="assets/wedding-fair-hero.png" alt="웨딩박람회에서 상담 자료를 확인하는 예비부부">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">지역별 무료입장 일정</p>
+          <h1>내 지역 웨딩박람회 무료입장 신청</h1>
+          <p class="hero-copy">웨딩홀, 스드메, 혼수 혜택을 비교하고 우리 커플에게 맞는 박람회 일정을 먼저 확인하세요.</p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#fairs" data-national-link="popular" data-track="hero_fairs">무료입장 일정 보기</a>
+            <a class="secondary-action" href="#quiz" data-track="hero_quiz">커플 성향 테스트</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-panel" aria-label="요약 정보">
+        <div>
+          <strong>100+</strong>
+          <span>확인 가능한 일정</span>
+        </div>
+        <div>
+          <strong>9</strong>
+          <span>주요 지역</span>
+        </div>
+        <div>
+          <strong>3분</strong>
+          <span>성향 테스트</span>
+        </div>
+      </section>
+
+      <section id="fairs" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Wedding fair</p>
+          <h2>지역별 무료입장 일정</h2>
+          <p>지역을 선택하면 해당 일정만 빠르게 볼 수 있습니다.</p>
+        </div>
+        <div class="fair-search">
+          <label for="fairSearch">박람회 검색</label>
+          <input id="fairSearch" type="search" placeholder="지역, 박람회명, 장소로 검색..." data-fair-search>
+          <span data-fair-count></span>
+        </div>
+        <div class="region-tabs" role="tablist" aria-label="지역 필터">
+          <button class="tab is-active" type="button" data-region="전체">전체</button>
+          <button class="tab" type="button" data-region="서울">서울</button>
+          <button class="tab" type="button" data-region="경기">경기</button>
+          <button class="tab" type="button" data-region="인천">인천</button>
+          <button class="tab" type="button" data-region="부산">부산</button>
+          <button class="tab" type="button" data-region="충청">충청</button>
+          <button class="tab" type="button" data-region="전라">전라</button>
+          <button class="tab" type="button" data-region="강원">강원</button>
+          <button class="tab" type="button" data-region="경상">경상</button>
+          <button class="tab" type="button" data-region="제주">제주</button>
+        </div>
+        <div class="region-link-row" aria-label="지역별 상세 페이지">
+          <a href="regions/seoul.html">서울 일정</a>
+          <a href="regions/gyeonggi.html">경기 일정</a>
+          <a href="regions/incheon.html">인천 일정</a>
+          <a href="regions/busan.html">부산 일정</a>
+          <a href="regions/chungcheong.html">충청 일정</a>
+          <a href="regions/jeolla.html">전라 일정</a>
+          <a href="regions/gangwon.html">강원 일정</a>
+          <a href="regions/gyeongsang.html">경상 일정</a>
+          <a href="regions/jeju.html">제주 일정</a>
+        </div>
+        <div class="fair-grid" data-fair-list></div>
+      </section>
+
+      <section id="quiz" class="section split-section">
+        <div class="section-head">
+          <p class="eyebrow">Couple test</p>
+          <h2>우리 커플 웨딩 준비 성향</h2>
+          <p>결과에 맞춰 어떤 박람회 일정을 먼저 보면 좋을지 추천합니다.</p>
+        </div>
+        <div class="tool-surface">
+          <div class="quiz-progress"><span data-quiz-step>1</span> / 3</div>
+          <h3 data-quiz-title></h3>
+          <div class="option-list" data-quiz-options></div>
+          <div class="quiz-result is-hidden" data-quiz-result>
+            <p class="result-label">테스트 결과</p>
+            <h3 data-result-title></h3>
+            <p data-result-body></p>
+            <a class="primary-action" href="#fairs" data-result-cta data-track="quiz_result_cta">추천 일정 보기</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="fortune" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Free fortune</p>
+          <h2>웨딩 타로 & 무료 궁합 사주</h2>
+          <p>재미로 보는 결과지만, 결혼 준비 우선순위를 정하는 작은 힌트로 활용해보세요.</p>
+        </div>
+        <div class="fortune-layout">
+          <article class="tool-surface fortune-card">
+            <div class="fortune-top">
+              <p class="eyebrow">Wedding tarot</p>
+              <h3>오늘의 웨딩 타로</h3>
+            </div>
+            <div class="tarot-deck" aria-hidden="true">
+              <div></div><div></div><div></div>
+            </div>
+            <div class="fortune-result is-hidden" data-tarot-result>
+              <img class="tarot-result-image" src="" alt="" data-tarot-image>
+              <span data-tarot-name></span>
+              <strong data-tarot-label></strong>
+              <p data-tarot-message></p>
+              <small data-tarot-action></small>
+            </div>
+            <button class="primary-action full" type="button" data-draw-tarot>타로 카드 뽑기</button>
+          </article>
+
+          <article class="tool-surface fortune-card">
+            <div class="fortune-top">
+              <p class="eyebrow">Couple saju</p>
+              <h3>무료 궁합 사주</h3>
+            </div>
+            <form class="saju-form" data-saju-form>
+              <div class="saju-grid">
+                <label>
+                  <span>나의 생년월일</span>
+                  <input type="date" name="mineDate" required>
+                </label>
+                <label>
+                  <span>나의 태어난 시간</span>
+                  <select name="mineTime">
+                    <option value="unknown">모름</option>
+                    <option value="0">자시 23:00-01:00</option>
+                    <option value="2">축시 01:00-03:00</option>
+                    <option value="4">인시 03:00-05:00</option>
+                    <option value="6">묘시 05:00-07:00</option>
+                    <option value="8">진시 07:00-09:00</option>
+                    <option value="10">사시 09:00-11:00</option>
+                    <option value="12">오시 11:00-13:00</option>
+                    <option value="14">미시 13:00-15:00</option>
+                    <option value="16">신시 15:00-17:00</option>
+                    <option value="18">유시 17:00-19:00</option>
+                    <option value="20">술시 19:00-21:00</option>
+                    <option value="22">해시 21:00-23:00</option>
+                  </select>
+                </label>
+                <label>
+                  <span>상대 생년월일</span>
+                  <input type="date" name="partnerDate" required>
+                </label>
+                <label>
+                  <span>상대 태어난 시간</span>
+                  <select name="partnerTime">
+                    <option value="unknown">모름</option>
+                    <option value="0">자시 23:00-01:00</option>
+                    <option value="2">축시 01:00-03:00</option>
+                    <option value="4">인시 03:00-05:00</option>
+                    <option value="6">묘시 05:00-07:00</option>
+                    <option value="8">진시 07:00-09:00</option>
+                    <option value="10">사시 09:00-11:00</option>
+                    <option value="12">오시 11:00-13:00</option>
+                    <option value="14">미시 13:00-15:00</option>
+                    <option value="16">신시 15:00-17:00</option>
+                    <option value="18">유시 17:00-19:00</option>
+                    <option value="20">술시 19:00-21:00</option>
+                    <option value="22">해시 21:00-23:00</option>
+                  </select>
+                </label>
+              </div>
+              <p class="saju-note">입력값은 브라우저 안에서만 계산에 사용되며 서버에 저장하지 않습니다.</p>
+              <button class="primary-action full" type="submit">궁합 결과 보기</button>
+            </form>
+            <div class="fortune-result is-hidden" data-saju-result>
+              <div class="saju-pill-row">
+                <span data-mine-element></span>
+                <span data-partner-element></span>
+              </div>
+              <strong data-saju-title></strong>
+              <p data-saju-body></p>
+              <ul class="saju-detail-list">
+                <li data-mine-trait></li>
+                <li data-partner-trait></li>
+                <li data-wedding-advice></li>
+              </ul>
+              <div class="month-advice">
+                <span>추천 결혼/상담 월</span>
+                <strong data-wedding-months></strong>
+                <p data-wedding-month-reason></p>
+              </div>
+              <a class="secondary-action" href="#fairs" data-saju-cta data-track="saju_result_cta">추천 박람회 보기</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="budget" class="section split-section alt">
+        <div class="section-head">
+          <p class="eyebrow">Budget</p>
+          <h2>결혼 예산 계산기</h2>
+          <p>대략적인 항목별 예산을 입력하면 총액과 박람회에서 확인할 항목을 정리합니다.</p>
+        </div>
+        <form class="tool-surface budget-form" data-budget-form>
+          <label>
+            <span>웨딩홀/식대</span>
+            <input type="number" name="venue" min="0" step="10" value="1800">
+          </label>
+          <label>
+            <span>스드메</span>
+            <input type="number" name="package" min="0" step="10" value="350">
+          </label>
+          <label>
+            <span>혼수/가전</span>
+            <input type="number" name="home" min="0" step="10" value="700">
+          </label>
+          <label>
+            <span>예물/예복</span>
+            <input type="number" name="gift" min="0" step="10" value="300">
+          </label>
+          <div class="budget-result">
+            <span>예상 총액</span>
+            <strong data-budget-total>3,150만원</strong>
+          </div>
+          <a class="primary-action full" href="#fairs" data-national-link="approval" data-track="budget_cta">예산별 박람회 보기</a>
+        </form>
+      </section>
+
+      <section class="section checklist">
+        <div class="section-head">
+          <p class="eyebrow">Before visit</p>
+          <h2>방문 전 체크리스트</h2>
+        </div>
+        <div class="check-grid">
+          <article><strong>예정일</strong><span>결혼 예정 월과 선호 요일을 먼저 정리하세요.</span></article>
+          <article><strong>지역</strong><span>예식장 후보 지역을 2곳 이하로 좁히면 상담이 빨라집니다.</span></article>
+          <article><strong>예산</strong><span>총액보다 항목별 상한선을 정해두는 편이 좋습니다.</span></article>
+          <article><strong>관심 항목</strong><span>웨딩홀, 스드메, 혼수 중 우선순위를 정하세요.</span></article>
+        </div>
+      </section>
+
+      <section class="section faq-section">
+        <div class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2>무료입장 신청 전 자주 묻는 질문</h2>
+        </div>
+        <div class="faq-list" data-faq-list></div>
+      </section>
+
+      <section class="section guide-section">
+        <div class="section-head">
+          <p class="eyebrow">Guide</p>
+          <h2>웨딩박람회 방문 가이드</h2>
+          <p>무료입장 신청 전 아래 항목을 정리해두면 상담 시간이 짧아지고 비교가 쉬워집니다.</p>
+        </div>
+        <div class="guide-grid">
+          <article>
+            <h3>웨딩박람회에서 볼 수 있는 것</h3>
+            <p>웨딩홀, 스드메, 혼수, 예물, 예복, 신혼여행 상담을 한 번에 비교할 수 있습니다.</p>
+          </article>
+          <article>
+            <h3>사전예약 전 준비할 것</h3>
+            <p>결혼 예정 시기, 희망 지역, 대략적인 예산, 관심 항목을 먼저 정리하세요.</p>
+          </article>
+          <article>
+            <h3>현장 상담 팁</h3>
+            <p>당일 계약을 서두르기보다 포함 항목, 추가 비용, 취소 조건을 비교해보는 것이 좋습니다.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>웨딩페어패스는 웨딩박람회 정보를 정리하는 제휴 안내 사이트입니다. 실제 일정과 혜택은 신청 페이지 및 주최사 안내를 기준으로 확인하세요.</p>
+      <div>
+        <a href="privacy.html">개인정보처리방침</a>
+        <a href="contact.html">문의</a>
+      </div>
+    </footer>
+
+    <script src="campaign-links.js"></script>
+    <script src="fairs.generated.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

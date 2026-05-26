@@ -1,0 +1,19 @@
+[build]
+  command = "npm run build:fairs"
+  publish = "."
+
+[build.environment]
+  SITE_URL = "https://weddingfairpass.com"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[redirects]]
+  from = "https://www.weddingfairpass.com/*"
+  to = "https://weddingfairpass.com/:splat"
+  status = 301
+  force = true

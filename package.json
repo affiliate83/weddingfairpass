@@ -1,0 +1,13 @@
+{
+  "name": "wedding-fair-mvp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "validate:fairs": "node tools/validate-fairs.js",
+    "build:fairs": "node tools/build-fairs.js && node tools/build-pages.js",
+    "build:data": "node tools/build-fairs.js",
+    "build:pages": "node tools/build-pages.js",
+    "start": "node server.js",
+    "check": "node --check app.js && node --check data.js && node --check server.js && node --check tools/build-fairs.js && node --check tools/build-pages.js && node --check tools/validate-fairs.js"
+  }
+}

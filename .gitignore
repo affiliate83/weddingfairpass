@@ -1,0 +1,26 @@
+node_modules/
+.env
+.env.*
+*.log
+.DS_Store
+Thumbs.db
+
+# Local handoff and planning notes
+PROJECT_HANDOFF_*.md
+affiliate_project_execution_plan.md
+affiliate_site_build_reference.md
+
+# Replyalba source exports and intermediate campaign data
+data/fairs.before-*.csv
+data/fairs.enriched.csv
+data/replyalba-*.csv
+data/replyalba-*.json
+data/ripplealba-campaigns-template.csv
+
+# Internal operation docs
+docs/
+
+# Local-only ingestion utilities
+tools/apply-enriched-fairs.js
+tools/convert-ripplealba.js
+tools/enrich-replyalba-intros.js
