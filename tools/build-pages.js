@@ -115,7 +115,7 @@ const structuredFairItem = (fair) => {
     ...parseSchedule(fair.date),
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
     eventStatus: "https://schema.org/EventScheduled",
-    location: { "@type": "Place", name: fair.venue, address: fair.region },
+    location: { "@type": "Place", name: fair.venue, address: fair.address || fair.venue || fair.region },
     offers: { "@type": "Offer", url: fair.affiliateUrl, price: "0", priceCurrency: "KRW" },
   };
 };
@@ -306,7 +306,8 @@ for (const fair of fairs.filter(isDetailFair)) {
   const slug = detailSlug(fair.id);
   const pathName = `/fairs/${slug}.html`;
   const title = `${fair.title} 일정 | 무료입장 신청`;
-  const description = `${fair.venue}에서 열리는 ${fair.title} 일정과 무료입장 신청 정보를 확인하세요.`;
+  const locationText = fair.address || fair.venue;
+  const description = `${locationText}에서 열리는 ${fair.title} 일정과 무료입장 신청 정보를 확인하세요.`;
   const regionCode = regions.find((region) => region.name === fair.region)?.code || "";
   const imageUrl = fair.imageUrl || `${siteUrl}/assets/wedding-fair-hero.png`;
   const jsonLd = {
@@ -327,7 +328,7 @@ for (const fair of fairs.filter(isDetailFair)) {
         ...parseSchedule(fair.date),
         eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
         eventStatus: "https://schema.org/EventScheduled",
-        location: { "@type": "Place", name: fair.venue, address: fair.region },
+        location: { "@type": "Place", name: fair.venue, address: locationText || fair.region },
         organizer: { "@type": "Organization", name: "웨딩페어패스" },
         offers: { "@type": "Offer", url: fair.affiliateUrl, price: "0", priceCurrency: "KRW", availability: "https://schema.org/InStock" },
       },
@@ -359,7 +360,7 @@ for (const fair of fairs.filter(isDetailFair)) {
           <h2>박람회 정보</h2>
           <dl>
             <div><dt>일정</dt><dd>${escapeHtml(fair.date)}</dd></div>
-            <div><dt>장소</dt><dd>${escapeHtml(fair.venue)}</dd></div>
+            <div><dt>장소</dt><dd>${escapeHtml(locationText)}</dd></div>
             <div><dt>지역</dt><dd>${escapeHtml(fair.region)}</dd></div>
           </dl>
           <a class="fair-cta full" href="${escapeHtml(fair.affiliateUrl)}" data-track="detail_fair_apply">사전예약 신청</a>
@@ -371,7 +372,7 @@ for (const fair of fairs.filter(isDetailFair)) {
           <div class="section-head">
             <p class="eyebrow">Venue</p>
             <h2>장소와 혜택</h2>
-            <p>${escapeHtml(fair.title)}은 ${escapeHtml(fair.venue)}에서 확인할 수 있는 웨딩박람회입니다. 방문 전 무료입장 신청을 해두면 현장 안내와 상담 절차를 더 빠르게 확인할 수 있습니다.</p>
+            <p>${escapeHtml(fair.title)}은 ${escapeHtml(locationText)}에서 확인할 수 있는 웨딩박람회입니다. 방문 전 무료입장 신청을 해두면 현장 안내와 상담 절차를 더 빠르게 확인할 수 있습니다.</p>
           </div>
           <div class="benefit-grid">
             <article>

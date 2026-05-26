@@ -151,7 +151,7 @@ const renderStructuredData = () => {
       location: {
         "@type": "Place",
         name: fair.venue,
-        address: fair.region,
+        address: fair.address || fair.venue || fair.region,
       },
       organizer: {
         "@type": "Organization",

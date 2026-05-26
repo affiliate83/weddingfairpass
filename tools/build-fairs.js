@@ -87,6 +87,7 @@ const fairs = records
     region: fair.region,
     title: fair.title,
     venue: fair.venue,
+    address: fair.address || fair.venue,
     date: fair.date,
     tags: fair.tags.split("|").map((tag) => tag.trim()).filter(Boolean),
     summary: fair.summary,
