@@ -557,6 +557,10 @@ h3 {
   background: #fff8f3;
 }
 
+.fortune-result.is-hidden {
+  display: none;
+}
+
 .tarot-result-image {
   width: 100%;
   max-width: 220px;
