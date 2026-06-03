@@ -235,6 +235,32 @@ const faqItems = (regionName) => [
   },
 ];
 
+const detailConsultItems = (fair) => {
+  const tagSet = new Set(fair.tags);
+  const items = [];
+  if (tagSet.has("웨딩홀")) items.push("예식장 위치, 식대, 보증 인원, 홀 분위기와 가능한 예식 시간대를 비교해보세요.");
+  if (tagSet.has("스드메")) items.push("스튜디오, 드레스, 메이크업 구성과 추가 비용이 생기는 항목을 미리 확인해보세요.");
+  if (tagSet.has("혼수")) items.push("가전, 가구, 침구처럼 예산 차이가 큰 혼수 품목은 방문 전 우선순위를 정해두면 좋습니다.");
+  if (tagSet.has("예물")) items.push("예물 상담은 디자인, 예산, 제작 기간, 보증 조건을 함께 확인하는 것이 좋습니다.");
+  if (tagSet.has("예복")) items.push("예복은 맞춤 여부, 대여 가능 여부, 촬영 일정과 본식 일정에 맞춘 준비 기간을 확인해보세요.");
+  return items.length ? items : ["상담 항목과 혜택은 박람회별로 다를 수 있으니 신청 페이지에서 최신 안내를 확인하세요."];
+};
+
+const detailFaqItems = (fair, locationText) => [
+  {
+    q: `${fair.title} 무료입장 신청은 가능한가요?`,
+    a: "제휴 신청 페이지를 통해 사전예약하면 무료입장 안내를 받을 수 있습니다. 실제 입장 조건과 혜택은 신청 페이지 및 주최사 안내 기준으로 확인하세요.",
+  },
+  {
+    q: `${fair.title} 방문 전 무엇을 준비하면 좋나요?`,
+    a: "희망 예식 지역, 예상 하객 수, 결혼 준비 예산, 비교하고 싶은 항목을 간단히 정리해두면 상담 시간을 더 효율적으로 쓸 수 있습니다.",
+  },
+  {
+    q: `장소는 어디에서 확인하나요?`,
+    a: `${locationText} 기준으로 안내하고 있습니다. 방문 전에는 신청 페이지에서 최종 장소와 운영 시간을 다시 확인하는 것이 좋습니다.`,
+  },
+];
+
 const regionUrls = [];
 for (const region of regions) {
   const regionFairs = fairs.filter((fair) => fair.region === region.name);
@@ -303,11 +329,17 @@ for (const region of regions) {
 }
 
 const detailUrls = [];
-for (const fair of fairs.filter(isDetailFair)) {
+const detailFairs = fairs.filter(isDetailFair);
+const priorityDetailIds = new Set(detailFairs.slice(0, 20).map((fair) => fair.id));
+
+for (const fair of detailFairs) {
   const slug = detailSlug(fair.id);
   const pathName = `/fairs/${slug}.html`;
   const title = `${fair.title} 일정 | 무료입장 신청`;
   const locationText = fair.address || fair.venue;
+  const isPriorityDetail = priorityDetailIds.has(fair.id);
+  const consultItems = detailConsultItems(fair);
+  const detailFaqs = detailFaqItems(fair, locationText);
   const description = `${locationText}에서 열리는 ${fair.title} 일정과 무료입장 신청 정보를 확인하세요.`;
   const regionCode = regions.find((region) => region.name === fair.region)?.code || "";
   const imageUrl = fair.imageUrl || `${siteUrl}/assets/wedding-fair-hero.png`;
@@ -333,8 +365,36 @@ for (const fair of fairs.filter(isDetailFair)) {
         organizer: { "@type": "Organization", name: "웨딩페어패스" },
         offers: { "@type": "Offer", url: fair.affiliateUrl, price: "0", priceCurrency: "KRW", availability: "https://schema.org/InStock" },
       },
+      ...(isPriorityDetail
+        ? [
+            {
+              "@type": "FAQPage",
+              mainEntity: detailFaqs.map((faq) => ({
+                "@type": "Question",
+                name: faq.q,
+                acceptedAnswer: { "@type": "Answer", text: faq.a },
+              })),
+            },
+          ]
+        : []),
     ],
   };
+  const prioritySeoSection = isPriorityDetail
+    ? `      <section class="section detail-copy detail-seo-copy">
+        <p class="eyebrow">Planning guide</p>
+        <h2>${escapeHtml(fair.title)} 방문 전 체크포인트</h2>
+        <p>이 페이지에서는 ${escapeHtml(fair.region)} 지역의 ${escapeHtml(fair.title)} 일정과 방문 전 체크할 내용을 정리했습니다. 웨딩홀, 스드메, 혼수, 예물, 예복 정보를 한 번에 비교하려는 예비부부라면 원하는 예식 지역과 예상 하객 수, 상담받고 싶은 항목을 미리 적어두면 현장에서 비교가 쉬워집니다.</p>
+        <p>현재 안내된 장소는 ${escapeHtml(locationText)}입니다. 실제 운영 시간, 제공 혜택, 상담 가능 브랜드는 신청 페이지와 주최사 안내에 따라 달라질 수 있으므로 방문 전 최종 확인을 권장합니다.</p>
+        <h3>상담 전에 확인하면 좋은 항목</h3>
+        <ul class="plain-list">
+          ${consultItems.map((item) => `<li>${escapeHtml(item)}</li>`).join("\n")}
+        </ul>
+        <h3>예약 전 자주 묻는 질문</h3>
+        <div class="faq-list compact-faq">
+          ${detailFaqs.map((faq) => `<details><summary>${escapeHtml(faq.q)}</summary><p>${escapeHtml(faq.a)}</p></details>`).join("\n")}
+        </div>
+      </section>`
+    : "";
   const body = `      <section class="detail-breadcrumb" aria-label="현재 위치">
         <a href="../index.html">홈</a>
         <span>/</span>
@@ -405,7 +465,8 @@ for (const fair of fairs.filter(isDetailFair)) {
         <p class="eyebrow">Guide</p>
         <h2>${escapeHtml(fair.title)} 신청 안내</h2>
         <p>${escapeHtml(fair.region)} 지역에서 웨딩홀, 스드메, 혼수, 예물, 예복을 함께 비교하려는 예비부부라면 방문 전에 희망 예식 시기와 예산 범위를 정리해두는 것이 좋습니다. 신청 후에는 리플알바 제휴 신청 페이지에서 제공하는 안내를 기준으로 실제 방문 가능 일정과 혜택을 확인하세요.</p>
-      </section>`;
+      </section>
+${prioritySeoSection}`;
   fs.writeFileSync(path.join(root, "fairs", `${slug}.html`), layout({ title, description, pathName, body, jsonLd, imageUrl }), "utf8");
   detailUrls.push(pathName);
 }
