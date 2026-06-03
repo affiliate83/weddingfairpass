@@ -156,6 +156,7 @@ const layout = ({ title, description, pathName, body, jsonLd, imageUrl = `${site
     <meta property="og:description" content="${escapeHtml(description)}">
     <meta property="og:type" content="website">
     <meta property="og:image" content="${escapeHtml(imageUrl)}">
+    <link rel="alternate" type="application/rss+xml" title="웨딩페어패스 웨딩박람회 일정" href="${siteUrl}/rss.xml">
     <link rel="stylesheet" href="../styles.css">
     <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
   </head>
@@ -422,10 +423,41 @@ ${sitemapUrls
 </urlset>
 `;
 fs.writeFileSync(path.join(root, "sitemap.xml"), sitemap, "utf8");
+
+const rssItems = fairs
+  .filter(isDetailFair)
+  .map((fair) => {
+    const slug = detailSlug(fair.id);
+    const url = `${siteUrl}/fairs/${slug}.html`;
+    const locationText = fair.address || fair.venue || fair.region;
+    return `    <item>
+      <title>${escapeHtml(fair.title)}</title>
+      <link>${url}</link>
+      <guid isPermaLink="true">${url}</guid>
+      <description>${escapeHtml(`${locationText}에서 열리는 ${fair.title} 일정과 무료입장 신청 정보를 확인하세요.`)}</description>
+      <category>${escapeHtml(fair.region)}</category>
+      <pubDate>${new Date(today).toUTCString()}</pubDate>
+    </item>`;
+  })
+  .join("\n");
+const rss = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>웨딩페어패스 웨딩박람회 일정</title>
+    <link>${siteUrl}/</link>
+    <description>전국 웨딩박람회 일정과 무료입장 신청 정보를 정리한 RSS 피드입니다.</description>
+    <language>ko</language>
+    <lastBuildDate>${new Date(today).toUTCString()}</lastBuildDate>
+${rssItems}
+  </channel>
+</rss>
+`;
+fs.writeFileSync(path.join(root, "rss.xml"), rss, "utf8");
+
 fs.writeFileSync(path.join(root, "robots.txt"), `User-agent: *
 Allow: /
 
 Sitemap: ${siteUrl}/sitemap.xml
 `, "utf8");
 
-console.log(`Generated ${regionUrls.length} region pages, ${detailUrls.length} detail pages, sitemap.xml, and robots.txt.`);
+console.log(`Generated ${regionUrls.length} region pages, ${detailUrls.length} detail pages, sitemap.xml, rss.xml, and robots.txt.`);
