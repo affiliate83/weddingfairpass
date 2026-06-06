@@ -261,6 +261,18 @@ const detailFaqItems = (fair, locationText) => [
   },
 ];
 
+const regionGuideItems = (regionName, count) => [
+  `${regionName} 지역에서 확인 가능한 웨딩박람회 ${count}개 일정을 한 번에 비교할 수 있습니다.`,
+  "방문 전에는 예식 희망 지역, 예상 하객 수, 스드메 상담 여부, 혼수 예산을 먼저 정리해두면 좋습니다.",
+  "무료입장 신청 후 실제 장소, 운영 시간, 제공 혜택은 신청 페이지와 주최사 안내를 기준으로 다시 확인하세요.",
+];
+
+const regionComparisonItems = [
+  "웨딩홀 상담은 위치, 식대, 보증 인원, 예식 가능 시간대를 함께 비교하세요.",
+  "스드메 상담은 포함 구성, 원본 비용, 추가 촬영 및 헬퍼 비용을 미리 물어보는 것이 좋습니다.",
+  "혼수와 예물은 현장 혜택만 보지 말고 배송 일정, 보증 조건, 계약 취소 기준까지 확인하세요.",
+];
+
 const regionUrls = [];
 for (const region of regions) {
   const regionFairs = fairs.filter((fair) => fair.region === region.name);
@@ -269,6 +281,7 @@ for (const region of regions) {
   const description = `${region.name} 지역 웨딩박람회 일정, 장소, 무료입장 신청 정보를 한 번에 확인하세요.`;
   const pathName = `/regions/${region.code}.html`;
   const faqs = faqItems(region.name);
+  const guideItems = regionGuideItems(region.name, listedRegionFairs.length);
   const heroCtaFair = regionFairs.find((fair) => fair.id.includes("NATIONAL")) || regionFairs[0];
   const listJsonLd = {
     "@context": "https://schema.org",
@@ -307,6 +320,23 @@ for (const region of regions) {
       </section>
       <section class="section">
         <div class="section-head">
+          <p class="eyebrow">Planning guide</p>
+          <h2>${escapeHtml(region.name)} 웨딩박람회 방문 전 비교 가이드</h2>
+          <p>${escapeHtml(region.name)} 지역 웨딩박람회는 같은 날짜라도 장소, 상담 가능 항목, 무료입장 조건이 다를 수 있습니다. 일정표만 보고 바로 신청하기보다 우리 커플에게 필요한 상담 항목을 먼저 정리해두면 방문 만족도가 높아집니다.</p>
+        </div>
+        <div class="benefit-grid">
+          ${guideItems.map((item) => `<article><strong>방문 전 체크</strong><span>${escapeHtml(item)}</span></article>`).join("\n")}
+        </div>
+      </section>
+      <section class="section detail-copy region-guide-copy">
+        <p class="eyebrow">Compare</p>
+        <h2>상담 항목별 확인 포인트</h2>
+        <ul class="plain-list">
+          ${regionComparisonItems.map((item) => `<li>${escapeHtml(item)}</li>`).join("\n")}
+        </ul>
+      </section>
+      <section class="section">
+        <div class="section-head">
           <p class="eyebrow">Schedule</p>
           <h2>${escapeHtml(region.name)} 지역 확인 가능한 일정</h2>
           <p>일정과 장소는 신청 페이지 및 주최사 안내를 기준으로 최종 확인하세요.</p>
@@ -330,7 +360,7 @@ for (const region of regions) {
 
 const detailUrls = [];
 const detailFairs = fairs.filter(isDetailFair);
-const priorityDetailIds = new Set(detailFairs.slice(0, 20).map((fair) => fair.id));
+const priorityDetailIds = new Set(detailFairs.slice(0, 50).map((fair) => fair.id));
 
 for (const fair of detailFairs) {
   const slug = detailSlug(fair.id);

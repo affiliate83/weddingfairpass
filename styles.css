@@ -448,6 +448,10 @@ h3 {
   font-size: 22px;
 }
 
+.region-guide-copy {
+  max-width: 920px;
+}
+
 .compact-faq {
   margin-top: 14px;
 }
