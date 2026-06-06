@@ -3,7 +3,7 @@ const path = require("path");
 
 const root = path.resolve(__dirname, "..");
 const input = path.join(root, "data", "fairs.csv");
-const siteUrl = (process.env.SITE_URL || "https://example.com").replace(/\/$/, "");
+const siteUrl = (process.env.SITE_URL || "https://weddingfairpass.com").replace(/\/$/, "");
 const today = new Date().toISOString().slice(0, 10);
 
 const regions = [
