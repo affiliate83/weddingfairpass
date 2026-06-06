@@ -8,9 +8,11 @@
     "build:data": "node tools/build-fairs.js",
     "build:pages": "node tools/build-pages.js",
     "fetch:replyalba": "node tools/fetch-replyalba-wedding-api.js",
+    "apply:replyalba": "node tools/apply-replyalba-api.js",
+    "sync:replyalba": "npm run fetch:replyalba && npm run apply:replyalba && npm run build:fairs",
     "submit:indexnow": "node tools/submit-indexnow.js",
     "submit:indexnow:dry": "node tools/submit-indexnow.js --dry-run",
     "start": "node server.js",
-    "check": "node --check app.js && node --check data.js && node --check server.js && node --check tools/build-fairs.js && node --check tools/build-pages.js && node --check tools/validate-fairs.js && node --check tools/submit-indexnow.js && node --check tools/fetch-replyalba-wedding-api.js"
+    "check": "node --check app.js && node --check data.js && node --check server.js && node --check tools/build-fairs.js && node --check tools/build-pages.js && node --check tools/validate-fairs.js && node --check tools/submit-indexnow.js && node --check tools/fetch-replyalba-wedding-api.js && node --check tools/apply-replyalba-api.js"
   }
 }

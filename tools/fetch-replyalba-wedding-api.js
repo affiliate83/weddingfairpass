@@ -41,7 +41,12 @@ const main = async () => {
   fs.mkdirSync(path.dirname(output), { recursive: true });
   fs.writeFileSync(output, `${JSON.stringify(data, null, 2)}\n`, "utf8");
 
-  const count = Array.isArray(data.resultList) ? data.resultList.length : 0;
+  const count = Array.isArray(data.resultList)
+    ? data.resultList.length
+    : Object.values(data.resultList || {}).reduce(
+        (total, section) => total + (Array.isArray(section.list) ? section.list.length : 0),
+        0,
+      );
   console.log(`Saved Replyalba API response with ${count} items to ${path.relative(root, output)}.`);
 };
 
