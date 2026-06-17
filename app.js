@@ -1,3 +1,5 @@
+// ─── TRACKING ────────────────────────────────────────────────────────────────
+
 const params = new URLSearchParams(window.location.search);
 const utm = {
   source: params.get("utm_source") || "direct",
@@ -11,6 +13,8 @@ const track = (eventName, payload = {}) => {
   window.dataLayer.push({ event: eventName, ...detail });
   console.log("[track]", eventName, detail);
 };
+
+// ─── URL BUILDING ─────────────────────────────────────────────────────────────
 
 const buildAffiliateUrl = (content) => {
   const fair = fairs.find((item) => item.id === content);
@@ -48,11 +52,40 @@ const updateNationalLinks = () => {
   });
 };
 
+// ─── FAIR LIST ────────────────────────────────────────────────────────────────
+
 const fairList = document.querySelector("[data-fair-list]");
 const fairSearch = document.querySelector("[data-fair-search]");
 const fairCount = document.querySelector("[data-fair-count]");
 let selectedRegion = "전체";
 let searchTerm = "";
+
+const buildFairCard = (fair) => `
+  <article class="fair-card">
+    <a class="fair-media" href="${fair.detailPath || buildAffiliateUrl(fair.id)}" aria-label="${fair.title}">
+      <img src="${fair.imageUrl || "assets/wedding-fair-hero.png"}" alt="${fair.title}">
+      <div class="fair-media-badges">
+        <span class="status-badge">진행중</span>
+        <span class="light-badge">무료입장</span>
+      </div>
+    </a>
+    <div class="fair-top">
+      <span class="badge">${fair.badge}</span>
+      <span class="badge">${fair.region}</span>
+    </div>
+    <h3>${fair.title}</h3>
+    <div class="fair-meta">
+      <span>${fair.date}</span>
+      <span>${fair.venue}</span>
+    </div>
+    <p>${fair.summary}</p>
+    <div class="tag-row">${fair.tags.map((tag) => `<span>${tag}</span>`).join("")}</div>
+    <div class="card-actions">
+      ${fair.detailPath ? `<a class="secondary-action" href="${fair.detailPath}">상세 보기</a>` : ""}
+      <a class="fair-cta" href="${buildAffiliateUrl(fair.id)}" data-track="fair_apply" data-fair-id="${fair.id}">무료입장 신청</a>
+    </div>
+  </article>
+`;
 
 const renderFairs = (region = "전체") => {
   selectedRegion = region;
@@ -69,37 +102,12 @@ const renderFairs = (region = "전체") => {
     return regionMatch && searchMatch;
   });
   fairCount.textContent = `총 ${visible.length}개`;
-  fairList.innerHTML = visible
-    .map(
-      (fair) => `
-        <article class="fair-card">
-          <a class="fair-media" href="${fair.detailPath || buildAffiliateUrl(fair.id)}" aria-label="${fair.title}">
-            <img src="${fair.imageUrl || "assets/wedding-fair-hero.png"}" alt="${fair.title}">
-            <div class="fair-media-badges">
-              <span class="status-badge">진행중</span>
-              <span class="light-badge">무료입장</span>
-            </div>
-          </a>
-          <div class="fair-top">
-            <span class="badge">${fair.badge}</span>
-            <span class="badge">${fair.region}</span>
-          </div>
-          <h3>${fair.title}</h3>
-          <div class="fair-meta">
-            <span>${fair.date}</span>
-            <span>${fair.venue}</span>
-          </div>
-          <p>${fair.summary}</p>
-          <div class="tag-row">${fair.tags.map((tag) => `<span>${tag}</span>`).join("")}</div>
-          <div class="card-actions">
-            ${fair.detailPath ? `<a class="secondary-action" href="${fair.detailPath}">상세 보기</a>` : ""}
-            <a class="fair-cta" href="${buildAffiliateUrl(fair.id)}" data-track="fair_apply" data-fair-id="${fair.id}">무료입장 신청</a>
-          </div>
-        </article>
-      `
-    )
-    .join("") || `<div class="empty-state">조건에 맞는 박람회가 없습니다. 다른 지역이나 검색어를 확인해보세요.</div>`;
+  fairList.innerHTML =
+    visible.map(buildFairCard).join("") ||
+    `<div class="empty-state">조건에 맞는 박람회가 없습니다. 다른 지역이나 검색어를 확인해보세요.</div>`;
 };
+
+// ─── FAQ & JSON-LD ────────────────────────────────────────────────────────────
 
 const renderFaqs = () => {
   const faqList = document.querySelector("[data-faq-list]");
@@ -168,6 +176,8 @@ const renderStructuredData = () => {
   });
 };
 
+// ─── EVENT LISTENERS ──────────────────────────────────────────────────────────
+
 document.querySelectorAll("[data-region]").forEach((button) => {
   button.addEventListener("click", () => {
     document.querySelectorAll("[data-region]").forEach((tab) => tab.classList.remove("is-active"));
@@ -198,6 +208,8 @@ document.body.addEventListener("click", (event) => {
     href: target.getAttribute("href") || "",
   });
 });
+
+// ─── QUIZ ─────────────────────────────────────────────────────────────────────
 
 let quizIndex = 0;
 const quizAnswers = [];
@@ -247,6 +259,8 @@ quizOptions.addEventListener("click", (event) => {
   track("test_complete", { result: resultType });
 });
 
+// ─── BUDGET ───────────────────────────────────────────────────────────────────
+
 const budgetForm = document.querySelector("[data-budget-form]");
 const budgetTotal = document.querySelector("[data-budget-total]");
 const updateBudget = () => {
@@ -259,6 +273,8 @@ budgetForm.addEventListener("input", () => {
   updateBudget();
   track("budget_change");
 });
+
+// ─── TAROT ────────────────────────────────────────────────────────────────────
 
 const tarotButton = document.querySelector("[data-draw-tarot]");
 const tarotResult = document.querySelector("[data-tarot-result]");
@@ -280,6 +296,8 @@ tarotButton.addEventListener("click", () => {
   tarotButton.textContent = "다시 뽑기";
   track("tarot_complete", { card: card.name });
 });
+
+// ─── SAJU (사주 궁합) ─────────────────────────────────────────────────────────
 
 const sajuForm = document.querySelector("[data-saju-form]");
 const sajuResult = document.querySelector("[data-saju-result]");
@@ -344,6 +362,8 @@ sajuForm.addEventListener("submit", (event) => {
   sajuResult.classList.remove("is-hidden");
   track("saju_complete", { result: relation, mine, partner });
 });
+
+// ─── INIT ─────────────────────────────────────────────────────────────────────
 
 renderFairs();
 updateNationalLinks();

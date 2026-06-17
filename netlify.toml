@@ -18,7 +18,3 @@
   status = 301
   force = true
 
-[[redirects]]
-  from = "/fairs/*"
-  to = "/#fairs"
-  status = 301

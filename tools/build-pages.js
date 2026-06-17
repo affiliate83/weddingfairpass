@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const { parseCsv } = require("./csv-utils");
 
 const root = path.resolve(__dirname, "..");
 const input = path.join(root, "data", "fairs.csv");
@@ -17,46 +18,6 @@ const regions = [
   { name: "경상", code: "gyeongsang" },
   { name: "제주", code: "jeju" },
 ];
-
-const parseCsv = (text) => {
-  const rows = [];
-  let row = [];
-  let cell = "";
-  let quoted = false;
-
-  for (let index = 0; index < text.length; index += 1) {
-    const char = text[index];
-    const next = text[index + 1];
-
-    if (char === '"' && quoted && next === '"') {
-      cell += '"';
-      index += 1;
-      continue;
-    }
-    if (char === '"') {
-      quoted = !quoted;
-      continue;
-    }
-    if (char === "," && !quoted) {
-      row.push(cell);
-      cell = "";
-      continue;
-    }
-    if ((char === "\n" || char === "\r") && !quoted) {
-      if (char === "\r" && next === "\n") index += 1;
-      row.push(cell);
-      if (row.some((value) => value.trim() !== "")) rows.push(row);
-      row = [];
-      cell = "";
-      continue;
-    }
-    cell += char;
-  }
-
-  row.push(cell);
-  if (row.some((value) => value.trim() !== "")) rows.push(row);
-  return rows;
-};
 
 const escapeHtml = (value) =>
   String(value || "")

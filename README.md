@@ -32,28 +32,45 @@ const AFFILIATE_CONFIG = {
 - 혜택
 - 승인 가능한 신청 링크
 
-## 리플알바 일정 연동 방식
+## 데이터 갱신 방법
 
-가장 안정적인 순서:
+### 현행: 리플알바 API 연동 방식 (권장)
 
-1. 리플알바에서 공식 API 또는 캠페인 목록 export 기능이 있는지 확인
-2. 없으면 리플알바에서 진행 중인 웨딩박람회 캠페인을 CSV/구글시트로 관리
-3. `data/fairs.csv`에 일정과 제휴 링크를 입력
-4. `npm.cmd run build:fairs`로 `fairs.generated.js` 생성
-5. 사이트에서 생성된 일정 데이터를 자동 사용
-
-API가 늦거나 제공되지 않으면 아래 반자동 운영 방식을 사용합니다.
+필수 환경변수:
 
 ```text
-리플알바 캠페인 상세 확인
--> data/ripplealba-campaigns-template.csv 형식으로 정리
--> npm.cmd run convert:ripplealba
--> npm.cmd run validate:fairs
--> npm.cmd run build:fairs
--> 사이트 확인
+REPLYALBA_API_ID=...
+REPLYALBA_API_KEY=...
 ```
 
-CSV 컬럼:
+전체 갱신 순서:
+
+```powershell
+npm.cmd run fetch:replyalba
+npm.cmd run apply:replyalba
+npm.cmd run build:fairs
+npm.cmd run check
+npm.cmd run validate:fairs
+npm.cmd run check:baseline
+```
+
+또는 한 번에:
+
+```powershell
+npm.cmd run sync:replyalba
+```
+
+`fetch:replyalba` — 리플알바 API에서 웨딩박람회 캠페인 목록을 가져와 `data/replyalba-wedding-api.json`에 저장합니다.
+`apply:replyalba` — API 응답을 `data/fairs.csv`에 병합합니다.
+`build:fairs` — CSV에서 `fairs.generated.js`, 지역 페이지, 상세 페이지, `sitemap.xml`, `rss.xml`을 생성합니다.
+`validate:fairs` — active 행에 필수값과 제휴 링크가 있는지 검사합니다.
+`check:baseline` — 생성된 페이지/sitemap/RSS 카운트가 기준선과 일치하는지 확인합니다.
+
+### 수동: CSV 직접 편집 방식
+
+API를 사용할 수 없을 때 `data/fairs.csv`를 직접 편집합니다.
+
+`data/fairs.csv` 컬럼:
 
 ```csv
 id,region,title,venue,date,tags,summary,badge,affiliateUrl,status
@@ -71,22 +88,20 @@ id,region,title,venue,date,tags,summary,badge,affiliateUrl,status
 - `affiliateUrl`: 리플알바 제휴 링크 또는 입력폼 링크
 - `status`: `active`면 노출, `inactive`면 제외
 
-명령:
+편집 후 실행:
 
-```bash
-npm.cmd run convert:ripplealba
+```powershell
 npm.cmd run validate:fairs
 npm.cmd run build:fairs
+npm.cmd run check:baseline
 ```
-
-`convert:ripplealba`는 리플알바 운영용 확장 CSV를 사이트 노출용 `data/fairs.csv`로 변환합니다.
-`validate:fairs`는 active 상태의 박람회 데이터에 필수값과 링크가 있는지 검사합니다.
 
 주의:
 - 리플알바 관리자 화면을 무단 스크래핑하지 않는다.
 - 공식 API, export, 입력폼 퍼가기, 제휴 링크 제공 방식이 있으면 그 방식을 우선한다.
 - 광고주가 공개를 제한한 단가, 승인 기준, 관리자 화면 정보는 사이트에 노출하지 않는다.
 - 일정과 혜택은 실제 광고주 랜딩 기준으로 확인한 뒤 노출한다.
+- 리플알바 `pt` 링크에는 UTM 파라미터를 붙이지 않는다.
 
 `privacy.html`:
 - 실제 개인정보 수집 주체
@@ -96,7 +111,7 @@ npm.cmd run build:fairs
 - 제3자 제공 내용
 
 `robots.txt`, `sitemap.xml`:
-- 실제 도메인으로 `https://example.com` 교체
+- 도메인은 이미 `https://weddingfairpass.com`으로 설정됨. 재생성 시 `SITE_URL` 환경변수가 유지되는지 확인.
 
 ## 권장 퍼널
 
@@ -117,6 +132,39 @@ Threads / Meta 광고 / 검색 유입
 5. 지역별 웨딩박람회 무료입장 일정을 모으는 사이트를 만들고 있습니다
 6. 오늘의 웨딩 타로 결과별로 먼저 볼 박람회가 달라집니다
 7. 생년월일 기반 무료 궁합 사주로 우리 커플 결혼 준비 스타일을 확인해보세요
+
+## 현재 기준선 (2026-06-17)
+
+| 항목 | 수 |
+|---|---|
+| CSV 행 | 130 |
+| Active 행 | 130 |
+| 지역 페이지 | 9 |
+| 상세 페이지 | 112 |
+| Sitemap URL | 124 |
+| RSS 항목 | 112 |
+
+기준선 확인:
+
+```powershell
+npm.cmd run check:baseline
+```
+
+## 자주 쓰는 명령
+
+```powershell
+npm.cmd run check            # 구문 검사
+npm.cmd run validate:fairs   # 박람회 데이터 필수값 검사
+npm.cmd run check:baseline   # 생성 파일 카운트 검사
+npm.cmd run build:fairs      # 페이지/sitemap/RSS 재생성
+npm.cmd run start            # 로컬 서버 (http://127.0.0.1:4173/)
+npm.cmd run submit:indexnow:dry  # IndexNow 제출 dry-run
+```
+
+## 문서 및 gitignore 안내
+
+`docs/`와 `PROJECT_HANDOFF_*.md`는 `.gitignore`에 등록되어 있어 로컬에서만 존재합니다.
+git status나 배포에 포함시키려면 `.gitignore`를 수정하거나 `git add -f`로 강제 추가해야 합니다.
 
 ## 추적 이벤트
 
