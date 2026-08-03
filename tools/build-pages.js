@@ -239,8 +239,8 @@ const regionUrls = [];
 for (const region of regions) {
   const regionFairs = fairs.filter((fair) => fair.region === region.name);
   const listedRegionFairs = regionFairs.filter(isDetailFair);
-  const title = `${region.name} 웨딩박람회 일정 2026 | 무료입장 신청`;
-  const description = `${region.name} 지역 웨딩박람회 일정, 장소, 무료입장 신청 정보를 한 번에 확인하세요.`;
+  const title = `${region.name} 웨딩박람회 일정 2026 | 무료입장·혜택 비교`;
+  const description = `${region.name} 지역 웨딩박람회 일정과 장소를 확인하고 무료입장 신청, 웨딩홀·스드메 혜택 비교까지 방문 전 확인하세요.`;
   const pathName = `/regions/${region.code}.html`;
   const faqs = faqItems(region.name);
   const guideItems = regionGuideItems(region.name, listedRegionFairs.length);
@@ -327,12 +327,12 @@ const priorityDetailIds = new Set(detailFairs.slice(0, 50).map((fair) => fair.id
 for (const fair of detailFairs) {
   const slug = detailSlug(fair.id);
   const pathName = `/fairs/${slug}.html`;
-  const title = `${fair.title} 일정 | 무료입장 신청`;
+  const title = `${fair.title} 일정·무료입장 | 웨딩페어패스`;
   const locationText = fair.address || fair.venue;
   const isPriorityDetail = priorityDetailIds.has(fair.id);
   const consultItems = detailConsultItems(fair);
   const detailFaqs = detailFaqItems(fair, locationText);
-  const description = `${locationText}에서 열리는 ${fair.title} 일정과 무료입장 신청 정보를 확인하세요.`;
+  const description = `${locationText}에서 열리는 ${fair.title} 일정과 무료입장 신청, 혜택 비교 정보를 확인하세요.`;
   const regionCode = regions.find((region) => region.name === fair.region)?.code || "";
   const imageUrl = fair.imageUrl || `${siteUrl}/assets/wedding-fair-hero.png`;
   const jsonLd = {
