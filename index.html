@@ -16,7 +16,7 @@
     <link rel="alternate" type="application/rss+xml" title="웨딩페어패스 웨딩박람회 일정" href="https://weddingfairpass.com/rss.xml">
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
+  <body data-page-type="home">
     <header class="site-header">
       <a class="brand" href="#top" aria-label="웨딩페어패스 홈">
         <span class="brand-mark">W</span>
@@ -42,8 +42,8 @@
           <h1>내 지역 웨딩박람회 무료입장 신청</h1>
           <p class="hero-copy">웨딩홀, 스드메, 혼수 혜택을 비교하고 우리 커플에게 맞는 박람회 일정을 먼저 확인하세요.</p>
           <div class="hero-actions">
-            <a class="primary-action" href="#fairs" data-national-link="popular" data-track="hero_fairs">무료입장 일정 보기</a>
-            <a class="secondary-action" href="#quiz" data-track="hero_quiz">커플 성향 테스트</a>
+            <a class="primary-action" href="#fairs" data-national-link="popular" data-track="hero_fairs" data-cta="home_hero_primary">무료입장 일정 보기</a>
+            <a class="secondary-action" href="#quiz" data-track="hero_quiz" data-cta="home_hero_secondary">커플 성향 테스트</a>
           </div>
         </div>
       </section>
@@ -114,7 +114,7 @@
             <p class="result-label">테스트 결과</p>
             <h3 data-result-title></h3>
             <p data-result-body></p>
-            <a class="primary-action" href="#fairs" data-result-cta data-track="quiz_result_cta">추천 일정 보기</a>
+            <a class="primary-action" href="#fairs" data-result-cta data-track="quiz_result_cta" data-cta="quiz_result">추천 일정 보기</a>
           </div>
         </div>
       </section>
@@ -216,7 +216,7 @@
                 <strong data-wedding-months></strong>
                 <p data-wedding-month-reason></p>
               </div>
-              <a class="secondary-action" href="#fairs" data-saju-cta data-track="saju_result_cta">추천 박람회 보기</a>
+              <a class="secondary-action" href="#fairs" data-saju-cta data-track="saju_result_cta" data-cta="saju_result">추천 박람회 보기</a>
             </div>
           </article>
         </div>
@@ -249,7 +249,7 @@
             <span>예상 총액</span>
             <strong data-budget-total>3,150만원</strong>
           </div>
-          <a class="primary-action full" href="#fairs" data-national-link="approval" data-track="budget_cta">예산별 박람회 보기</a>
+          <a class="primary-action full" href="#fairs" data-national-link="approval" data-track="budget_cta" data-cta="budget_result">예산별 박람회 보기</a>
         </form>
       </section>
 

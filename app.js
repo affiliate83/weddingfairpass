@@ -8,18 +8,42 @@ const utm = {
 };
 
 const track = (eventName, payload = {}) => {
-  const detail = { ...utm, ...payload };
+  const detail = { ...utm, pageType: "home", ...payload };
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({ event: eventName, ...detail });
   console.log("[track]", eventName, detail);
 };
 
+const resolveDestinationType = (href) => {
+  if (!href || href.startsWith("#")) return "internal";
+  if (/\/hit(?:$|[?#])/.test(href)) return "national_affiliate";
+  if (/replyalba\.(co\.kr|com)/.test(href)) return "individual_affiliate";
+  return "internal";
+};
+
+const resolveRegionFromHref = (href) => {
+  const match = href.match(/\/([a-z]+)\/hit(?:$|[?#])/);
+  if (!match) return "";
+  const code = match[1];
+  return Object.keys(REGION_CODES).find((name) => REGION_CODES[name] === code) || code;
+};
+
 // ─── URL BUILDING ─────────────────────────────────────────────────────────────
+
+const isReplyalbaPtUrl = (rawUrl) => {
+  try {
+    const parsed = new URL(rawUrl);
+    const host = parsed.hostname.replace(/^www\./, "");
+    return (host === "replyalba.co.kr" || host === "replyalba.com") && parsed.pathname.startsWith("/pt/");
+  } catch (e) {
+    return false;
+  }
+};
 
 const buildAffiliateUrl = (content) => {
   const fair = fairs.find((item) => item.id === content);
   const rawUrl = fair?.affiliateUrl || AFFILIATE_CONFIG.affiliateUrl;
-  if (rawUrl.includes("replyalba.co.kr/pt/")) return rawUrl;
+  if (isReplyalbaPtUrl(rawUrl)) return rawUrl;
   const url = new URL(rawUrl);
   url.searchParams.set("utm_source", utm.source);
   url.searchParams.set("utm_medium", utm.medium);
@@ -62,7 +86,7 @@ let searchTerm = "";
 
 const buildFairCard = (fair) => `
   <article class="fair-card">
-    <a class="fair-media" href="${fair.detailPath || buildAffiliateUrl(fair.id)}" aria-label="${fair.title}">
+    <a class="fair-media" href="${fair.detailPath || buildAffiliateUrl(fair.id)}" aria-label="${fair.title}" data-track="fair_media_click" data-fair-id="${fair.id}" data-cta="home_fair_media">
       <img src="${fair.imageUrl || "assets/wedding-fair-hero.png"}" alt="${fair.title}">
       <div class="fair-media-badges">
         <span class="status-badge">진행중</span>
@@ -82,7 +106,7 @@ const buildFairCard = (fair) => `
     <div class="tag-row">${fair.tags.map((tag) => `<span>${tag}</span>`).join("")}</div>
     <div class="card-actions">
       ${fair.detailPath ? `<a class="secondary-action" href="${fair.detailPath}">상세 보기</a>` : ""}
-      <a class="fair-cta" href="${buildAffiliateUrl(fair.id)}" data-track="fair_apply" data-fair-id="${fair.id}">무료입장 신청</a>
+      <a class="fair-cta" href="${buildAffiliateUrl(fair.id)}" data-track="fair_apply" data-fair-id="${fair.id}" data-cta="home_fair_card">무료입장 신청</a>
     </div>
   </article>
 `;
@@ -203,9 +227,16 @@ menuButton.addEventListener("click", () => {
 document.body.addEventListener("click", (event) => {
   const target = event.target.closest("[data-track]");
   if (!target) return;
+  const href = target.getAttribute("href") || "";
+  const fairId = target.dataset.fairId || "";
+  const fair = fairId ? fairs.find((item) => item.id === fairId) : null;
   track(target.dataset.track, {
-    fairId: target.dataset.fairId || "",
-    href: target.getAttribute("href") || "",
+    fairId,
+    fairTitle: fair?.title || "",
+    region: fair?.region || resolveRegionFromHref(href),
+    cta: target.dataset.cta || "",
+    destinationType: resolveDestinationType(href),
+    href,
   });
 });
 

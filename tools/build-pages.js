@@ -105,7 +105,7 @@ ensureDir("fairs");
 cleanGeneratedHtml("regions");
 cleanGeneratedHtml("fairs");
 
-const layout = ({ title, description, pathName, body, jsonLd, imageUrl = `${siteUrl}/assets/wedding-fair-hero.png` }) => `<!doctype html>
+const layout = ({ title, description, pathName, body, jsonLd, pageType, imageUrl = `${siteUrl}/assets/wedding-fair-hero.png` }) => `<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="utf-8">
@@ -121,7 +121,7 @@ const layout = ({ title, description, pathName, body, jsonLd, imageUrl = `${site
     <link rel="stylesheet" href="../styles.css">
     <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
   </head>
-  <body>
+  <body data-page-type="${pageType || ""}">
     <header class="site-header">
       <a class="brand" href="../index.html" aria-label="웨딩페어패스 홈">
         <span class="brand-mark">W</span>
@@ -144,6 +144,7 @@ ${body}
         <a href="../contact.html">문의</a>
       </div>
     </footer>
+    <script src="../tracking.js"></script>
   </body>
 </html>
 `;
@@ -152,7 +153,7 @@ const fairCard = (fair) => {
   const detailPath = isDetailFair(fair) ? `../fairs/${detailSlug(fair.id)}.html` : "";
   const imageUrl = fair.imageUrl || "../assets/wedding-fair-hero.png";
   return `<article class="fair-card">
-          <a class="fair-media" href="${detailPath || escapeHtml(fair.affiliateUrl)}" aria-label="${escapeHtml(fair.title)}">
+          <a class="fair-media" href="${detailPath || escapeHtml(fair.affiliateUrl)}" aria-label="${escapeHtml(fair.title)}" data-track="region_fair_media_click" data-fair-id="${escapeHtml(fair.id)}" data-fair-title="${escapeHtml(fair.title)}" data-region="${escapeHtml(fair.region)}" data-cta="region_fair_media">
             <img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(fair.title)}">
             <div class="fair-media-badges">
               <span class="status-badge">진행중</span>
@@ -172,7 +173,7 @@ const fairCard = (fair) => {
           <div class="tag-row">${fair.tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>
           <div class="card-actions">
             ${detailPath ? `<a class="secondary-action" href="${detailPath}">상세 보기</a>` : ""}
-            <a class="fair-cta" href="${escapeHtml(fair.affiliateUrl)}" data-track="region_fair_apply">무료입장 신청</a>
+            <a class="fair-cta" href="${escapeHtml(fair.affiliateUrl)}" data-track="region_fair_apply" data-fair-id="${escapeHtml(fair.id)}" data-fair-title="${escapeHtml(fair.title)}" data-region="${escapeHtml(fair.region)}" data-cta="region_fair_card">무료입장 신청</a>
           </div>
         </article>`;
 };
@@ -277,7 +278,7 @@ for (const region of regions) {
         <p class="eyebrow">Regional wedding fair</p>
         <h1>${escapeHtml(region.name)} 웨딩박람회 일정 무료입장 신청</h1>
         <p>${escapeHtml(description)}</p>
-        <a class="primary-action" href="${escapeHtml(heroCtaFair?.affiliateUrl || "../index.html#fairs")}">무료입장 신청하기</a>
+        <a class="primary-action" href="${escapeHtml(heroCtaFair?.affiliateUrl || "../index.html#fairs")}" data-track="region_hero_apply" data-fair-id="${escapeHtml(heroCtaFair?.id || "")}" data-fair-title="${escapeHtml(heroCtaFair?.title || "")}" data-region="${escapeHtml(region.name)}" data-cta="region_hero">무료입장 신청하기</a>
       </section>
       <section class="section">
         <div class="section-head">
@@ -315,7 +316,7 @@ for (const region of regions) {
           ${faqs.map((faq) => `<details><summary>${escapeHtml(faq.q)}</summary><p>${escapeHtml(faq.a)}</p></details>`).join("\n")}
         </div>
       </section>`;
-  fs.writeFileSync(path.join(root, "regions", `${region.code}.html`), layout({ title, description, pathName, body, jsonLd: listJsonLd }), "utf8");
+  fs.writeFileSync(path.join(root, "regions", `${region.code}.html`), layout({ title, description, pathName, body, jsonLd: listJsonLd, pageType: "region" }), "utf8");
   regionUrls.push(pathName);
 }
 
@@ -415,7 +416,7 @@ for (const fair of detailFairs) {
             <div><dt>장소</dt><dd>${escapeHtml(locationText)}</dd></div>
             <div><dt>지역</dt><dd>${escapeHtml(fair.region)}</dd></div>
           </dl>
-          <a class="fair-cta full" href="${escapeHtml(fair.affiliateUrl)}" data-track="detail_fair_apply">사전예약 신청</a>
+          <a class="fair-cta full" href="${escapeHtml(fair.affiliateUrl)}" data-track="detail_fair_apply" data-fair-id="${escapeHtml(fair.id)}" data-fair-title="${escapeHtml(fair.title)}" data-region="${escapeHtml(fair.region)}" data-cta="detail_primary_cta">사전예약 신청</a>
           <a class="secondary-action full" href="../regions/${escapeHtml(regionCode)}.html">${escapeHtml(fair.region)} 웨딩박람회 더보기</a>
         </aside>
       </section>
@@ -449,7 +450,7 @@ for (const fair of detailFairs) {
             <li>스드메, 예물, 예복, 혼수 중 비교할 항목을 정하세요.</li>
             <li>무료입장 신청 후 실제 일정과 혜택을 다시 확인하세요.</li>
           </ul>
-          <a class="fair-cta" href="${escapeHtml(fair.affiliateUrl)}">신청 페이지로 이동</a>
+          <a class="fair-cta" href="${escapeHtml(fair.affiliateUrl)}" data-track="detail_secondary_apply" data-fair-id="${escapeHtml(fair.id)}" data-fair-title="${escapeHtml(fair.title)}" data-region="${escapeHtml(fair.region)}" data-cta="detail_secondary_cta">신청 페이지로 이동</a>
         </article>
       </section>
       <section class="section detail-copy detail-note">
@@ -458,7 +459,7 @@ for (const fair of detailFairs) {
         <p>${escapeHtml(fair.region)} 지역에서 웨딩홀, 스드메, 혼수, 예물, 예복을 함께 비교하려는 예비부부라면 방문 전에 희망 예식 시기와 예산 범위를 정리해두는 것이 좋습니다. 신청 후에는 리플알바 제휴 신청 페이지에서 제공하는 안내를 기준으로 실제 방문 가능 일정과 혜택을 확인하세요.</p>
       </section>
 ${prioritySeoSection}`;
-  fs.writeFileSync(path.join(root, "fairs", `${slug}.html`), layout({ title, description, pathName, body, jsonLd, imageUrl }), "utf8");
+  fs.writeFileSync(path.join(root, "fairs", `${slug}.html`), layout({ title, description, pathName, body, jsonLd, imageUrl, pageType: "detail" }), "utf8");
   detailUrls.push(pathName);
 }
 
