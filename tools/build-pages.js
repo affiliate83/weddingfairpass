@@ -60,13 +60,45 @@ const parseSchedule = (dateText) => {
   };
 };
 
+const fairEnded = (fair) => {
+  const schedule = parseSchedule(fair.date);
+  const last = (schedule.endDate || schedule.startDate || "").slice(0, 10);
+  return Boolean(last) && last < today;
+};
+
+const statusBadge = (fair) =>
+  fairEnded(fair)
+    ? '<span class="status-badge is-ended">종료</span>'
+    : '<span class="status-badge">진행중</span>';
+
+const WEEKDAY_NAMES = ["일", "월", "화", "수", "목", "금", "토"];
+
+const formatKoreanDate = (isoDate) => {
+  const [year, month, day] = isoDate.slice(0, 10).split("-").map(Number);
+  const weekday = WEEKDAY_NAMES[new Date(`${isoDate.slice(0, 10)}T00:00:00+09:00`).getDay()];
+  return `${year}년 ${month}월 ${day}일(${weekday})`;
+};
+
+const scheduleSentence = (fair) => {
+  const schedule = parseSchedule(fair.date);
+  if (!schedule.startDate) return "";
+  const start = formatKoreanDate(schedule.startDate);
+  const end = schedule.endDate && schedule.endDate.slice(0, 10) !== schedule.startDate.slice(0, 10)
+    ? formatKoreanDate(schedule.endDate)
+    : "";
+  const range = end ? `${start}부터 ${end}까지` : `${start}에`;
+  return fairEnded(fair)
+    ? `이 박람회는 ${range} 진행되었습니다.`
+    : `이 박람회는 ${range} 진행됩니다.`;
+};
+
 const structuredFairItem = (fair) => {
-  if (!isDetailFair(fair)) {
+  if (!isDetailFair(fair) || fairEnded(fair)) {
     return {
       "@type": "WebPage",
       name: fair.title,
       description: fair.summary,
-      url: fair.affiliateUrl,
+      url: isDetailFair(fair) ? `${siteUrl}/fairs/${detailSlug(fair.id)}.html` : fair.affiliateUrl,
     };
   }
   return {
@@ -105,7 +137,7 @@ ensureDir("fairs");
 cleanGeneratedHtml("regions");
 cleanGeneratedHtml("fairs");
 
-const layout = ({ title, description, pathName, body, jsonLd, pageType, imageUrl = `${siteUrl}/assets/wedding-fair-hero.png` }) => `<!doctype html>
+const layout = ({ title, description, pathName, body, jsonLd, pageType, imageUrl = `${siteUrl}/assets/og-image.jpg` }) => `<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="utf-8">
@@ -113,10 +145,17 @@ const layout = ({ title, description, pathName, body, jsonLd, pageType, imageUrl
     <title>${escapeHtml(title)}</title>
     <meta name="description" content="${escapeHtml(description)}">
     <link rel="canonical" href="${siteUrl}${pathName}">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <meta property="og:title" content="${escapeHtml(title)}">
     <meta property="og:description" content="${escapeHtml(description)}">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="${siteUrl}${pathName}">
     <meta property="og:image" content="${escapeHtml(imageUrl)}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="${escapeHtml(title)}">
+    <meta name="twitter:description" content="${escapeHtml(description)}">
+    <meta name="twitter:image" content="${escapeHtml(imageUrl)}">
     <link rel="alternate" type="application/rss+xml" title="웨딩페어패스 웨딩박람회 일정" href="${siteUrl}/rss.xml">
     <link rel="stylesheet" href="../styles.css">
     <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
@@ -151,12 +190,12 @@ ${body}
 
 const fairCard = (fair) => {
   const detailPath = isDetailFair(fair) ? `../fairs/${detailSlug(fair.id)}.html` : "";
-  const imageUrl = fair.imageUrl || "../assets/wedding-fair-hero.png";
+  const imageUrl = fair.imageUrl && fair.imageUrl.startsWith("http") ? fair.imageUrl : "../assets/wedding-fair-hero-800.webp";
   return `<article class="fair-card">
           <a class="fair-media" href="${detailPath || escapeHtml(fair.affiliateUrl)}" aria-label="${escapeHtml(fair.title)}" data-track="region_fair_media_click" data-fair-id="${escapeHtml(fair.id)}" data-fair-title="${escapeHtml(fair.title)}" data-region="${escapeHtml(fair.region)}" data-cta="region_fair_media">
-            <img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(fair.title)}">
+            <img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(fair.title)}" loading="lazy" decoding="async">
             <div class="fair-media-badges">
-              <span class="status-badge">진행중</span>
+              ${statusBadge(fair)}
               <span class="light-badge">무료입장</span>
             </div>
           </a>
@@ -238,7 +277,9 @@ const regionComparisonItems = [
 const regionUrls = [];
 for (const region of regions) {
   const regionFairs = fairs.filter((fair) => fair.region === region.name);
-  const listedRegionFairs = regionFairs.filter(isDetailFair);
+  const listedRegionFairs = regionFairs
+    .filter(isDetailFair)
+    .sort((a, b) => Number(fairEnded(a)) - Number(fairEnded(b)));
   const title = `${region.name} 웨딩박람회 일정 2026 | 무료입장·혜택 비교`;
   const description = `${region.name} 지역 웨딩박람회 일정과 장소를 확인하고 무료입장 신청, 웨딩홀·스드메 혜택 비교까지 방문 전 확인하세요.`;
   const pathName = `/regions/${region.code}.html`;
@@ -323,18 +364,95 @@ for (const region of regions) {
 const detailUrls = [];
 const detailFairs = fairs.filter(isDetailFair);
 const priorityDetailIds = new Set(detailFairs.slice(0, 50).map((fair) => fair.id));
+const nationalByRegion = new Map(
+  fairs.filter((fair) => fair.id.includes("NATIONAL")).map((fair) => [fair.region, fair.affiliateUrl])
+);
+const detailFairsByRegion = new Map(
+  regions.map((region) => [region.name, detailFairs.filter((fair) => fair.region === region.name)])
+);
+
+const hashCode = (value) => {
+  let hash = 0;
+  for (const char of String(value)) hash = (hash * 31 + char.charCodeAt(0)) | 0;
+  return Math.abs(hash);
+};
+
+const pickVariant = (fair, variants) => variants[hashCode(fair.id) % variants.length];
+
+const districtOf = (fair) => {
+  const match = (fair.address || "").match(/^([가-힣]+(?:특별시|광역시|도)?)\s+([가-힣]+(?:시|군|구))/);
+  return match ? `${match[1]} ${match[2]}` : "";
+};
+
+const VISIT_CHECK_VARIANTS = [
+  [
+    "희망 웨딩홀 지역과 예상 하객 수를 정리하세요.",
+    "스드메, 예물, 예복, 혼수 중 비교할 항목을 정하세요.",
+    "무료입장 신청 후 실제 일정과 혜택을 다시 확인하세요.",
+  ],
+  [
+    "결혼 예정 시기와 예식 후보 지역을 먼저 좁혀두세요.",
+    "항목별 예산 상한선을 정해두면 현장 비교가 빨라집니다.",
+    "상담받고 싶은 업체 유형을 미리 적어가면 동선이 짧아집니다.",
+  ],
+  [
+    "두 사람의 우선순위(웨딩홀·스드메·혼수)를 순서대로 정리하세요.",
+    "현장 계약 전 포함 항목과 추가 비용, 취소 조건을 확인하세요.",
+    "방문 당일 일정과 운영 시간은 신청 페이지에서 다시 확인하세요.",
+  ],
+];
+
+const BENEFIT_COPY_VARIANTS = [
+  {
+    apply: "사전예약 페이지에서 방문 정보를 남기고 입장 가능 여부와 안내 연락을 확인하세요.",
+    compare: "관련 상담 포인트를 한 번에 비교하기 좋습니다.",
+    confirm: "실제 일정, 운영 시간, 제공 혜택은 신청 페이지와 주최사 안내 기준으로 확인하세요.",
+  },
+  {
+    apply: "무료입장 신청을 먼저 해두면 현장 접수 대기 없이 상담 안내를 받을 수 있습니다.",
+    compare: "항목별 상담 부스를 돌며 조건을 나란히 비교해볼 수 있습니다.",
+    confirm: "제공 혜택과 사은품 조건은 주최사 사정에 따라 바뀔 수 있으니 방문 전 다시 확인하세요.",
+  },
+  {
+    apply: "신청 페이지에 방문 예정일을 남기면 입장 절차와 상담 예약 안내를 받게 됩니다.",
+    compare: "여러 업체의 견적과 구성을 같은 자리에서 비교할 수 있는 것이 박람회의 장점입니다.",
+    confirm: "일정 변경이나 조기 마감 가능성이 있으므로 출발 전 신청 페이지 공지를 확인하세요.",
+  },
+];
+
+const relatedFairs = (fair) => {
+  const siblings = detailFairsByRegion.get(fair.region) || [];
+  if (siblings.length < 2) return [];
+  const index = siblings.findIndex((item) => item.id === fair.id);
+  const picks = [];
+  for (let offset = 1; offset <= 3 && picks.length < Math.min(3, siblings.length - 1); offset += 1) {
+    picks.push(siblings[(index + offset) % siblings.length]);
+  }
+  return picks;
+};
 
 for (const fair of detailFairs) {
   const slug = detailSlug(fair.id);
   const pathName = `/fairs/${slug}.html`;
-  const title = `${fair.title} 일정·무료입장 | 웨딩페어패스`;
+  const ended = fairEnded(fair);
+  const title = ended
+    ? `${fair.title} 종료 안내·${fair.region} 다음 일정 | 웨딩페어패스`
+    : `${fair.title} 일정·무료입장 | 웨딩페어패스`;
   const locationText = fair.address || fair.venue;
   const isPriorityDetail = priorityDetailIds.has(fair.id);
   const consultItems = detailConsultItems(fair);
   const detailFaqs = detailFaqItems(fair, locationText);
-  const description = `${locationText}에서 열리는 ${fair.title} 일정과 무료입장 신청, 혜택 비교 정보를 확인하세요.`;
+  const description = ended
+    ? `${fair.title}(${locationText})는 종료되었습니다. ${fair.region} 지역에서 확인 가능한 다른 웨딩박람회 일정과 무료입장 신청 정보를 확인하세요.`
+    : `${locationText}에서 열리는 ${fair.title} 일정과 무료입장 신청, 혜택 비교 정보를 확인하세요.`;
   const regionCode = regions.find((region) => region.name === fair.region)?.code || "";
-  const imageUrl = fair.imageUrl || `${siteUrl}/assets/wedding-fair-hero.png`;
+  const imageUrl = fair.imageUrl && fair.imageUrl.startsWith("http") ? fair.imageUrl : `${siteUrl}/assets/og-image.jpg`;
+  const primaryCtaUrl = ended ? nationalByRegion.get(fair.region) || fair.affiliateUrl : fair.affiliateUrl;
+  const primaryCtaLabel = ended ? `진행 중인 ${fair.region} 박람회 신청` : "사전예약 신청";
+  const related = relatedFairs(fair);
+  const benefitCopy = pickVariant(fair, BENEFIT_COPY_VARIANTS);
+  const visitCheckItems = pickVariant(fair, VISIT_CHECK_VARIANTS);
+  const district = districtOf(fair);
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -346,17 +464,28 @@ for (const fair of detailFairs) {
           { "@type": "ListItem", position: 3, name: fair.title, item: `${siteUrl}${pathName}` },
         ],
       },
-      {
-        "@type": "Event",
-        name: fair.title,
-        description: fair.summary,
-        ...parseSchedule(fair.date),
-        eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-        eventStatus: "https://schema.org/EventScheduled",
-        location: { "@type": "Place", name: fair.venue, address: locationText || fair.region },
-        organizer: { "@type": "Organization", name: "웨딩페어패스" },
-        offers: { "@type": "Offer", url: fair.affiliateUrl, price: "0", priceCurrency: "KRW", availability: "https://schema.org/InStock" },
-      },
+      ...(ended
+        ? [
+            {
+              "@type": "WebPage",
+              name: title,
+              description,
+              url: `${siteUrl}${pathName}`,
+            },
+          ]
+        : [
+            {
+              "@type": "Event",
+              name: fair.title,
+              description: fair.summary,
+              ...parseSchedule(fair.date),
+              eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+              eventStatus: "https://schema.org/EventScheduled",
+              location: { "@type": "Place", name: fair.venue, address: locationText || fair.region },
+              organizer: { "@type": "Organization", name: "웨딩페어패스" },
+              offers: { "@type": "Offer", url: fair.affiliateUrl, price: "0", priceCurrency: "KRW", availability: "https://schema.org/InStock" },
+            },
+          ]),
       ...(isPriorityDetail
         ? [
             {
@@ -371,12 +500,12 @@ for (const fair of detailFairs) {
         : []),
     ],
   };
-  const prioritySeoSection = isPriorityDetail
-    ? `      <section class="section detail-copy detail-seo-copy">
+  const scheduleText = scheduleSentence(fair);
+  const seoSection = `      <section class="section detail-copy detail-seo-copy">
         <p class="eyebrow">Planning guide</p>
         <h2>${escapeHtml(fair.title)} 방문 전 체크포인트</h2>
-        <p>이 페이지에서는 ${escapeHtml(fair.region)} 지역의 ${escapeHtml(fair.title)} 일정과 방문 전 체크할 내용을 정리했습니다. 웨딩홀, 스드메, 혼수, 예물, 예복 정보를 한 번에 비교하려는 예비부부라면 원하는 예식 지역과 예상 하객 수, 상담받고 싶은 항목을 미리 적어두면 현장에서 비교가 쉬워집니다.</p>
-        <p>현재 안내된 장소는 ${escapeHtml(locationText)}입니다. 실제 운영 시간, 제공 혜택, 상담 가능 브랜드는 신청 페이지와 주최사 안내에 따라 달라질 수 있으므로 방문 전 최종 확인을 권장합니다.</p>
+        <p>이 페이지에서는 ${escapeHtml(fair.region)} 지역의 ${escapeHtml(fair.title)} 일정과 방문 전 체크할 내용을 정리했습니다.${scheduleText ? ` ${escapeHtml(scheduleText)}` : ""}${district ? ` 행사장은 ${escapeHtml(district)}에 있어 ${escapeHtml(district.split(" ").pop())} 인근에서 예식장이나 스드메 업체를 알아보는 커플에게 특히 동선이 편리합니다.` : ""} 웨딩홀, 스드메, 혼수, 예물, 예복 정보를 한 번에 비교하려는 예비부부라면 원하는 예식 지역과 예상 하객 수, 상담받고 싶은 항목을 미리 적어두면 현장에서 비교가 쉬워집니다.</p>
+        <p>${ended ? "안내되었던" : "현재 안내된"} 장소는 ${escapeHtml(locationText)}입니다. 실제 운영 시간, 제공 혜택, 상담 가능 브랜드는 신청 페이지와 주최사 안내에 따라 달라질 수 있으므로 ${ended ? "다른 일정을 알아볼 때도 신청 페이지 기준으로 최종 확인을 권장합니다" : "방문 전 최종 확인을 권장합니다"}.</p>
         <h3>상담 전에 확인하면 좋은 항목</h3>
         <ul class="plain-list">
           ${consultItems.map((item) => `<li>${escapeHtml(item)}</li>`).join("\n")}
@@ -385,7 +514,29 @@ for (const fair of detailFairs) {
         <div class="faq-list compact-faq">
           ${detailFaqs.map((faq) => `<details><summary>${escapeHtml(faq.q)}</summary><p>${escapeHtml(faq.a)}</p></details>`).join("\n")}
         </div>
+      </section>`;
+  const relatedSection = related.length
+    ? `      <section class="section detail-copy related-fairs">
+        <p class="eyebrow">More fairs</p>
+        <h2>${escapeHtml(fair.region)} 지역의 다른 웨딩박람회</h2>
+        <ul class="plain-list">
+          ${related
+            .map(
+              (item) =>
+                `<li><a href="../fairs/${detailSlug(item.id)}.html">${escapeHtml(item.title)}</a> — ${escapeHtml(item.date)}${fairEnded(item) ? " (종료)" : ""}</li>`
+            )
+            .join("\n")}
+        </ul>
+        <p><a href="../regions/${escapeHtml(regionCode)}.html">${escapeHtml(fair.region)} 웨딩박람회 전체 일정 보기</a></p>
       </section>`
+    : "";
+  const endedNotice = ended
+    ? `      <section class="section ended-notice" role="note">
+        <strong>이 박람회는 종료되었습니다.</strong>
+        <p>${escapeHtml(scheduleText)} 아래에서 ${escapeHtml(fair.region)} 지역에서 확인 가능한 다른 웨딩박람회 일정을 확인하거나, 진행 중인 박람회 무료입장을 신청하세요.</p>
+        <a class="secondary-action" href="../regions/${escapeHtml(regionCode)}.html">${escapeHtml(fair.region)} 웨딩박람회 일정 보기</a>
+      </section>
+`
     : "";
   const body = `      <section class="detail-breadcrumb" aria-label="현재 위치">
         <a href="../index.html">홈</a>
@@ -394,12 +545,12 @@ for (const fair of detailFairs) {
         <span>/</span>
         <strong>${escapeHtml(fair.title)}</strong>
       </section>
-      <section class="section detail-showcase">
+${endedNotice}      <section class="section detail-showcase">
         <div class="detail-main-column">
           <div class="detail-image-panel">
-            <img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(fair.title)}">
+            <img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(fair.title)}" loading="lazy" decoding="async">
             <div class="fair-media-badges">
-              <span class="status-badge">진행중</span>
+              ${statusBadge(fair)}
               <span class="light-badge">무료입장</span>
             </div>
           </div>
@@ -416,7 +567,7 @@ for (const fair of detailFairs) {
             <div><dt>장소</dt><dd>${escapeHtml(locationText)}</dd></div>
             <div><dt>지역</dt><dd>${escapeHtml(fair.region)}</dd></div>
           </dl>
-          <a class="fair-cta full" href="${escapeHtml(fair.affiliateUrl)}" data-track="detail_fair_apply" data-fair-id="${escapeHtml(fair.id)}" data-fair-title="${escapeHtml(fair.title)}" data-region="${escapeHtml(fair.region)}" data-cta="detail_primary_cta">사전예약 신청</a>
+          <a class="fair-cta full" href="${escapeHtml(primaryCtaUrl)}" data-track="detail_fair_apply" data-fair-id="${escapeHtml(fair.id)}" data-fair-title="${escapeHtml(fair.title)}" data-region="${escapeHtml(fair.region)}" data-cta="detail_primary_cta">${escapeHtml(primaryCtaLabel)}</a>
           <a class="secondary-action full" href="../regions/${escapeHtml(regionCode)}.html">${escapeHtml(fair.region)} 웨딩박람회 더보기</a>
         </aside>
       </section>
@@ -430,15 +581,15 @@ for (const fair of detailFairs) {
           <div class="benefit-grid">
             <article>
               <strong>무료입장 신청</strong>
-              <span>사전예약 페이지에서 방문 정보를 남기고 입장 가능 여부와 안내 연락을 확인하세요.</span>
+              <span>${escapeHtml(benefitCopy.apply)}</span>
             </article>
             <article>
               <strong>결혼 준비 항목 비교</strong>
-              <span>${fair.tags.map((tag) => escapeHtml(tag)).join(", ")} 관련 상담 포인트를 한 번에 비교하기 좋습니다.</span>
+              <span>${fair.tags.map((tag) => escapeHtml(tag)).join(", ")} ${escapeHtml(benefitCopy.compare)}</span>
             </article>
             <article>
               <strong>방문 전 최종 확인</strong>
-              <span>실제 일정, 운영 시간, 제공 혜택은 신청 페이지와 주최사 안내 기준으로 확인하세요.</span>
+              <span>${escapeHtml(benefitCopy.confirm)}</span>
             </article>
           </div>
           <div class="tag-row">${fair.tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>
@@ -446,11 +597,9 @@ for (const fair of detailFairs) {
         <article class="tool-surface">
           <h3>방문 전 체크</h3>
           <ul class="plain-list">
-            <li>희망 웨딩홀 지역과 예상 하객 수를 정리하세요.</li>
-            <li>스드메, 예물, 예복, 혼수 중 비교할 항목을 정하세요.</li>
-            <li>무료입장 신청 후 실제 일정과 혜택을 다시 확인하세요.</li>
+            ${visitCheckItems.map((item) => `<li>${escapeHtml(item)}</li>`).join("\n")}
           </ul>
-          <a class="fair-cta" href="${escapeHtml(fair.affiliateUrl)}" data-track="detail_secondary_apply" data-fair-id="${escapeHtml(fair.id)}" data-fair-title="${escapeHtml(fair.title)}" data-region="${escapeHtml(fair.region)}" data-cta="detail_secondary_cta">신청 페이지로 이동</a>
+          <a class="fair-cta" href="${escapeHtml(primaryCtaUrl)}" data-track="detail_secondary_apply" data-fair-id="${escapeHtml(fair.id)}" data-fair-title="${escapeHtml(fair.title)}" data-region="${escapeHtml(fair.region)}" data-cta="detail_secondary_cta">${ended ? "진행 중인 박람회 보기" : "신청 페이지로 이동"}</a>
         </article>
       </section>
       <section class="section detail-copy detail-note">
@@ -458,7 +607,8 @@ for (const fair of detailFairs) {
         <h2>${escapeHtml(fair.title)} 신청 안내</h2>
         <p>${escapeHtml(fair.region)} 지역에서 웨딩홀, 스드메, 혼수, 예물, 예복을 함께 비교하려는 예비부부라면 방문 전에 희망 예식 시기와 예산 범위를 정리해두는 것이 좋습니다. 신청 후에는 리플알바 제휴 신청 페이지에서 제공하는 안내를 기준으로 실제 방문 가능 일정과 혜택을 확인하세요.</p>
       </section>
-${prioritySeoSection}`;
+${seoSection}
+${relatedSection}`;
   fs.writeFileSync(path.join(root, "fairs", `${slug}.html`), layout({ title, description, pathName, body, jsonLd, imageUrl, pageType: "detail" }), "utf8");
   detailUrls.push(pathName);
 }

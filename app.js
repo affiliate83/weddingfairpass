@@ -84,12 +84,31 @@ const fairCount = document.querySelector("[data-fair-count]");
 let selectedRegion = "전체";
 let searchTerm = "";
 
+const TODAY_ISO = new Date().toISOString().slice(0, 10);
+
+const fairSchedule = (dateText) => {
+  const match = String(dateText || "").match(/(20\d{2}-\d{2}-\d{2})(?:\s*~\s*(20\d{2}-\d{2}-\d{2}))?/);
+  if (!match) return {};
+  return { startDate: match[1], endDate: match[2] || "" };
+};
+
+const fairEnded = (fair) => {
+  const schedule = fairSchedule(fair.date);
+  const last = schedule.endDate || schedule.startDate || "";
+  return Boolean(last) && last < TODAY_ISO;
+};
+
+const statusBadgeHtml = (fair) =>
+  fairEnded(fair)
+    ? '<span class="status-badge is-ended">종료</span>'
+    : '<span class="status-badge">진행중</span>';
+
 const buildFairCard = (fair) => `
   <article class="fair-card">
     <a class="fair-media" href="${fair.detailPath || buildAffiliateUrl(fair.id)}" aria-label="${fair.title}" data-track="fair_media_click" data-fair-id="${fair.id}" data-cta="home_fair_media">
-      <img src="${fair.imageUrl || "assets/wedding-fair-hero.png"}" alt="${fair.title}">
+      <img src="${fair.imageUrl || "assets/wedding-fair-hero-800.webp"}" alt="${fair.title}" loading="lazy" decoding="async">
       <div class="fair-media-badges">
-        <span class="status-badge">진행중</span>
+        ${statusBadgeHtml(fair)}
         <span class="light-badge">무료입장</span>
       </div>
     </a>
@@ -125,6 +144,7 @@ const renderFairs = (region = "전체") => {
         .includes(normalizedSearch);
     return regionMatch && searchMatch;
   });
+  visible.sort((a, b) => Number(fairEnded(a)) - Number(fairEnded(b)));
   fairCount.textContent = `총 ${visible.length}개`;
   fairList.innerHTML =
     visible.map(buildFairCard).join("") ||
@@ -172,31 +192,38 @@ const renderStructuredData = () => {
     })),
   });
 
+  const upcomingEvents = fairs.filter((fair) => !fairEnded(fair) && fairSchedule(fair.date).startDate);
+  if (!upcomingEvents.length) return;
   appendJsonLd("event-jsonld", {
     "@context": "https://schema.org",
-    "@graph": fairs.map((fair) => ({
-      "@type": "Event",
-      name: fair.title,
-      description: fair.summary,
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      eventStatus: "https://schema.org/EventScheduled",
-      location: {
-        "@type": "Place",
-        name: fair.venue,
-        address: fair.address || fair.venue || fair.region,
-      },
-      organizer: {
-        "@type": "Organization",
-        name: "웨딩페어패스",
-      },
-      offers: {
-        "@type": "Offer",
-        url: buildAffiliateUrl(fair.id),
-        price: "0",
-        priceCurrency: "KRW",
-        availability: "https://schema.org/InStock",
-      },
-    })),
+    "@graph": upcomingEvents.map((fair) => {
+      const schedule = fairSchedule(fair.date);
+      return {
+        "@type": "Event",
+        name: fair.title,
+        description: fair.summary,
+        startDate: schedule.startDate,
+        ...(schedule.endDate ? { endDate: schedule.endDate } : {}),
+        eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+        eventStatus: "https://schema.org/EventScheduled",
+        location: {
+          "@type": "Place",
+          name: fair.venue,
+          address: fair.address || fair.venue || fair.region,
+        },
+        organizer: {
+          "@type": "Organization",
+          name: "웨딩페어패스",
+        },
+        offers: {
+          "@type": "Offer",
+          url: buildAffiliateUrl(fair.id),
+          price: "0",
+          priceCurrency: "KRW",
+          availability: "https://schema.org/InStock",
+        },
+      };
+    }),
   });
 };
 

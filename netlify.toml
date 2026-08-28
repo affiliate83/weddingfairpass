@@ -11,6 +11,13 @@
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
 
 [[redirects]]
   from = "https://www.weddingfairpass.com/*"
@@ -18,3 +25,14 @@
   status = 301
   force = true
 
+# 비정규(확장자 없는) URL을 canonical .html로 통합한다.
+# 실제 파일이 존재하는 요청(.html)은 Netlify 섀도잉 규칙에 따라 리다이렉트되지 않는다.
+[[redirects]]
+  from = "/regions/*"
+  to = "/regions/:splat.html"
+  status = 301
+
+[[redirects]]
+  from = "/fairs/*"
+  to = "/fairs/:splat.html"
+  status = 301
