@@ -31,12 +31,12 @@ Then execute only the task the user requested.
 
 ## Current Baseline
 
-- CSV rows: 130.
-- Active fair rows: 130.
+- CSV rows: 135.
+- Active fair rows: 135.
 - Region pages: 9.
-- Detail pages: 112.
-- Sitemap URLs: 124.
-- RSS items: 112.
+- Detail pages: 114.
+- Sitemap URLs: 126.
+- RSS items: 114.
 - Baseline commands currently pass:
   - `npm.cmd run check`
   - `npm.cmd run validate:fairs`

@@ -26,3 +26,6 @@ tools/convert-ripplealba.js
 tools/enrich-replyalba-intros.js
 tools/update-fair-images.js
 tools/update-fair-addresses.js
+
+# Local credential/guide documents
+*.hwp

@@ -6,12 +6,12 @@ const root = path.resolve(__dirname, "..");
 
 // Update these when a deliberate data change is made (e.g. after CSV sync).
 const EXPECTED = {
-  csvRows: 130,
-  activeRows: 130,
+  csvRows: 135,
+  activeRows: 135,
   regionPages: 9,
-  detailPages: 112,
-  sitemapUrls: 124,
-  rssItems: 112,
+  detailPages: 114,
+  sitemapUrls: 126,
+  rssItems: 114,
 };
 
 const countHtmlFiles = (dir) => {

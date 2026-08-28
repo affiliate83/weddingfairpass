@@ -189,12 +189,12 @@ window.WEDDING_FAIRS = [
     "detailPath": ""
   },
   {
-    "id": "RA-WEDDING-API-KcP5ZPKs00",
+    "id": "RA-WEDDING-API-M8aO0lgkl3",
     "region": "서울",
-    "title": "COEX 웨덱스X코웨드 웨딩페어",
+    "title": "강남 코엑스 원조 웨덱스 웨딩페어",
     "venue": "서울 강남구 삼성동 159, 코엑스",
     "address": "서울 강남구 삼성동 159, 코엑스",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -202,12 +202,12 @@ window.WEDDING_FAIRS = [
       "예물",
       "예복"
     ],
-    "summary": "COEX 웨덱스X코웨드 웨딩페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "summary": "강남 코엑스 원조 웨덱스 웨딩페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "서울",
-    "affiliateUrl": "https://replyalba.com/pt/KcP5ZPKs00",
-    "imageUrl": "https://replyalba.com/intros/coexwedding/img/og.jpg",
+    "affiliateUrl": "https://replyalba.com/pt/M8aO0lgkl3",
+    "imageUrl": "https://replyalba.com/intros/weddex/img/og.jpg",
     "regionPath": "regions/seoul.html",
-    "detailPath": "fairs/api-kcp5zpks00.html"
+    "detailPath": "fairs/api-m8ao0lgkl3.html"
   },
   {
     "id": "RA-WEDDING-API-M8aO0lt7p8",
@@ -231,12 +231,12 @@ window.WEDDING_FAIRS = [
     "detailPath": ""
   },
   {
-    "id": "RA-WEDDING-API-KcP5ZN8KhW",
+    "id": "RA-WEDDING-API-SI7qoHZWrQ",
     "region": "서울",
-    "title": "대치동 삼성스토어 하우투 웨딩박람회",
-    "venue": "서울 강남구 영동대로 237 2층 특별전시장",
-    "address": "서울 강남구 영동대로 237 2층 특별전시장",
-    "date": "2026-06-20 ~ 2026-06-21",
+    "title": "서울 세텍 웨딩박람회",
+    "venue": "서울 강남구 남부순환로 3104 SETEC 컨벤션센터(2층 전시실)",
+    "address": "서울 강남구 남부순환로 3104 SETEC 컨벤션센터(2층 전시실)",
+    "date": "2026-09-12 ~ 2026-09-13",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -244,12 +244,54 @@ window.WEDDING_FAIRS = [
       "예물",
       "예복"
     ],
-    "summary": "대치동 삼성스토어 하우투 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "summary": "서울 세텍 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "서울",
-    "affiliateUrl": "https://replyalba.com/pt/KcP5ZN8KhW",
-    "imageUrl": "https://replyalba.com/intros/howto_dcss/img/og.jpg",
+    "affiliateUrl": "https://replyalba.com/pt/SI7qoHZWrQ",
+    "imageUrl": "https://replyalba.com/intros/ponw_ssw/img/og.jpg",
     "regionPath": "regions/seoul.html",
-    "detailPath": "fairs/api-kcp5zn8khw.html"
+    "detailPath": "fairs/api-si7qohzwrq.html"
+  },
+  {
+    "id": "RA-WEDDING-API-SI7qoHlZyK",
+    "region": "서울",
+    "title": "서울 세텍 웨딩홀박람회",
+    "venue": "서울 강남구 남부순환로 3104 SETEC 컨벤션센터(2층 전시실)",
+    "address": "서울 강남구 남부순환로 3104 SETEC 컨벤션센터(2층 전시실)",
+    "date": "2026-09-12 ~ 2026-09-13",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "서울 세텍 웨딩홀박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "서울",
+    "affiliateUrl": "https://replyalba.com/pt/SI7qoHlZyK",
+    "imageUrl": "https://replyalba.com/intros/ponw_ssd/img/og.jpg",
+    "regionPath": "regions/seoul.html",
+    "detailPath": "fairs/api-si7qohlzyk.html"
+  },
+  {
+    "id": "RA-WEDDING-API-SI7qoDGxq3",
+    "region": "서울",
+    "title": "서울 세텍 허니문박람회",
+    "venue": "서울 강남구 남부순환로 3104 SETEC 컨벤션센터(2층 전시실)",
+    "address": "서울 강남구 남부순환로 3104 SETEC 컨벤션센터(2층 전시실)",
+    "date": "2026-09-12 ~ 2026-09-13",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "서울 세텍 허니문박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "서울",
+    "affiliateUrl": "https://replyalba.com/pt/SI7qoDGxq3",
+    "imageUrl": "https://replyalba.com/intros/ponw_ssh/img/og.jpg",
+    "regionPath": "regions/seoul.html",
+    "detailPath": "fairs/api-si7qodgxq3.html"
   },
   {
     "id": "RA-WEDDING-API-M8aO0jw00e",
@@ -257,7 +299,7 @@ window.WEDDING_FAIRS = [
     "title": "서울 신혼여행 박람회",
     "venue": "서울 강남구 테헤란로 518 섬유센터 2F",
     "address": "서울 강남구 테헤란로 518 섬유센터 2F",
-    "date": "2026-06-27 ~ 2026-06-28",
+    "date": "2026-09-19 ~ 2026-09-20",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -278,7 +320,7 @@ window.WEDDING_FAIRS = [
     "title": "서울 웨딩드레스 페어",
     "venue": "서울 강남구 테헤란로 518 섬유센터 2F",
     "address": "서울 강남구 테헤란로 518 섬유센터 2F",
-    "date": "2026-06-27 ~ 2026-06-28",
+    "date": "2026-09-19 ~ 2026-09-20",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -299,7 +341,7 @@ window.WEDDING_FAIRS = [
     "title": "서울 웨딩홀 박람회",
     "venue": "서울 강남구 테헤란로 518 섬유센터 2F",
     "address": "서울 강남구 테헤란로 518 섬유센터 2F",
-    "date": "2026-06-27 ~ 2026-06-28",
+    "date": "2026-09-19 ~ 2026-09-20",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -320,7 +362,7 @@ window.WEDDING_FAIRS = [
     "title": "세텍 웨딩 페어",
     "venue": "서울 강남구 남부순환로 3104 SETEC 컨벤션센터(2층 전시실)",
     "address": "서울 강남구 남부순환로 3104 SETEC 컨벤션센터(2층 전시실)",
-    "date": "2026-06-20",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -341,7 +383,7 @@ window.WEDDING_FAIRS = [
     "title": "세텍 웨딩홀 페어",
     "venue": "서울 강남구 남부순환로 3104 SETEC 컨벤션센터(2층 전시실)",
     "address": "서울 강남구 남부순환로 3104 SETEC 컨벤션센터(2층 전시실)",
-    "date": "2026-06-20",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -362,7 +404,7 @@ window.WEDDING_FAIRS = [
     "title": "세텍 허니문 페어",
     "venue": "서울 강남구 남부순환로 3104 SETEC 컨벤션센터(2층 전시실)",
     "address": "서울 강남구 남부순환로 3104 SETEC 컨벤션센터(2층 전시실)",
-    "date": "2026-06-20",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -373,17 +415,17 @@ window.WEDDING_FAIRS = [
     "summary": "세텍 허니문 페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "서울",
     "affiliateUrl": "https://replyalba.com/pt/M8aO0nV1bh",
-    "imageUrl": "https://replyalba.com/intros/st_hnf/img/og.jpg",
+    "imageUrl": "https://replyalba.com/intros/st_hnf3/img/og.jpg",
     "regionPath": "regions/seoul.html",
     "detailPath": "fairs/1103.html"
   },
   {
-    "id": "RA-WEDDING-1381-신한카드-직거래-웨딩박람회",
+    "id": "RA-WEDDING-API-10dzjzOWzq7",
     "region": "서울",
-    "title": "신한카드 직거래 웨딩박람회",
-    "venue": "서울 강남구 테헤란로 518 섬유센터 3층",
-    "address": "서울 강남구 테헤란로 518 섬유센터 3층",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "title": "팜투어 신혼여행 박람회",
+    "venue": "서울 강남구 언주로 711",
+    "address": "서울 강남구 언주로 711",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -391,41 +433,20 @@ window.WEDDING_FAIRS = [
       "예물",
       "예복"
     ],
-    "summary": "신한카드 직거래 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "summary": "팜투어 신혼여행 박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "서울",
-    "affiliateUrl": "https://replyalba.com/pt/M8aO0ptIlS",
-    "imageUrl": "https://replyalba.com/intros/shinhan_p/img/og.jpg",
+    "affiliateUrl": "https://replyalba.com/pt/10dzjzOWzq7",
+    "imageUrl": "https://replyalba.com/intros/palmtour2/img/og.jpg",
     "regionPath": "regions/seoul.html",
-    "detailPath": "fairs/1381.html"
-  },
-  {
-    "id": "RA-WEDDING-API-KcP5ZOTYaz",
-    "region": "서울",
-    "title": "웨덱스웨딩박람회 in 코엑스마곡",
-    "venue": "서울 강서구 마곡중앙로 143 코엑스 마곡컨벤션 센터",
-    "address": "서울 강서구 마곡중앙로 143 코엑스 마곡컨벤션 센터",
-    "date": "2026-06-13 ~ 2026-06-14",
-    "tags": [
-      "웨딩홀",
-      "스드메",
-      "혼수",
-      "예물",
-      "예복"
-    ],
-    "summary": "웨덱스웨딩박람회 in 코엑스마곡 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
-    "badge": "서울",
-    "affiliateUrl": "https://replyalba.com/pt/KcP5ZOTYaz",
-    "imageUrl": "https://replyalba.com/intros/comg0830/img/og.jpg",
-    "regionPath": "regions/seoul.html",
-    "detailPath": "fairs/api-kcp5zotyaz.html"
+    "detailPath": "fairs/api-10dzjzowzq7.html"
   },
   {
     "id": "RA-WEDDING-1172-청량리-롯데백화점-대형-웨딩박람회",
     "region": "서울",
     "title": "청량리 롯데백화점 대형 웨딩박람회",
-    "venue": "서울 동대문구 왕산로 214 롯데백화점 청량리점 7층 특별행사장",
-    "address": "서울 동대문구 왕산로 214 롯데백화점 청량리점 7층 특별행사장",
-    "date": "2026-06-27 ~ 2026-06-28",
+    "venue": "서울 동대문구 왕산로 214",
+    "address": "서울 동대문구 왕산로 214",
+    "date": "2026-08-29 ~ 2026-08-30",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -441,33 +462,12 @@ window.WEDDING_FAIRS = [
     "detailPath": "fairs/1172.html"
   },
   {
-    "id": "RA-WEDDING-1223-at센터-서울-대형-웨딩페스티벌",
-    "region": "서울",
-    "title": "aT센터 서울 대형 웨딩페스티벌",
-    "venue": "서울 서초구 강남대로 27, 양재 aT센터 특별행사장",
-    "address": "서울 서초구 강남대로 27, 양재 aT센터 특별행사장",
-    "date": "2026-06-06 ~ 2026-06-07",
-    "tags": [
-      "웨딩홀",
-      "스드메",
-      "혼수",
-      "예물",
-      "예복"
-    ],
-    "summary": "aT센터 서울 대형 웨딩페스티벌 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
-    "badge": "서울",
-    "affiliateUrl": "https://replyalba.com/pt/M8aO0kv7AU",
-    "imageUrl": "https://replyalba.com/intros/wedcrowd_at/img/og.jpg",
-    "regionPath": "regions/seoul.html",
-    "detailPath": "fairs/1223-at.html"
-  },
-  {
     "id": "RA-WEDDING-1358-서울-롯데월드타워-대형-웨딩박람회",
     "region": "서울",
     "title": "서울 롯데월드타워 대형 웨딩박람회",
-    "venue": "서울 송파구 올림픽로 300 롯데면세점 월드타워점 8층 갤러리 라운지",
-    "address": "서울 송파구 올림픽로 300 롯데면세점 월드타워점 8층 갤러리 라운지",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "venue": "서울 송파구 올림픽로 300",
+    "address": "서울 송파구 올림픽로 300",
+    "date": "2026-09-12 ~ 2026-09-13",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -488,7 +488,7 @@ window.WEDDING_FAIRS = [
     "title": "잠실 롯데백화점 대형 웨딩박람회",
     "venue": "서울 송파구 올림픽로 240 10층 삼성스토어 특별행사장",
     "address": "서울 송파구 올림픽로 240 10층 삼성스토어 특별행사장",
-    "date": "2026-06-20 ~ 2026-06-21",
+    "date": "2026-09-19 ~ 2026-09-20",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -509,7 +509,7 @@ window.WEDDING_FAIRS = [
     "title": "잠실 롯데백화점 레브웨딩박람회",
     "venue": "서울 송파구 올림픽로 240 롯데백화점 잠실점 10층 LG전자",
     "address": "서울 송파구 올림픽로 240 롯데백화점 잠실점 10층 LG전자",
-    "date": "2026-06-06 ~ 2026-06-07",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -525,12 +525,33 @@ window.WEDDING_FAIRS = [
     "detailPath": "fairs/api-m8ao0kwazc.html"
   },
   {
+    "id": "RA-WEDDING-API-RCclIS6sb5",
+    "region": "서울",
+    "title": "영등포 타임스퀘어 웨딩박람회",
+    "venue": "서울 영등포구 영중로 9",
+    "address": "서울 영등포구 영중로 9",
+    "date": "2026-09-12 ~ 2026-09-13",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "영등포 타임스퀘어 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "서울",
+    "affiliateUrl": "https://replyalba.com/pt/RCclIS6sb5",
+    "imageUrl": "https://replyalba.com/intros/wedcrowd_ydp/img/og.jpg",
+    "regionPath": "regions/seoul.html",
+    "detailPath": "fairs/api-rcclis6sb5.html"
+  },
+  {
     "id": "RA-WEDDING-API-KcP5ZMt4O0",
     "region": "서울",
     "title": "웨딩더하기 영등포 신세계 타임스퀘어 웨딩박람회",
     "venue": "서울 영등포구 영중로 9 신세계백화점 타임스퀘어점 리빙관 3층 LG베스트샵 행사장",
     "address": "서울 영등포구 영중로 9 신세계백화점 타임스퀘어점 리빙관 3층 LG베스트샵 행사장",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -551,7 +572,7 @@ window.WEDDING_FAIRS = [
     "title": "용산 아이파크 웨딩박람회",
     "venue": "서울 용산구 한강대로23길 55 아이파크몰 리빙파크 5층 리바트 가구 특별행사장",
     "address": "서울 용산구 한강대로23길 55 아이파크몰 리빙파크 5층 리바트 가구 특별행사장",
-    "date": "2026-06-20 ~ 2026-06-21",
+    "date": "2026-09-12 ~ 2026-09-13",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -572,7 +593,7 @@ window.WEDDING_FAIRS = [
     "title": "용산 아이파크 혼수박람회",
     "venue": "서울 용산구 한강대로23길 55 아이파크몰 리빙파크 5층 리바트 가구 특별행사장",
     "address": "서울 용산구 한강대로23길 55 아이파크몰 리빙파크 5층 리바트 가구 특별행사장",
-    "date": "2026-06-20 ~ 2026-06-21",
+    "date": "2026-09-12 ~ 2026-09-13",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -593,7 +614,7 @@ window.WEDDING_FAIRS = [
     "title": "용산 아이파크몰 대형 웨딩박람회",
     "venue": "서울 용산구 한강대로23길 55 용산 아이파크몰 리빙파크 3F",
     "address": "서울 용산구 한강대로23길 55 용산 아이파크몰 리빙파크 3F",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "date": "2026-09-12 ~ 2026-09-13",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -614,7 +635,7 @@ window.WEDDING_FAIRS = [
     "title": "서울 명동 웨딩박람회",
     "venue": "서울 중구 소공로 63 신세계백화점 본점 12층 특별 행사장",
     "address": "서울 중구 소공로 63 신세계백화점 본점 12층 특별 행사장",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "date": "2026-09-12 ~ 2026-09-13",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -633,9 +654,9 @@ window.WEDDING_FAIRS = [
     "id": "RA-WEDDING-API-M8aO0mXB2d",
     "region": "경기",
     "title": "스타필드 고양 그랜드 웨딩페어",
-    "venue": "경기 고양시 덕양구 고양대로 1955 스타필드고양 한샘 특별행사장",
-    "address": "경기 고양시 덕양구 고양대로 1955 스타필드고양 한샘 특별행사장",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "venue": "경기 고양시 덕양구 고양대로 1955",
+    "address": "경기 고양시 덕양구 고양대로 1955",
+    "date": "2026-08-29 ~ 2026-08-30",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -656,7 +677,7 @@ window.WEDDING_FAIRS = [
     "title": "일산킨텍스 최대규모 대형 웨딩박람회",
     "venue": "경기 고양시 일산서구 킨텍스로 217-60 킨텍스 2전시장",
     "address": "경기 고양시 일산서구 킨텍스로 217-60 킨텍스 2전시장",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "date": "2026-08-29 ~ 2026-08-30",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -675,9 +696,9 @@ window.WEDDING_FAIRS = [
     "id": "RA-WEDDING-API-M8aO0kXUm9",
     "region": "경기",
     "title": "광명 AK 대형 웨딩박람회",
-    "venue": "경기 광명시 양지로 17 AK PLAZA 광명",
-    "address": "경기 광명시 양지로 17 AK PLAZA 광명",
-    "date": "2026-06-20 ~ 2026-06-21",
+    "venue": "경기 광명시 양지로 17",
+    "address": "경기 광명시 양지로 17",
+    "date": "2026-09-19 ~ 2026-09-20",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -693,12 +714,12 @@ window.WEDDING_FAIRS = [
     "detailPath": "fairs/api-m8ao0kxum9.html"
   },
   {
-    "id": "RA-WEDDING-857-부천-롯데백화점-위드유-웨딩박람회",
+    "id": "RA-WEDDING-API-RCclITz7ZM",
     "region": "경기",
-    "title": "부천 롯데백화점 위드유 웨딩박람회",
-    "venue": "경기도 부천시 원미구 길주로 300 롯데백화점 9층 삼성스토어 특별행사장",
-    "address": "경기도 부천시 원미구 길주로 300 롯데백화점 9층 삼성스토어 특별행사장",
-    "date": "2026-06-20 ~ 2026-06-21",
+    "title": "광명 이케아 LG 위드유 웨딩박람회",
+    "venue": "경기 광명시 일직로 17",
+    "address": "경기 광명시 일직로 17",
+    "date": "2026-09-12 ~ 2026-09-13",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -706,20 +727,41 @@ window.WEDDING_FAIRS = [
       "예물",
       "예복"
     ],
-    "summary": "부천 롯데백화점 위드유 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "summary": "광명 이케아 LG 위드유 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
-    "affiliateUrl": "https://replyalba.com/pt/M8aO0maFyr",
-    "imageUrl": "https://replyalba.com/intros/withu_bccl/img/og.jpg",
+    "affiliateUrl": "https://replyalba.com/pt/RCclITz7ZM",
+    "imageUrl": "https://replyalba.com/intros/withu_gmik/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
-    "detailPath": "fairs/857.html"
+    "detailPath": "fairs/api-rcclitz7zm.html"
+  },
+  {
+    "id": "RA-WEDDING-API-RCclISDZef",
+    "region": "경기",
+    "title": "아르비아 구리 웨딩박람회",
+    "venue": "경기 구리시 건원대로 44 8, 9층",
+    "address": "경기 구리시 건원대로 44 8, 9층",
+    "date": "2026-09-05 ~ 2026-09-06",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "아르비아 구리 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "경기",
+    "affiliateUrl": "https://replyalba.com/pt/RCclISDZef",
+    "imageUrl": "https://replyalba.com/intros/wedcrowd_gr/img/og.jpg",
+    "regionPath": "regions/gyeonggi.html",
+    "detailPath": "fairs/api-rcclisdzef.html"
   },
   {
     "id": "RA-WEDDING-946-부천-위드유-웨딩박람회",
     "region": "경기",
     "title": "부천 위드유 웨딩박람회",
-    "venue": "경기 부천시 원미구 길주로 254 삼성스토어 부천중동",
-    "address": "경기 부천시 원미구 길주로 254 삼성스토어 부천중동",
-    "date": "2026-06-13 ~ 2026-06-28",
+    "venue": "경기 부천시 원미구 길주로 254",
+    "address": "경기 부천시 원미구 길주로 254",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -738,9 +780,9 @@ window.WEDDING_FAIRS = [
     "id": "RA-WEDDING-1292-수원-메쎄-하우투-웨딩박람회",
     "region": "경기",
     "title": "수원 메쎄 하우투 웨딩박람회",
-    "venue": "경기 수원시 권선구 세화로134번길 37 수원메쎄 2층 특별전시장",
-    "address": "경기 수원시 권선구 세화로134번길 37 수원메쎄 2층 특별전시장",
-    "date": "2026-06-06 ~ 2026-06-07",
+    "venue": "경기 수원시 권선구 세화로134번길 37",
+    "address": "경기 수원시 권선구 세화로134번길 37",
+    "date": "2026-09-12 ~ 2026-09-13",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -756,12 +798,12 @@ window.WEDDING_FAIRS = [
     "detailPath": "fairs/1292.html"
   },
   {
-    "id": "RA-WEDDING-API-M8aO0oyiAw",
+    "id": "RA-WEDDING-API-M8aO0onNtA",
     "region": "경기",
-    "title": "수원 메쎄 하우투 허니문박람회",
-    "venue": "경기 수원시 권선구 세화로 134번길 37 수원메쎄",
-    "address": "경기 수원시 권선구 세화로 134번길 37 수원메쎄",
-    "date": "2026-06-06 ~ 2026-06-07",
+    "title": "수원 타임빌라스 웨딩박람회",
+    "venue": "경기 수원시 권선구 세화로 134 타임빌라스 수원점",
+    "address": "경기 수원시 권선구 세화로 134 타임빌라스 수원점",
+    "date": "2026-08-29 ~ 2026-08-30",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -769,20 +811,20 @@ window.WEDDING_FAIRS = [
       "예물",
       "예복"
     ],
-    "summary": "수원 메쎄 하우투 허니문박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "summary": "수원 타임빌라스 웨딩박람회  무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
-    "affiliateUrl": "https://replyalba.com/pt/M8aO0oyiAw",
-    "imageUrl": "https://replyalba.com/intros/howto_swms/img/og.jpg",
+    "affiliateUrl": "https://replyalba.com/pt/M8aO0lY9Mf",
+    "imageUrl": "https://replyalba.com/intros/paris_swlt/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
-    "detailPath": "fairs/api-m8ao0oyiaw.html"
+    "detailPath": "fairs/api-m8ao0onnta.html"
   },
   {
-    "id": "RA-WEDDING-API-M8aO0onNtA",
+    "id": "RA-WEDDING-API-M8aO0onNtA-2",
     "region": "경기",
     "title": "수원 타임빌라스 웨딩박람회",
     "venue": "경기 수원시 권선구 세화로 134 타임빌라스 수원점",
     "address": "경기 수원시 권선구 세화로 134 타임빌라스 수원점",
-    "date": "2026-06-06 ~ 2026-06-07",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -795,7 +837,7 @@ window.WEDDING_FAIRS = [
     "affiliateUrl": "https://replyalba.com/pt/M8aO0onNtA",
     "imageUrl": "https://replyalba.com/intros/paris_swlt0607/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
-    "detailPath": "fairs/api-m8ao0onnta.html"
+    "detailPath": "fairs/api-m8ao0onnta-2.html"
   },
   {
     "id": "RA-WEDDING-813-수원메쎄-대형-웨딩박람회",
@@ -803,7 +845,7 @@ window.WEDDING_FAIRS = [
     "title": "수원메쎄 대형 웨딩박람회",
     "venue": "경기 수원시 권선구 세화로134번길 37 수원 메쎄 전시장",
     "address": "경기 수원시 권선구 세화로134번길 37 수원 메쎄 전시장",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "date": "2026-08-29 ~ 2026-08-30",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -822,9 +864,9 @@ window.WEDDING_FAIRS = [
     "id": "RA-WEDDING-1235-타임빌라스-수원-대형-웨딩박람회",
     "region": "경기",
     "title": "타임빌라스 수원 대형 웨딩박람회",
-    "venue": "경기 수원시 권선구 세화로 134 지하1층 삼성스토어",
-    "address": "경기 수원시 권선구 세화로 134 지하1층 삼성스토어",
-    "date": "2026-06-06 ~ 2026-06-07",
+    "venue": "타임빌라스 수원 B1층 특별행사장",
+    "address": "타임빌라스 수원 B1층 특별행사장",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -843,9 +885,9 @@ window.WEDDING_FAIRS = [
     "id": "RA-WEDDING-903-수원-갤러리아-광교-대형-웨딩박람회",
     "region": "경기",
     "title": "수원 갤러리아 광교 대형 웨딩박람회",
-    "venue": "경기 수원시 영통구 광교중앙로 124 수원 갤러리아 백화점 특별 행사장",
-    "address": "경기 수원시 영통구 광교중앙로 124 수원 갤러리아 백화점 특별 행사장",
-    "date": "2026-06-20 ~ 2026-06-21",
+    "venue": "경기 수원시 영통구 광교중앙로 124",
+    "address": "경기 수원시 영통구 광교중앙로 124",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -861,33 +903,12 @@ window.WEDDING_FAIRS = [
     "detailPath": "fairs/903.html"
   },
   {
-    "id": "RA-WEDDING-API-KcP5ZQmEzk",
-    "region": "경기",
-    "title": "수원 메쎄 홈씨씨 웨딩박람회",
-    "venue": "경기 수원시 권선구 세화로134번길 37 수원메쎄 특별전시장",
-    "address": "경기 수원시 권선구 세화로134번길 37 수원메쎄 특별전시장",
-    "date": "2026-06-20 ~ 2026-06-21",
-    "tags": [
-      "웨딩홀",
-      "스드메",
-      "혼수",
-      "예물",
-      "예복"
-    ],
-    "summary": "수원 메쎄 홈씨씨 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
-    "badge": "경기",
-    "affiliateUrl": "https://replyalba.com/pt/KcP5ZQmEzk",
-    "imageUrl": "https://replyalba.com/intros/howto_sw/img/og.jpg",
-    "regionPath": "regions/gyeonggi.html",
-    "detailPath": "fairs/api-kcp5zqmezk.html"
-  },
-  {
     "id": "RA-WEDDING-1063-수원-컨벤션-하우투-웨딩박람회",
     "region": "경기",
     "title": "수원 컨벤션 하우투 웨딩박람회",
-    "venue": "경기 수원시 영통구 광교중앙로 140 수원컨벤션센터 2층 특별전시장",
-    "address": "경기 수원시 영통구 광교중앙로 140 수원컨벤션센터 2층 특별전시장",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "venue": "경기 수원시 영통구 광교중앙로 140",
+    "address": "경기 수원시 영통구 광교중앙로 140",
+    "date": "2026-09-12 ~ 2026-09-13",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -903,54 +924,12 @@ window.WEDDING_FAIRS = [
     "detailPath": "fairs/1063.html"
   },
   {
-    "id": "RA-WEDDING-1373-수원-컨벤션-하우투-허니문박람회",
-    "region": "경기",
-    "title": "수원 컨벤션 하우투 허니문박람회",
-    "venue": "경기 수원시 영통구 광교중앙로 140 수원컨벤션센터 2층 특별전시장",
-    "address": "경기 수원시 영통구 광교중앙로 140 수원컨벤션센터 2층 특별전시장",
-    "date": "2026-06-13 ~ 2026-06-14",
-    "tags": [
-      "웨딩홀",
-      "스드메",
-      "혼수",
-      "예물",
-      "예복"
-    ],
-    "summary": "수원 컨벤션 하우투 허니문박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
-    "badge": "경기",
-    "affiliateUrl": "https://replyalba.com/pt/M8aO0lcwfC",
-    "imageUrl": "https://replyalba.com/intros/howto_swchnm2/img/og.jpg",
-    "regionPath": "regions/gyeonggi.html",
-    "detailPath": "fairs/1373.html"
-  },
-  {
-    "id": "RA-WEDDING-API-M8aO0lGTBI",
-    "region": "경기",
-    "title": "수원 패밀리 웨딩박람회",
-    "venue": "경기 수원시 영통구 광교중앙로 140 수원컨벤션센터 특별행사장",
-    "address": "경기 수원시 영통구 광교중앙로 140 수원컨벤션센터 특별행사장",
-    "date": "2026-06-06 ~ 2026-06-07",
-    "tags": [
-      "웨딩홀",
-      "스드메",
-      "혼수",
-      "예물",
-      "예복"
-    ],
-    "summary": "수원 패밀리 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
-    "badge": "경기",
-    "affiliateUrl": "https://replyalba.com/pt/M8aO0lGTBI",
-    "imageUrl": "https://replyalba.com/intros/familytour_sw/img/og.jpg",
-    "regionPath": "regions/gyeonggi.html",
-    "detailPath": "fairs/api-m8ao0lgtbi.html"
-  },
-  {
     "id": "RA-WEDDING-812-수원컨벤션센터-초대형-웨딩박람회",
     "region": "경기",
     "title": "수원컨벤션센터 초대형 웨딩박람회",
     "venue": "경기 수원시 영통구 광교중앙로 140 수원컨벤션센터 1F",
     "address": "경기 수원시 영통구 광교중앙로 140 수원컨벤션센터 1F",
-    "date": "2026-06-06 ~ 2026-06-07",
+    "date": "2026-09-12 ~ 2026-09-13",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -987,12 +966,12 @@ window.WEDDING_FAIRS = [
     "detailPath": ""
   },
   {
-    "id": "RA-WEDDING-API-KcP5ZPSDti",
+    "id": "RA-WEDDING-API-M8aO0pdAfQ",
     "region": "경기",
-    "title": "수원 AK플라자 웨딩박람회",
-    "venue": "경기 수원시 팔달구 덕영대로 924 AK플라자 수원",
-    "address": "경기 수원시 팔달구 덕영대로 924 AK플라자 수원",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "title": "더셜리 수원 웨딩박람회",
+    "venue": "경기 수원시 팔달구 인계로94번길 26 1층 투어민",
+    "address": "경기 수원시 팔달구 인계로94번길 26 1층 투어민",
+    "date": "2026-09-12 ~ 2026-09-13",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1000,20 +979,20 @@ window.WEDDING_FAIRS = [
       "예물",
       "예복"
     ],
-    "summary": "수원 AK플라자 웨딩박람회  무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "summary": "더셜리 수원 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
-    "affiliateUrl": "https://replyalba.com/pt/KcP5ZPSDti",
-    "imageUrl": "https://replyalba.com/intros/paris_swak/img/og.jpg",
+    "affiliateUrl": "https://replyalba.com/pt/M8aO0pdAfQ",
+    "imageUrl": "https://replyalba.com/intros/shirley_sw/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
-    "detailPath": "fairs/api-kcp5zpsdti.html"
+    "detailPath": "fairs/api-m8ao0pdafq.html"
   },
   {
     "id": "RA-WEDDING-API-M8aO0psiXJ",
     "region": "경기",
     "title": "수원 웨딩거리 웨딩박람회",
-    "venue": "경기 수원시 팔달구 효원로 62, 수원웨딩만들기 웨딩타운 전층",
-    "address": "경기 수원시 팔달구 효원로 62, 수원웨딩만들기 웨딩타운 전층",
-    "date": "2026-06-06 ~ 2026-06-07",
+    "venue": "경기 수원시 팔달구 효원로 62",
+    "address": "경기 수원시 팔달구 효원로 62",
+    "date": "2026-08-29 ~ 2026-08-30",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1050,6 +1029,27 @@ window.WEDDING_FAIRS = [
     "detailPath": ""
   },
   {
+    "id": "RA-WEDDING-API-NXCOdRSyAw",
+    "region": "경기",
+    "title": "월컨투 수원 웨딩박람회",
+    "venue": "경기 수원시 팔달구 인계로94번길 26 1층 투어민",
+    "address": "경기 수원시 팔달구 인계로94번길 26 1층 투어민",
+    "date": "2026-09-12 ~ 2026-09-13",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "월컨투 수원 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "경기",
+    "affiliateUrl": "https://replyalba.com/pt/NXCOdRSyAw",
+    "imageUrl": "https://replyalba.com/intros/shirley_wctsw/img/og.jpg",
+    "regionPath": "regions/gyeonggi.html",
+    "detailPath": "fairs/api-nxcodrsyaw.html"
+  },
+  {
     "id": "RA-WEDDING-API-M8aO0otgaC",
     "region": "경기",
     "title": "이본한복 상담신청",
@@ -1071,12 +1071,54 @@ window.WEDDING_FAIRS = [
     "detailPath": ""
   },
   {
+    "id": "RA-WEDDING-API-M8aO0lX8aC",
+    "region": "경기",
+    "title": "안산 롯데백화점 그랜드 웨딩페어",
+    "venue": "경기 안산시 단원구 중앙대로873",
+    "address": "경기 안산시 단원구 중앙대로873",
+    "date": "2026-08-29 ~ 2026-08-30",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "안산 롯데백화점 그랜드 웨딩페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "경기",
+    "affiliateUrl": "https://replyalba.com/pt/M8aO0lX8aC",
+    "imageUrl": "https://replyalba.com/intros/wnco_aslt/img/og.jpg",
+    "regionPath": "regions/gyeonggi.html",
+    "detailPath": "fairs/api-m8ao0lx8ac.html"
+  },
+  {
+    "id": "RA-WEDDING-API-RCclIQ1ILA",
+    "region": "경기",
+    "title": "안산문화예술의전당 레브웨딩박람회",
+    "venue": "경기 안산시 단원구 화랑로 312 안산문화예술의전당",
+    "address": "경기 안산시 단원구 화랑로 312 안산문화예술의전당",
+    "date": "2026-09-05 ~ 2026-09-06",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "안산문화예술의전당 레브웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "경기",
+    "affiliateUrl": "https://replyalba.com/pt/RCclIQ1ILA",
+    "imageUrl": "https://replyalba.com/intros/revew_as/img/og.jpg",
+    "regionPath": "regions/gyeonggi.html",
+    "detailPath": "fairs/api-rccliq1ila.html"
+  },
+  {
     "id": "RA-WEDDING-1104-안산-삼성-고잔점-위드유-웨딩박람회",
     "region": "경기",
     "title": "안산 삼성 고잔점 위드유 웨딩박람회",
-    "venue": "경기 안산시 상록구 광덕1로 342 삼성스토어 안산고잔 2층",
-    "address": "경기 안산시 상록구 광덕1로 342 삼성스토어 안산고잔 2층",
-    "date": "2026-06-20 ~ 2026-06-21",
+    "venue": "경기 안산시 상록구 광덕1로 342",
+    "address": "경기 안산시 상록구 광덕1로 342",
+    "date": "2026-09-12 ~ 2026-09-13",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1092,33 +1134,12 @@ window.WEDDING_FAIRS = [
     "detailPath": "fairs/1104.html"
   },
   {
-    "id": "RA-WEDDING-API-KcP5ZKrukW",
-    "region": "경기",
-    "title": "안성 스타필드 그랜드 웨딩페어",
-    "venue": "경기도 안성시 공도읍 서동대로 3930-39 2F 스타필드 안성점(한샘) 특별행사장",
-    "address": "경기도 안성시 공도읍 서동대로 3930-39 2F 스타필드 안성점(한샘) 특별행사장",
-    "date": "2026-06-20 ~ 2026-06-21",
-    "tags": [
-      "웨딩홀",
-      "스드메",
-      "혼수",
-      "예물",
-      "예복"
-    ],
-    "summary": "안성 스타필드 그랜드 웨딩페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
-    "badge": "경기",
-    "affiliateUrl": "https://replyalba.com/pt/KcP5ZKrukW",
-    "imageUrl": "https://replyalba.com/intros/wnco_as/img/og.jpg",
-    "regionPath": "regions/gyeonggi.html",
-    "detailPath": "fairs/api-kcp5zkrukw.html"
-  },
-  {
     "id": "RA-WEDDING-949-안양-롯데백화점-평촌-웨딩박람회",
     "region": "경기",
     "title": "안양 롯데백화점 평촌 웨딩박람회",
     "venue": "경기 안양시 동안구 시민대로 180 롯데백화점 평촌점 특별전시장",
     "address": "경기 안양시 동안구 시민대로 180 롯데백화점 평촌점 특별전시장",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "date": "2026-09-12 ~ 2026-09-13",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1134,54 +1155,12 @@ window.WEDDING_FAIRS = [
     "detailPath": "fairs/949.html"
   },
   {
-    "id": "RA-WEDDING-API-M8aO0nbF4C",
-    "region": "경기",
-    "title": "안양평촌 롯데백화점 레브웨딩박람회",
-    "venue": "경기도 안양시 동안구 호계동 1039 롯데백화점 7층 LG전자",
-    "address": "경기도 안양시 동안구 호계동 1039 롯데백화점 7층 LG전자",
-    "date": "2026-06-06 ~ 2026-06-07",
-    "tags": [
-      "웨딩홀",
-      "스드메",
-      "혼수",
-      "예물",
-      "예복"
-    ],
-    "summary": "안양평촌 롯데백화점 레브웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
-    "badge": "경기",
-    "affiliateUrl": "https://replyalba.com/pt/M8aO0nbF4C",
-    "imageUrl": "https://replyalba.com/intros/revew_pcw/img/og.jpg",
-    "regionPath": "regions/gyeonggi.html",
-    "detailPath": "fairs/api-m8ao0nbf4c.html"
-  },
-  {
-    "id": "RA-WEDDING-API-KcP5ZLEcEh",
-    "region": "경기",
-    "title": "웨딩더하기 안양평촌 롯데백화점 웨딩박람회",
-    "venue": "경기 안양시 동안구 시민대로 180 LG전자베스트샵 롯데평촌 특별전시장",
-    "address": "경기 안양시 동안구 시민대로 180 LG전자베스트샵 롯데평촌 특별전시장",
-    "date": "2026-06-13 ~ 2026-06-14",
-    "tags": [
-      "웨딩홀",
-      "스드메",
-      "혼수",
-      "예물",
-      "예복"
-    ],
-    "summary": "웨딩더하기 안양평촌 롯데백화점 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
-    "badge": "경기",
-    "affiliateUrl": "https://replyalba.com/pt/KcP5ZLEcEh",
-    "imageUrl": "https://replyalba.com/intros/wplus_aypc/img/og.jpg",
-    "regionPath": "regions/gyeonggi.html",
-    "detailPath": "fairs/api-kcp5zleceh.html"
-  },
-  {
     "id": "RA-WEDDING-1237-성남-용인-그랜드-웨딩페어",
     "region": "경기",
     "title": "성남/용인 그랜드 웨딩페어",
-    "venue": "경기 용인시 수지구 포은대로 536 신세계 사우스시티 특별행사장",
-    "address": "경기 용인시 수지구 포은대로 536 신세계 사우스시티 특별행사장",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "venue": "경기 용인시 수지구 포은대로 536",
+    "address": "경기 용인시 수지구 포은대로 536",
+    "date": "2026-09-12 ~ 2026-09-13",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1202,7 +1181,7 @@ window.WEDDING_FAIRS = [
     "title": "더셜리 의정부 신세계 웨딩박람회",
     "venue": "경기 의정부시 의정부동 168-54 신세계백화점 8층 LG전자 특별행사장",
     "address": "경기 의정부시 의정부동 168-54 신세계백화점 8층 LG전자 특별행사장",
-    "date": "2026-06-20 ~ 2026-06-21",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1223,7 +1202,7 @@ window.WEDDING_FAIRS = [
     "title": "월컨투 의정부 허니문박람회",
     "venue": "경기 의정부시 의정부동 168-54 신세계백화점 8층 LG전자 특별행사장",
     "address": "경기 의정부시 의정부동 168-54 신세계백화점 8층 LG전자 특별행사장",
-    "date": "2026-06-20 ~ 2026-06-21",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1242,9 +1221,9 @@ window.WEDDING_FAIRS = [
     "id": "RA-WEDDING-1147-이천-위드유-웨딩박람회",
     "region": "경기",
     "title": "이천 위드유 웨딩박람회",
-    "venue": "경기 이천시 증신로 130 삼성스토어 이천증포 특별행사장",
-    "address": "경기 이천시 증신로 130 삼성스토어 이천증포 특별행사장",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "venue": "경기 이천시 증신로 130",
+    "address": "경기 이천시 증신로 130",
+    "date": "2026-09-19 ~ 2026-09-20",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1260,12 +1239,12 @@ window.WEDDING_FAIRS = [
     "detailPath": "fairs/1147.html"
   },
   {
-    "id": "RA-WEDDING-API-KcP5ZPUwze",
+    "id": "RA-WEDDING-API-10dzjzLtum9",
     "region": "경기",
-    "title": "이천 패밀리 웨딩박람회",
-    "venue": "경기 이천시 이섭대천로 1430 LG전자베스트샵 이천본점 특별행사장",
-    "address": "경기 이천시 이섭대천로 1430 LG전자베스트샵 이천본점 특별행사장",
-    "date": "2026-06-20 ~ 2026-06-21",
+    "title": "평택 AK 대형 웨딩박람회",
+    "venue": "경기 평택시 평택로 51",
+    "address": "경기 평택시 평택로 51",
+    "date": "2026-09-12 ~ 2026-09-13",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1273,20 +1252,20 @@ window.WEDDING_FAIRS = [
       "예물",
       "예복"
     ],
-    "summary": "이천 패밀리 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "summary": "평택 AK 대형 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
-    "affiliateUrl": "https://replyalba.com/pt/KcP5ZPUwze",
-    "imageUrl": "https://replyalba.com/intros/familytour_ic/img/og.jpg",
+    "affiliateUrl": "https://replyalba.com/pt/10dzjzLtum9",
+    "imageUrl": "https://replyalba.com/intros/wedcrowd_ptak/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
-    "detailPath": "fairs/api-kcp5zpuwze.html"
+    "detailPath": "fairs/api-10dzjzltum9.html"
   },
   {
-    "id": "RA-WEDDING-API-IYWvDXwV5q",
+    "id": "RA-WEDDING-API-M8aO0oPcEX",
     "region": "경기",
-    "title": "스타필드 운정 패밀리 웨딩박람회",
-    "venue": "경기 파주시 와석순환로515번길 70 스타필드 운정 B동, 1층 / LG전자 특별행사장",
-    "address": "경기 파주시 와석순환로515번길 70 스타필드 운정 B동, 1층 / LG전자 특별행사장",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "title": "평택 LG베스트샵 위드유 웨딩박람회",
+    "venue": "경기 평택시 평택로 311",
+    "address": "경기 평택시 평택로 311",
+    "date": "2026-09-12 ~ 2026-09-13",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1294,20 +1273,20 @@ window.WEDDING_FAIRS = [
       "예물",
       "예복"
     ],
-    "summary": "스타필드 운정 패밀리 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "summary": "평택 LG베스트샵 위드유 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
-    "affiliateUrl": "https://replyalba.com/pt/IYWvDXwV5q",
-    "imageUrl": "https://replyalba.com/intros/familytour_uj/img/og.jpg",
+    "affiliateUrl": "https://replyalba.com/pt/M8aO0oPcEX",
+    "imageUrl": "https://replyalba.com/intros/withu_ptlg/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
-    "detailPath": "fairs/api-iywvdxwv5q.html"
+    "detailPath": "fairs/api-m8ao0opcex.html"
   },
   {
     "id": "RA-WEDDING-1238-평택-그랜드-웨딩페어",
     "region": "경기",
     "title": "평택 그랜드 웨딩페어",
-    "venue": "경기 평택시 평택로 51 AK플라자 평택점 6층 특별행사장",
-    "address": "경기 평택시 평택로 51 AK플라자 평택점 6층 특별행사장",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "venue": "경기 평택시 평택로 51",
+    "address": "경기 평택시 평택로 51",
+    "date": "2026-09-12 ~ 2026-09-13",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1323,12 +1302,12 @@ window.WEDDING_FAIRS = [
     "detailPath": "fairs/1238.html"
   },
   {
-    "id": "RA-WEDDING-API-M8aO0p2MD9",
+    "id": "RA-WEDDING-API-W2k33kE9ii",
     "region": "경기",
-    "title": "평택 패밀리 웨딩박람회",
-    "venue": "경기 평택시 평택로 51 AK백화점 6층 LG전자 특별행사장",
-    "address": "경기 평택시 평택로 51 AK백화점 6층 LG전자 특별행사장",
-    "date": "2026-06-06 ~ 2026-06-07",
+    "title": "대형 동탄 롯데백화점 웨딩박람회",
+    "venue": "경기 화성시 동탄구 동탄역로 160",
+    "address": "경기 화성시 동탄구 동탄역로 160",
+    "date": "2026-09-19 ~ 2026-09-20",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1336,20 +1315,41 @@ window.WEDDING_FAIRS = [
       "예물",
       "예복"
     ],
-    "summary": "평택 패밀리 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "summary": "대형 동탄 롯데백화점 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경기",
-    "affiliateUrl": "https://replyalba.com/pt/M8aO0p2MD9",
-    "imageUrl": "https://replyalba.com/intros/familytour_pt/img/og.jpg",
+    "affiliateUrl": "https://replyalba.com/pt/W2k33kE9ii",
+    "imageUrl": "https://replyalba.com/intros/hong_dt/img/og.jpg",
     "regionPath": "regions/gyeonggi.html",
-    "detailPath": "fairs/api-m8ao0p2md9.html"
+    "detailPath": "fairs/api-w2k33ke9ii.html"
+  },
+  {
+    "id": "RA-WEDDING-API-M8aO0npJ7N",
+    "region": "경기",
+    "title": "동탄 롯데백화점 그랜드 웨딩페어",
+    "venue": "경기 화성시 동탄역로 160",
+    "address": "경기 화성시 동탄역로 160",
+    "date": "2026-08-29 ~ 2026-08-30",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "동탄 롯데백화점 그랜드 웨딩페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "경기",
+    "affiliateUrl": "https://replyalba.com/pt/M8aO0npJ7N",
+    "imageUrl": "https://replyalba.com/intros/wnco_dt/img/og.jpg",
+    "regionPath": "regions/gyeonggi.html",
+    "detailPath": "fairs/api-m8ao0npj7n.html"
   },
   {
     "id": "RA-WEDDING-API-M8aO0oiclO",
     "region": "인천",
     "title": "IWC 인천 웨딩박람회",
-    "venue": "인천 남동구 예술로 206 구월중앙프라자 3층 IWC인천웨딩컴퍼니",
-    "address": "인천 남동구 예술로 206 구월중앙프라자 3층 IWC인천웨딩컴퍼니",
-    "date": "2026-06-01 ~ 2026-06-30",
+    "venue": "인천 남동구 예술로 206 구월중앙프라자 3층",
+    "address": "인천 남동구 예술로 206 구월중앙프라자 3층",
+    "date": "상시 확인",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1362,7 +1362,7 @@ window.WEDDING_FAIRS = [
     "affiliateUrl": "https://replyalba.com/pt/M8aO0oiclO",
     "imageUrl": "https://replyalba.com/intros/iwc_incheon/img/og.jpg",
     "regionPath": "regions/incheon.html",
-    "detailPath": "fairs/api-m8ao0oiclo.html"
+    "detailPath": ""
   },
   {
     "id": "RA-WEDDING-API-M8aO0khYz6",
@@ -1391,7 +1391,7 @@ window.WEDDING_FAIRS = [
     "title": "로코코 웨딩드레스 초대전",
     "venue": "인천 남동구 구월남로 117 가주프라자 6층 로코코웨딩",
     "address": "인천 남동구 구월남로 117 가주프라자 6층 로코코웨딩",
-    "date": "2026-06-01 ~ 2026-06-30",
+    "date": "상시 확인",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1404,15 +1404,15 @@ window.WEDDING_FAIRS = [
     "affiliateUrl": "https://replyalba.com/pt/M8aO0pbNG1",
     "imageUrl": "https://replyalba.com/intros/rococo/img/og.jpg",
     "regionPath": "regions/incheon.html",
-    "detailPath": "fairs/api-m8ao0pbng1.html"
+    "detailPath": ""
   },
   {
     "id": "RA-WEDDING-API-M8aO0moxRA",
     "region": "인천",
     "title": "인천 하이허니문",
-    "venue": "인천 남동구 예술로 206 중앙프라자 A동 3층",
-    "address": "인천 남동구 예술로 206 중앙프라자 A동 3층",
-    "date": "2026-06-01 ~ 2026-06-30",
+    "venue": "인천 남동구 예술로 206",
+    "address": "인천 남동구 예술로 206",
+    "date": "상시 확인",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1425,15 +1425,15 @@ window.WEDDING_FAIRS = [
     "affiliateUrl": "https://replyalba.com/pt/M8aO0moxRA",
     "imageUrl": "https://replyalba.com/intros/hihnm_ic/img/og.jpg",
     "regionPath": "regions/incheon.html",
-    "detailPath": "fairs/api-m8ao0moxra.html"
+    "detailPath": ""
   },
   {
     "id": "RA-WEDDING-1378-인천-롯데백화점-그랜드-웨딩페어",
     "region": "인천",
     "title": "인천 롯데백화점 그랜드 웨딩페어",
-    "venue": "인천 미추홀구 연남로 35 5층 LG전자베스트샵 롯데인천점 특별행사장",
-    "address": "인천 미추홀구 연남로 35 5층 LG전자베스트샵 롯데인천점 특별행사장",
-    "date": "2026-06-06 ~ 2026-06-07",
+    "venue": "인천 미추홀구 연남로 35",
+    "address": "인천 미추홀구 연남로 35",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1444,17 +1444,17 @@ window.WEDDING_FAIRS = [
     "summary": "인천 롯데백화점 그랜드 웨딩페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "인천",
     "affiliateUrl": "https://replyalba.com/pt/M8aO0oLer0",
-    "imageUrl": "https://replyalba.com/intros/wnco_ic/img/og.jpg",
+    "imageUrl": "https://replyalba.com/intros/wnco_ic2/img/og.jpg",
     "regionPath": "regions/incheon.html",
     "detailPath": "fairs/1378.html"
   },
   {
-    "id": "RA-WEDDING-API-M8aO0n1t76",
+    "id": "RA-WEDDING-API-ScN6NXHGPe",
     "region": "인천",
-    "title": "초대형 인천 하이어 웨딩박람회",
-    "venue": "인천 미추홀구 매소홀로 618 그랜드오스티엄 3층 특별행사장",
-    "address": "인천 미추홀구 매소홀로 618 그랜드오스티엄 3층 특별행사장",
-    "date": "2026-06-14",
+    "title": "송도 엘리아벨 대형 웨딩박람회",
+    "venue": "인천 연수구 송도힐즈로10길 8 엘리아벨 특별행사장",
+    "address": "인천 연수구 송도힐즈로10길 8 엘리아벨 특별행사장",
+    "date": "2026-08-29 ~ 2026-08-30",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1462,12 +1462,12 @@ window.WEDDING_FAIRS = [
       "예물",
       "예복"
     ],
-    "summary": "초대형 인천 하이어 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "summary": "송도 엘리아벨 대형 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "인천",
-    "affiliateUrl": "https://replyalba.com/pt/M8aO0n1t76",
-    "imageUrl": "https://replyalba.com/intros/higher_ic2/img/og.jpg",
+    "affiliateUrl": "https://replyalba.com/pt/ScN6NXHGPe",
+    "imageUrl": "https://replyalba.com/intros/wedcrowd_sde/img/og.jpg",
     "regionPath": "regions/incheon.html",
-    "detailPath": "fairs/api-m8ao0n1t76.html"
+    "detailPath": "fairs/api-scn6nxhgpe.html"
   },
   {
     "id": "RA-WEDDING-827-인천-송도컨벤시아-대형-웨딩박람회",
@@ -1475,7 +1475,7 @@ window.WEDDING_FAIRS = [
     "title": "인천 송도컨벤시아 대형 웨딩박람회",
     "venue": "인천 연수구 센트럴로 123 송도컨벤시아",
     "address": "인천 연수구 센트럴로 123 송도컨벤시아",
-    "date": "2026-06-06 ~ 2026-06-07",
+    "date": "2026-08-29 ~ 2026-08-30",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1491,12 +1491,12 @@ window.WEDDING_FAIRS = [
     "detailPath": "fairs/827.html"
   },
   {
-    "id": "RA-WEDDING-API-IYWvDWr5xJ",
-    "region": "부산",
-    "title": "W웨딩 롯데백화점 부산본점 웨딩박람회",
-    "venue": "부산광역시 부산진구 가야대로 772 롯데백화점 부산본점 10층",
-    "address": "부산광역시 부산진구 가야대로 772 롯데백화점 부산본점 10층",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "id": "RA-WEDDING-API-M8aO0n1t76",
+    "region": "인천",
+    "title": "초대형 인천 하이어 웨딩박람회",
+    "venue": "인천 남동구 문화로 119-1 승산빌딩 4층",
+    "address": "인천 남동구 문화로 119-1 승산빌딩 4층",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1504,20 +1504,41 @@ window.WEDDING_FAIRS = [
       "예물",
       "예복"
     ],
-    "summary": "W웨딩 롯데백화점 부산본점 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
-    "badge": "부산",
-    "affiliateUrl": "https://replyalba.com/pt/IYWvDWr5xJ",
-    "imageUrl": "https://replyalba.com/intros/w_lotte/img/og.jpg",
-    "regionPath": "regions/busan.html",
-    "detailPath": "fairs/api-iywvdwr5xj.html"
+    "summary": "초대형 인천 하이어 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "인천",
+    "affiliateUrl": "https://replyalba.com/pt/M8aO0n1t76",
+    "imageUrl": "https://replyalba.com/intros/higher_ic2/img/og.jpg",
+    "regionPath": "regions/incheon.html",
+    "detailPath": "fairs/api-m8ao0n1t76.html"
+  },
+  {
+    "id": "RA-WEDDING-API-RCclIQs5uR",
+    "region": "인천",
+    "title": "초대형 하이어 웨딩박람회",
+    "venue": "인천 연수구 센트럴로 123",
+    "address": "인천 연수구 센트럴로 123",
+    "date": "2026-09-19 ~ 2026-09-20",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "초대형 하이어 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "인천",
+    "affiliateUrl": "https://replyalba.com/pt/RCclIQs5uR",
+    "imageUrl": "https://replyalba.com/intros/higher_ic/img/og.jpg",
+    "regionPath": "regions/incheon.html",
+    "detailPath": "fairs/api-rccliqs5ur.html"
   },
   {
     "id": "RA-WEDDING-API-M8aO0mlInk",
     "region": "부산",
     "title": "W웨딩시티 부산웨딩박람회",
-    "venue": "부산광역시 부산진구 자유평화로 11 W웨딩시티",
-    "address": "부산광역시 부산진구 자유평화로 11 W웨딩시티",
-    "date": "2026-06-06 ~ 2026-06-07",
+    "venue": "부산광역시 부산진구 자유평화로 11",
+    "address": "부산광역시 부산진구 자유평화로 11",
+    "date": "2026-08-29 ~ 2026-08-30",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1536,9 +1557,9 @@ window.WEDDING_FAIRS = [
     "id": "RA-WEDDING-API-yYzT1YI4sy",
     "region": "부산",
     "title": "부산 더블혜택 웨딩박람회",
-    "venue": "부산 부산진구 황령대로 13 한라시그마타워 1F",
-    "address": "부산 부산진구 황령대로 13 한라시그마타워 1F",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "venue": "부산 부산진구 황령대로 13",
+    "address": "부산 부산진구 황령대로 13",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1557,9 +1578,9 @@ window.WEDDING_FAIRS = [
     "id": "RA-WEDDING-772-부산-찰스-웨딩박람회",
     "region": "부산",
     "title": "부산 찰스 웨딩박람회",
-    "venue": "부산광역시 부산진구 황령대로 13 한라시그마타워 1F",
-    "address": "부산광역시 부산진구 황령대로 13 한라시그마타워 1F",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "venue": "부산광역시 부산진구 황령대로 13",
+    "address": "부산광역시 부산진구 황령대로 13",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1580,7 +1601,7 @@ window.WEDDING_FAIRS = [
     "title": "부산 투어민 허니문초대전",
     "venue": "부산 연제구 법원로8번길 10, 1층",
     "address": "부산 연제구 법원로8번길 10, 1층",
-    "date": "2026-06-06 ~ 2026-06-07",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1599,9 +1620,9 @@ window.WEDDING_FAIRS = [
     "id": "RA-WEDDING-916-롯데백화점-부산본점-웨딩엑스포",
     "region": "부산",
     "title": "롯데백화점 부산본점 웨딩엑스포",
-    "venue": "부산 부산진구 가야대로 772 롯데백화점 부산본점 10층",
-    "address": "부산 부산진구 가야대로 772 롯데백화점 부산본점 10층",
-    "date": "2026-06-20 ~ 2026-06-21",
+    "venue": "부산 부산진구 가야대로 772",
+    "address": "부산 부산진구 가야대로 772",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1617,12 +1638,12 @@ window.WEDDING_FAIRS = [
     "detailPath": "fairs/916.html"
   },
   {
-    "id": "RA-WEDDING-793-bwc-부산-벡스코-웨딩박람회",
+    "id": "RA-WEDDING-API-M8aO0kNWDZ",
     "region": "부산",
-    "title": "BWC 부산 벡스코 웨딩박람회",
-    "venue": "부산 해운대구 APEC로 30 벡스코 제2 전시장 5A홀",
-    "address": "부산 해운대구 APEC로 30 벡스코 제2 전시장 5A홀",
-    "date": "2026-06-19 ~ 2026-06-21",
+    "title": "BEXCO 부산웨딩박람회",
+    "venue": "부산 해운대구 APEC로 30 벡스코 제2 전시장 1층 4F홀",
+    "address": "부산 해운대구 APEC로 30 벡스코 제2 전시장 1층 4F홀",
+    "date": "2026-09-11 ~ 2026-09-13",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1630,41 +1651,20 @@ window.WEDDING_FAIRS = [
       "예물",
       "예복"
     ],
-    "summary": "BWC 부산 벡스코 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "summary": "BEXCO 부산웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "부산",
-    "affiliateUrl": "https://replyalba.com/pt/M8aO0pld0r",
-    "imageUrl": "https://replyalba.com/intros/bwc24/img/og.jpg",
+    "affiliateUrl": "https://replyalba.com/pt/M8aO0kNWDZ",
+    "imageUrl": "https://replyalba.com/intros/knn_bexco2/img/og.jpg",
     "regionPath": "regions/busan.html",
-    "detailPath": "fairs/793-bwc.html"
-  },
-  {
-    "id": "RA-WEDDING-1026-knn-부산-웨딩엑스포",
-    "region": "부산",
-    "title": "KNN 부산 웨딩엑스포",
-    "venue": "부산 해운대구 센텀서로 30 KNN방송국 특별행사장",
-    "address": "부산 해운대구 센텀서로 30 KNN방송국 특별행사장",
-    "date": "2026-06-13 ~ 2026-06-14",
-    "tags": [
-      "웨딩홀",
-      "스드메",
-      "혼수",
-      "예물",
-      "예복"
-    ],
-    "summary": "KNN 부산 웨딩엑스포 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
-    "badge": "부산",
-    "affiliateUrl": "https://replyalba.com/pt/yYzT1ZuNGo",
-    "imageUrl": "https://replyalba.com/intros/charles_land/img/og.jpg",
-    "regionPath": "regions/busan.html",
-    "detailPath": "fairs/1026-knn.html"
+    "detailPath": "fairs/api-m8ao0knwdz.html"
   },
   {
     "id": "RA-WEDDING-API-IYWvE1DexO",
     "region": "부산",
     "title": "W웨딩 신세계센텀 부산웨딩박람회",
-    "venue": "부산광역시 해운대구 센텀남대로 35 신세계백화점 센텀시티점",
-    "address": "부산광역시 해운대구 센텀남대로 35 신세계백화점 센텀시티점",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "venue": "부산광역시 해운대구 센텀남대로 35",
+    "address": "부산광역시 해운대구 센텀남대로 35",
+    "date": "2026-08-29 ~ 2026-08-30",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1683,9 +1683,9 @@ window.WEDDING_FAIRS = [
     "id": "RA-WEDDING-761-부산-웨딩박람회-in-knn-방송국",
     "region": "부산",
     "title": "부산 웨딩박람회 in KNN 방송국",
-    "venue": "부산 해운대구 센텀서로 30 KNN 방송국 센텀 신사옥 1층",
-    "address": "부산 해운대구 센텀서로 30 KNN 방송국 센텀 신사옥 1층",
-    "date": "2026-06-06 ~ 2026-06-07",
+    "venue": "부산 해운대구 센텀서로 30",
+    "address": "부산 해운대구 센텀서로 30",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1701,12 +1701,12 @@ window.WEDDING_FAIRS = [
     "detailPath": "fairs/761-in-knn.html"
   },
   {
-    "id": "RA-WEDDING-API-yYzT1XgJLC",
+    "id": "RA-WEDDING-API-AwVxQP2u1T",
     "region": "충청",
-    "title": "당진 그랜드 웨딩페어",
-    "venue": "충남 당진시 수청9길 23 LG전자베스트샵 당진점 특별행사장",
-    "address": "충남 당진시 수청9길 23 LG전자베스트샵 당진점 특별행사장",
-    "date": "2026-06-20 ~ 2026-06-21",
+    "title": "대전 신세계 허니문박람회",
+    "venue": "대전 유성구 엑스포로 1",
+    "address": "대전 유성구 엑스포로 1",
+    "date": "2026-08-29 ~ 2026-08-30",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1714,20 +1714,20 @@ window.WEDDING_FAIRS = [
       "예물",
       "예복"
     ],
-    "summary": "당진 그랜드 웨딩페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "summary": "대전 신세계 허니문박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "충청",
-    "affiliateUrl": "https://replyalba.com/pt/yYzT1XgJLC",
-    "imageUrl": "https://replyalba.com/intros/wnco_dj/img/og.jpg",
+    "affiliateUrl": "https://replyalba.com/pt/AwVxQP2u1T",
+    "imageUrl": "https://replyalba.com/intros/planit_ssg/img/og.jpg",
     "regionPath": "regions/chungcheong.html",
-    "detailPath": "fairs/api-yyzt1xgjlc.html"
+    "detailPath": "fairs/api-awvxqp2u1t.html"
   },
   {
     "id": "RA-WEDDING-870-대전-위드유-웨딩박람회",
     "region": "충청",
     "title": "대전 위드유 웨딩박람회",
-    "venue": "대전 서구 계룡로 598 롯데백화점 대전점 B1 LG베스트샵",
-    "address": "대전 서구 계룡로 598 롯데백화점 대전점 B1 LG베스트샵",
-    "date": "2026-06-13 ~ 2026-06-28",
+    "venue": "대전 서구 계룡로 598",
+    "address": "대전 서구 계룡로 598",
+    "date": "2026-09-12 ~ 2026-09-13",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1743,12 +1743,54 @@ window.WEDDING_FAIRS = [
     "detailPath": "fairs/870.html"
   },
   {
+    "id": "RA-WEDDING-API-AwVxQKOlFL",
+    "region": "충청",
+    "title": "플래닛투어 DCC앵콜전 대전허니문박람회",
+    "venue": "대전 서구 계룡로 639 에이스침대대전사옥 2층",
+    "address": "대전 서구 계룡로 639 에이스침대대전사옥 2층",
+    "date": "2026-08-29 ~ 2026-08-30",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "플래닛투어 DCC앵콜전 대전허니문박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "충청",
+    "affiliateUrl": "https://replyalba.com/pt/AwVxQKOlFL",
+    "imageUrl": "https://replyalba.com/intros/planit_djh/img/og.jpg",
+    "regionPath": "regions/chungcheong.html",
+    "detailPath": "fairs/api-awvxqkolfl.html"
+  },
+  {
+    "id": "RA-WEDDING-API-AwVxQLCcqc",
+    "region": "충청",
+    "title": "대전 DCC 허니문박람회",
+    "venue": "대전 유성구 엑스포로 107",
+    "address": "대전 유성구 엑스포로 107",
+    "date": "2026-10-10 ~ 2026-10-11",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "대전 DCC 허니문박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "충청",
+    "affiliateUrl": "https://replyalba.com/pt/AwVxQLCcqc",
+    "imageUrl": "https://replyalba.com/intros/planit_djh2/img/og.jpg",
+    "regionPath": "regions/chungcheong.html",
+    "detailPath": "fairs/api-awvxqlccqc.html"
+  },
+  {
     "id": "RA-WEDDING-950-대전-nc백화점-대형-웨딩박람회",
     "region": "충청",
     "title": "대전 NC백화점 대형 웨딩박람회",
     "venue": "대전 유성구 계룡로 119 NC백화점 유성점 7층 특별 행사장",
     "address": "대전 유성구 계룡로 119 NC백화점 유성점 7층 특별 행사장",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "date": "2026-09-26 ~ 2026-09-27",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1769,7 +1811,7 @@ window.WEDDING_FAIRS = [
     "title": "대전 컨벤션센터 대형 웨딩박람회",
     "venue": "대전 유성구 엑스포로 107 DCC 대전 컨벤션센터 1층 특별 행사장",
     "address": "대전 유성구 엑스포로 107 DCC 대전 컨벤션센터 1층 특별 행사장",
-    "date": "2026-06-20 ~ 2026-06-21",
+    "date": "2026-09-12 ~ 2026-09-13",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1790,7 +1832,7 @@ window.WEDDING_FAIRS = [
     "title": "천안 신세계백화점 레브웨딩박람회",
     "venue": "충남 천안시 동남구 만남로 43 신세계 천안아산점 A관 4층 LG전자",
     "address": "충남 천안시 동남구 만남로 43 신세계 천안아산점 A관 4층 LG전자",
-    "date": "2026-06-20 ~ 2026-06-21",
+    "date": "2026-08-29 ~ 2026-08-30",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1809,9 +1851,9 @@ window.WEDDING_FAIRS = [
     "id": "RA-WEDDING-API-yYzT206zrR",
     "region": "충청",
     "title": "천안 하이허니문",
-    "venue": "충남 천안시 동남구 서부대로 540 1층 하이허니문 천안점",
-    "address": "충남 천안시 동남구 서부대로 540 1층 하이허니문 천안점",
-    "date": "2026-06-01 ~ 2026-06-30",
+    "venue": "충남 천안시 동남구 서부대로 540 1층",
+    "address": "충남 천안시 동남구 서부대로 540 1층",
+    "date": "상시 확인",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1824,15 +1866,15 @@ window.WEDDING_FAIRS = [
     "affiliateUrl": "https://replyalba.com/pt/yYzT206zrR",
     "imageUrl": "https://replyalba.com/intros/hihnm_ca/img/og.jpg",
     "regionPath": "regions/chungcheong.html",
-    "detailPath": "fairs/api-yyzt206zrr.html"
+    "detailPath": ""
   },
   {
     "id": "RA-WEDDING-API-yYzT1YR8qP",
     "region": "충청",
     "title": "IWC 천안 웨딩박람회",
-    "venue": "충남 천안시 서북구 미라16길 18 IWC 천안 웨딩박람회",
-    "address": "충남 천안시 서북구 미라16길 18 IWC 천안 웨딩박람회",
-    "date": "2026-06-01 ~ 2026-06-30",
+    "venue": "충남 천안시 서북구 미라16길 18",
+    "address": "충남 천안시 서북구 미라16길 18",
+    "date": "상시 확인",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1845,15 +1887,15 @@ window.WEDDING_FAIRS = [
     "affiliateUrl": "https://replyalba.com/pt/yYzT1YR8qP",
     "imageUrl": "https://replyalba.com/intros/iwc_cheonan/img/og.jpg",
     "regionPath": "regions/chungcheong.html",
-    "detailPath": "fairs/api-yyzt1yr8qp.html"
+    "detailPath": ""
   },
   {
     "id": "RA-WEDDING-1233-천안-갤러리아-그랜드-웨딩페어",
     "region": "충청",
     "title": "천안 갤러리아 그랜드 웨딩페어",
-    "venue": "충남 천안시 서북구 공원로 227 7층 LG전자베스트샵 갤러리아 특별행사장",
-    "address": "충남 천안시 서북구 공원로 227 7층 LG전자베스트샵 갤러리아 특별행사장",
-    "date": "2026-06-06 ~ 2026-06-07",
+    "venue": "충남 천안시 서북구 공원로 227",
+    "address": "충남 천안시 서북구 공원로 227",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1872,9 +1914,9 @@ window.WEDDING_FAIRS = [
     "id": "RA-WEDDING-API-yYzT20hgIN",
     "region": "충청",
     "title": "천안 갤러리아 대형 웨딩박람회",
-    "venue": "충남 천안시 서북구 공원로 227 갤러리아백화점 센터시티점 7F 특별전시장",
-    "address": "충남 천안시 서북구 공원로 227 갤러리아백화점 센터시티점 7F 특별전시장",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "venue": "충남 천안시 서북구 공원로 227",
+    "address": "충남 천안시 서북구 공원로 227",
+    "date": "2026-09-12 ~ 2026-09-13",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1893,9 +1935,9 @@ window.WEDDING_FAIRS = [
     "id": "RA-WEDDING-838-천안-아일랜드유-위드유-웨딩박람회",
     "region": "충청",
     "title": "천안 아일랜드유 위드유 웨딩박람회",
-    "venue": "충남 천안시 서북구 부대3길 26 아일랜드유 특별행사장",
-    "address": "충남 천안시 서북구 부대3길 26 아일랜드유 특별행사장",
-    "date": "2026-06-20 ~ 2026-06-21",
+    "venue": "충남 천안시 서북구 부대3길 26",
+    "address": "충남 천안시 서북구 부대3길 26",
+    "date": "2026-09-19 ~ 2026-09-20",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1932,12 +1974,33 @@ window.WEDDING_FAIRS = [
     "detailPath": ""
   },
   {
+    "id": "RA-WEDDING-API-NXCOdQIB2U",
+    "region": "충청",
+    "title": "리움웨딩 청주 웨딩박람회",
+    "venue": "충북 청주시 서원구 남이면 남이가좌1길 195 3동 1층",
+    "address": "충북 청주시 서원구 남이면 남이가좌1길 195 3동 1층",
+    "date": "2026-09-19 ~ 2026-09-20",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "리움웨딩 청주 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "충청",
+    "affiliateUrl": "https://replyalba.com/pt/NXCOdQIB2U",
+    "imageUrl": "https://replyalba.com/intros/wedcrowd_rucj/img/og.jpg",
+    "regionPath": "regions/chungcheong.html",
+    "detailPath": "fairs/api-nxcodqib2u.html"
+  },
+  {
     "id": "RA-WEDDING-1273-청주-율랑점-엘지-위드유-웨딩박람회",
     "region": "충청",
     "title": "청주 율랑점 엘지 위드유 웨딩박람회",
-    "venue": "충북 청주시 청원구 사천로17번길 37 LG전자베스트샵 율량점",
-    "address": "충북 청주시 청원구 사천로17번길 37 LG전자베스트샵 율량점",
-    "date": "상시 확인",
+    "venue": "충북 청주시 청원구 사천로17번길 37",
+    "address": "충북 청주시 청원구 사천로17번길 37",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1950,7 +2013,28 @@ window.WEDDING_FAIRS = [
     "affiliateUrl": "https://replyalba.com/pt/yYzT21AiHY",
     "imageUrl": "https://replyalba.com/intros/withu_cjyr/img/og.jpg",
     "regionPath": "regions/chungcheong.html",
-    "detailPath": ""
+    "detailPath": "fairs/1273.html"
+  },
+  {
+    "id": "RA-WEDDING-API-yYzT1YclP3",
+    "region": "충청",
+    "title": "청주 OSCO 패밀리 웨딩박람회",
+    "venue": "충북 청주시 흥덕구 오송읍 만수리 275-5 청주오스코 특별행사장",
+    "address": "충북 청주시 흥덕구 오송읍 만수리 275-5 청주오스코 특별행사장",
+    "date": "2026-08-29 ~ 2026-08-30",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "청주 OSCO 패밀리 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "충청",
+    "affiliateUrl": "https://replyalba.com/pt/yYzT1YclP3",
+    "imageUrl": "https://replyalba.com/intros/familytour_cj/img/og.jpg",
+    "regionPath": "regions/chungcheong.html",
+    "detailPath": "fairs/api-yyzt1yclp3.html"
   },
   {
     "id": "RA-WEDDING-API-SI7qoDwcPr",
@@ -1958,7 +2042,7 @@ window.WEDDING_FAIRS = [
     "title": "청주 오스코 레브웨딩박람회",
     "venue": "충북 청주시 흥덕구 오송읍 오송생명로 250 청주 오스코 205,206호",
     "address": "충북 청주시 흥덕구 오송읍 오송생명로 250 청주 오스코 205,206호",
-    "date": "2026-06-20 ~ 2026-06-21",
+    "date": "2026-09-12 ~ 2026-09-13",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1979,7 +2063,7 @@ window.WEDDING_FAIRS = [
     "title": "청주 오스코 초대형 웨딩박람회",
     "venue": "충북 청주시 흥덕구 오송읍 만수리 275-5 청주오스코 특별전시장",
     "address": "충북 청주시 흥덕구 오송읍 만수리 275-5 청주오스코 특별전시장",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "date": "2026-10-03 ~ 2026-10-04",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -1998,9 +2082,9 @@ window.WEDDING_FAIRS = [
     "id": "RA-WEDDING-1192-청주-오스코-하우투-웨딩박람회",
     "region": "충청",
     "title": "청주 오스코 하우투 웨딩박람회",
-    "venue": "충북 청주시 흥덕구 오송읍 만수리 275-5 청주 오스코 특별전시장",
-    "address": "충북 청주시 흥덕구 오송읍 만수리 275-5 청주 오스코 특별전시장",
-    "date": "2026-06-06 ~ 2026-06-07",
+    "venue": "충북 청주시 흥덕구 오송읍 만수리 275-5",
+    "address": "충북 청주시 흥덕구 오송읍 만수리 275-5",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -2019,9 +2103,9 @@ window.WEDDING_FAIRS = [
     "id": "RA-WEDDING-API-yYzT1ZNeFT",
     "region": "충청",
     "title": "청주 오스코 허니문박람회",
-    "venue": "충청북도 청주시 흥덕구 오송읍 오송생명로 250 청주오스코",
-    "address": "충청북도 청주시 흥덕구 오송읍 오송생명로 250 청주오스코",
-    "date": "2026-06-06 ~ 2026-06-07",
+    "venue": "충청북도 청주시 흥덕구 오송읍 오송생명로 250",
+    "address": "충청북도 청주시 흥덕구 오송읍 오송생명로 250",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -2037,12 +2121,54 @@ window.WEDDING_FAIRS = [
     "detailPath": "fairs/api-yyzt1zneft.html"
   },
   {
+    "id": "RA-WEDDING-API-RCclIPTrhm",
+    "region": "충청",
+    "title": "청주 지웰시티몰 웨딩박람회",
+    "venue": "충북 청주시 흥덕구 대농로 47-1",
+    "address": "충북 청주시 흥덕구 대농로 47-1",
+    "date": "2026-09-12 ~ 2026-09-13",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "청주 지웰시티몰 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "충청",
+    "affiliateUrl": "https://replyalba.com/pt/RCclIPTrhm",
+    "imageUrl": "https://replyalba.com/intros/wedcrowd_cjgw/img/og.jpg",
+    "regionPath": "regions/chungcheong.html",
+    "detailPath": "fairs/api-rccliptrhm.html"
+  },
+  {
+    "id": "RA-WEDDING-API-ScN6NWllEz",
+    "region": "충청",
+    "title": "충주 그랜드 웨딩페어",
+    "venue": "충북 충주시 금봉대로 182 삼성스토어 충주 특별행사장",
+    "address": "충북 충주시 금봉대로 182 삼성스토어 충주 특별행사장",
+    "date": "2026-09-12 ~ 2026-09-13",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "충주 그랜드 웨딩페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "충청",
+    "affiliateUrl": "https://replyalba.com/pt/ScN6NWllEz",
+    "imageUrl": "https://replyalba.com/intros/wnco_cuj/img/og.jpg",
+    "regionPath": "regions/chungcheong.html",
+    "detailPath": "fairs/api-scn6nwllez.html"
+  },
+  {
     "id": "RA-WEDDING-837-충주-위드유-웨딩박람회",
     "region": "충청",
     "title": "충주 위드유 웨딩박람회",
-    "venue": "충북 충주시 탄금대로 139 LG전자베스트샵 충주본점 특별행사장",
-    "address": "충북 충주시 탄금대로 139 LG전자베스트샵 충주본점 특별행사장",
-    "date": "2026-06-20 ~ 2026-06-21",
+    "venue": "충북 충주시 탄금대로 139",
+    "address": "충북 충주시 탄금대로 139",
+    "date": "2026-09-12 ~ 2026-09-13",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -2058,12 +2184,12 @@ window.WEDDING_FAIRS = [
     "detailPath": "fairs/837.html"
   },
   {
-    "id": "RA-WEDDING-API-IYWvE0G81a",
+    "id": "RA-WEDDING-API-ScN6NVdWzG",
     "region": "전라",
-    "title": "광주웨딩페스타",
-    "venue": "광주 동구 서석로 13-1 3층",
-    "address": "광주 동구 서석로 13-1 3층",
-    "date": "2026-06-06 ~ 2026-06-07",
+    "title": "광주웨딩페어",
+    "venue": "광주 서구 상무누리로 30",
+    "address": "광주 서구 상무누리로 30",
+    "date": "2026-08-29 ~ 2026-08-30",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -2071,20 +2197,20 @@ window.WEDDING_FAIRS = [
       "예물",
       "예복"
     ],
-    "summary": "광주웨딩페스타 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "summary": "광주웨딩페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "전라",
-    "affiliateUrl": "https://replyalba.com/pt/IYWvE0G81a",
-    "imageUrl": "https://replyalba.com/intros/gjwedding/img/og.jpg",
+    "affiliateUrl": "https://replyalba.com/pt/ScN6NVdWzG",
+    "imageUrl": "https://replyalba.com/intros/best_gwangju/img/og.jpg",
     "regionPath": "regions/jeolla.html",
-    "detailPath": "fairs/api-iywve0g81a.html"
+    "detailPath": "fairs/api-scn6nvdwzg.html"
   },
   {
     "id": "RA-WEDDING-API-yYzT1XPWLs",
     "region": "전라",
     "title": "광주 컨벤션 웨딩박람회",
-    "venue": "광주 서구 치평동 1282-1 컨벤션타워 2층",
-    "address": "광주 서구 치평동 1282-1 컨벤션타워 2층",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "venue": "광주 서구 치평동 1282-1",
+    "address": "광주 서구 치평동 1282-1",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -2100,12 +2226,12 @@ window.WEDDING_FAIRS = [
     "detailPath": "fairs/api-yyzt1xpwls.html"
   },
   {
-    "id": "RA-WEDDING-API-yYzT1Xra15",
+    "id": "RA-WEDDING-API-IYWvE0G81a",
     "region": "전라",
-    "title": "광주스타일링페어",
-    "venue": "광주 동구 서석로 13-1 3층 더베스트웨딩사옥",
-    "address": "광주 동구 서석로 13-1 3층 더베스트웨딩사옥",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "title": "광주웨딩페스타",
+    "venue": "전남광주통합특별시 동구 천변우로 393-3 4층",
+    "address": "전남광주통합특별시 동구 천변우로 393-3 4층",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -2113,12 +2239,33 @@ window.WEDDING_FAIRS = [
       "예물",
       "예복"
     ],
-    "summary": "광주스타일링페어 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "summary": "광주웨딩페스타 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "전라",
-    "affiliateUrl": "https://replyalba.com/pt/yYzT1Xra15",
-    "imageUrl": "https://replyalba.com/intros/gjstyling/img/og.jpg",
+    "affiliateUrl": "https://replyalba.com/pt/IYWvE0G81a",
+    "imageUrl": "https://replyalba.com/intros/gjwedding/img/og.jpg",
     "regionPath": "regions/jeolla.html",
-    "detailPath": "fairs/api-yyzt1xra15.html"
+    "detailPath": "fairs/api-iywve0g81a.html"
+  },
+  {
+    "id": "RA-WEDDING-API-RCclISvaJD",
+    "region": "전라",
+    "title": "전주 더웨스틴 헤라 웨딩박람회",
+    "venue": "전라북도 전주시 완산구 쑥고개로 242-31",
+    "address": "전라북도 전주시 완산구 쑥고개로 242-31",
+    "date": "2026-09-05 ~ 2026-09-06",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "전주 더웨스틴 헤라 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "전라",
+    "affiliateUrl": "https://replyalba.com/pt/RCclISvaJD",
+    "imageUrl": "https://replyalba.com/intros/cdstory_hera/img/og.jpg",
+    "regionPath": "regions/jeolla.html",
+    "detailPath": "fairs/api-rcclisvajd.html"
   },
   {
     "id": "RA-WEDDING-API-yYzT22f47f",
@@ -2147,7 +2294,7 @@ window.WEDDING_FAIRS = [
     "title": "강릉 세인트존스 레브웨딩박람회",
     "venue": "강원도 강릉시 창해로 307 강릉세인트존스 호텔",
     "address": "강원도 강릉시 창해로 307 강릉세인트존스 호텔",
-    "date": "2026-06-27 ~ 2026-06-28",
+    "date": "2026-09-12 ~ 2026-09-13",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -2163,33 +2310,12 @@ window.WEDDING_FAIRS = [
     "detailPath": "fairs/api-kcp5zpmxql.html"
   },
   {
-    "id": "RA-WEDDING-API-yYzT1Zeo4m",
-    "region": "강원",
-    "title": "강릉 세인트존스 레브웨딩박람회",
-    "venue": "강원도 강릉시 창해로 307 강릉세인트존스 호텔",
-    "address": "강원도 강릉시 창해로 307 강릉세인트존스 호텔",
-    "date": "2026-06-06 ~ 2026-06-07",
-    "tags": [
-      "웨딩홀",
-      "스드메",
-      "혼수",
-      "예물",
-      "예복"
-    ],
-    "summary": "강릉 세인트존스 레브웨딩박람회  무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
-    "badge": "강원",
-    "affiliateUrl": "https://replyalba.com/pt/yYzT1Zeo4m",
-    "imageUrl": "https://replyalba.com/intros/revew_gn2/img/og.jpg",
-    "regionPath": "regions/gangwon.html",
-    "detailPath": "fairs/api-yyzt1zeo4m.html"
-  },
-  {
     "id": "RA-WEDDING-843-강릉-위드유-웨딩박람회",
     "region": "강원",
     "title": "강릉 위드유 웨딩박람회",
-    "venue": "강원 강릉시 경강로 2370 LG전자베스트샵 강릉본점 특별행사장",
-    "address": "강원 강릉시 경강로 2370 LG전자베스트샵 강릉본점 특별행사장",
-    "date": "2026-06-20 ~ 2026-06-21",
+    "venue": "강원 강릉시 경강로 2370",
+    "address": "강원 강릉시 경강로 2370",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -2205,12 +2331,54 @@ window.WEDDING_FAIRS = [
     "detailPath": "fairs/843.html"
   },
   {
+    "id": "RA-WEDDING-API-PXX3Pffftu",
+    "region": "강원",
+    "title": "라카이 샌드파인 강릉 웨딩박람회",
+    "venue": "강원 강릉시 해안로 536",
+    "address": "강원 강릉시 해안로 536",
+    "date": "2026-08-29 ~ 2026-08-30",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "라카이 샌드파인 강릉 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "강원",
+    "affiliateUrl": "https://replyalba.com/pt/PXX3Pffftu",
+    "imageUrl": "https://replyalba.com/intros/wedcrowd_lakai/img/og.jpg",
+    "regionPath": "regions/gangwon.html",
+    "detailPath": "fairs/api-pxx3pffftu.html"
+  },
+  {
+    "id": "RA-WEDDING-API-RCclIPUFLP",
+    "region": "강원",
+    "title": "웨딩더하기 속초 LG베스트샵 웨딩박람회",
+    "venue": "강원도 속초시 동해대로 4109 1-3층 LG전자 베스트샵 속초점 행사장",
+    "address": "강원도 속초시 동해대로 4109 1-3층 LG전자 베스트샵 속초점 행사장",
+    "date": "2026-09-12 ~ 2026-09-13",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "웨딩더하기 속초 LG베스트샵 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "강원",
+    "affiliateUrl": "https://replyalba.com/pt/RCclIPUFLP",
+    "imageUrl": "https://replyalba.com/intros/wplus_sclg2/img/og.jpg",
+    "regionPath": "regions/gangwon.html",
+    "detailPath": "fairs/api-rcclipuflp.html"
+  },
+  {
     "id": "RA-WEDDING-1234-ak플라자-원주-그랜드-웨딩페어",
     "region": "강원",
     "title": "AK플라자 원주 그랜드 웨딩페어",
-    "venue": "강원 원주시 봉화로 1 AK플라자 원주 특별행사장",
-    "address": "강원 원주시 봉화로 1 AK플라자 원주 특별행사장",
-    "date": "2026-06-06 ~ 2026-06-07",
+    "venue": "AK플라자 원주 6층 특별행사장",
+    "address": "AK플라자 원주 6층 특별행사장",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -2229,9 +2397,9 @@ window.WEDDING_FAIRS = [
     "id": "RA-WEDDING-986-원주-삼성스토어-위드유-웨딩박람회",
     "region": "강원",
     "title": "원주 삼성스토어 위드유 웨딩박람회",
-    "venue": "강원도 원주시 북원로 2384 삼성스토어 단계",
-    "address": "강원도 원주시 북원로 2384 삼성스토어 단계",
-    "date": "2026-06-13 ~ 2026-06-28",
+    "venue": "강원도 원주시 북원로 2384",
+    "address": "강원도 원주시 북원로 2384",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -2252,7 +2420,7 @@ window.WEDDING_FAIRS = [
     "title": "웨딩더하기 원주 LG베스트샵 웨딩박람회",
     "venue": "강원도 원주시 봉화로 1 6층 LG전자베스트샵 AK플라자원주점",
     "address": "강원도 원주시 봉화로 1 6층 LG전자베스트샵 AK플라자원주점",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -2268,12 +2436,12 @@ window.WEDDING_FAIRS = [
     "detailPath": "fairs/1005-lg.html"
   },
   {
-    "id": "RA-WEDDING-API-yYzT1YokpS",
+    "id": "RA-WEDDING-API-yYzT220cko",
     "region": "강원",
-    "title": "춘천 레브웨딩박람회",
-    "venue": "강원 춘천시 영서로 2099 LG전자 베스트샵 춘천점",
-    "address": "강원 춘천시 영서로 2099 LG전자 베스트샵 춘천점",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "title": "춘천 더테라리움 위드유 웨딩박람회",
+    "venue": "강원도 춘천시 지석로 80 10층",
+    "address": "강원도 춘천시 지석로 80 10층",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -2281,20 +2449,41 @@ window.WEDDING_FAIRS = [
       "예물",
       "예복"
     ],
-    "summary": "춘천 레브웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "summary": "춘천 더테라리움 위드유 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "강원",
-    "affiliateUrl": "https://replyalba.com/pt/yYzT1YokpS",
-    "imageUrl": "https://replyalba.com/intros/revew_ccw/img/og.jpg",
+    "affiliateUrl": "https://replyalba.com/pt/yYzT220cko",
+    "imageUrl": "https://replyalba.com/intros/withu_cc/img/og.jpg",
     "regionPath": "regions/gangwon.html",
-    "detailPath": "fairs/api-yyzt1yokps.html"
+    "detailPath": "fairs/api-yyzt220cko.html"
+  },
+  {
+    "id": "RA-WEDDING-API-PXX3PcYOJ8",
+    "region": "강원",
+    "title": "춘천 베어스호텔 레브웨딩박람회",
+    "venue": "강원 춘천시 스포츠타운길 376 춘천 베어스호텔",
+    "address": "강원 춘천시 스포츠타운길 376 춘천 베어스호텔",
+    "date": "2026-08-29 ~ 2026-08-30",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "춘천 베어스호텔 레브웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "강원",
+    "affiliateUrl": "https://replyalba.com/pt/PXX3PcYOJ8",
+    "imageUrl": "https://replyalba.com/intros/revew_ccb/img/og.jpg",
+    "regionPath": "regions/gangwon.html",
+    "detailPath": "fairs/api-pxx3pcyoj8.html"
   },
   {
     "id": "RA-WEDDING-1232-춘천퇴계점-lg베스트샵-위드유-웨딩박람회",
     "region": "강원",
     "title": "춘천퇴계점 LG베스트샵 위드유 웨딩박람회",
-    "venue": "강원 춘천시 춘천로 18 LG전자 베스트샵 춘천퇴계점",
-    "address": "강원 춘천시 춘천로 18 LG전자 베스트샵 춘천퇴계점",
-    "date": "2026-06-27 ~ 2026-06-28",
+    "venue": "강원 춘천시 춘천로 18",
+    "address": "강원 춘천시 춘천로 18",
+    "date": "2026-09-19 ~ 2026-09-20",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -2310,201 +2499,12 @@ window.WEDDING_FAIRS = [
     "detailPath": "fairs/1232-lg.html"
   },
   {
-    "id": "RA-WEDDING-API-KcP5ZPec26",
-    "region": "경상",
-    "title": "울산 롯데백화점 웨딩박람회",
-    "venue": "울산 남구 삼산로 288 롯데백화점 울산점 특별행사장 B1",
-    "address": "울산 남구 삼산로 288 롯데백화점 울산점 특별행사장 B1",
-    "date": "상시 확인",
-    "tags": [
-      "웨딩홀",
-      "스드메",
-      "혼수",
-      "예물",
-      "예복"
-    ],
-    "summary": "울산 롯데백화점 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
-    "badge": "경상",
-    "affiliateUrl": "https://replyalba.com/pt/KcP5ZPec26",
-    "imageUrl": "https://replyalba.com/intros/w_ltus/img/og.jpg",
-    "regionPath": "regions/gyeongsang.html",
-    "detailPath": ""
-  },
-  {
-    "id": "RA-WEDDING-API-SI7qoIF7bB",
-    "region": "경상",
-    "title": "대구 라모르 웨딩박람회",
-    "venue": "대구 동구 동부로 149 7층 신세계백화점 7층 LG전자베스트샵",
-    "address": "대구 동구 동부로 149 7층 신세계백화점 7층 LG전자베스트샵",
-    "date": "2026-06-13 ~ 2026-06-14",
-    "tags": [
-      "웨딩홀",
-      "스드메",
-      "혼수",
-      "예물",
-      "예복"
-    ],
-    "summary": "대구 라모르 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
-    "badge": "경상",
-    "affiliateUrl": "https://replyalba.com/pt/SI7qoIF7bB",
-    "imageUrl": "https://replyalba.com/intros/lamour/img/og.jpg",
-    "regionPath": "regions/gyeongsang.html",
-    "detailPath": "fairs/api-si7qoif7bb.html"
-  },
-  {
-    "id": "RA-WEDDING-API-yYzT1WLOyz",
-    "region": "경상",
-    "title": "대구 대박웨딩박람회",
-    "venue": "대구 북구 유통단지로 80 호텔인터불고 엑스코",
-    "address": "대구 북구 유통단지로 80 호텔인터불고 엑스코",
-    "date": "2026-06-20 ~ 2026-06-21",
-    "tags": [
-      "웨딩홀",
-      "스드메",
-      "혼수",
-      "예물",
-      "예복"
-    ],
-    "summary": "대구 대박웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
-    "badge": "경상",
-    "affiliateUrl": "https://replyalba.com/pt/yYzT1WLOyz",
-    "imageUrl": "https://replyalba.com/intros/daegu_daebak/img/og.jpg",
-    "regionPath": "regions/gyeongsang.html",
-    "detailPath": "fairs/api-yyzt1wloyz.html"
-  },
-  {
-    "id": "RA-WEDDING-API-IYWvE1LIpI",
-    "region": "경상",
-    "title": "울산 반하나 허니문박람회",
-    "venue": "울산 북구 진장동 705 신선도원몰, 1층 반하나투어",
-    "address": "울산 북구 진장동 705 신선도원몰, 1층 반하나투어",
-    "date": "2026-06-06 ~ 2026-06-07",
-    "tags": [
-      "웨딩홀",
-      "스드메",
-      "혼수",
-      "예물",
-      "예복"
-    ],
-    "summary": "울산 반하나 허니문박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
-    "badge": "경상",
-    "affiliateUrl": "https://replyalba.com/pt/IYWvE1LIpI",
-    "imageUrl": "https://replyalba.com/intros/ktour_ulsan/img/og.jpg",
-    "regionPath": "regions/gyeongsang.html",
-    "detailPath": "fairs/api-iywve1lipi.html"
-  },
-  {
-    "id": "RA-WEDDING-API-yYzT20Yrjn",
-    "region": "경상",
-    "title": "대구 대결모 대규모 웨딩박람회",
-    "venue": "대구광역시 수성구 동대구로 305 그랜드호텔 웨딩행사장",
-    "address": "대구광역시 수성구 동대구로 305 그랜드호텔 웨딩행사장",
-    "date": "2026-06-27 ~ 2026-06-28",
-    "tags": [
-      "웨딩홀",
-      "스드메",
-      "혼수",
-      "예물",
-      "예복"
-    ],
-    "summary": "대구 대결모 대규모 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
-    "badge": "경상",
-    "affiliateUrl": "https://replyalba.com/pt/yYzT20Yrjn",
-    "imageUrl": "https://replyalba.com/intros/daegyulmo/img/og.jpg",
-    "regionPath": "regions/gyeongsang.html",
-    "detailPath": "fairs/api-yyzt20yrjn.html"
-  },
-  {
-    "id": "RA-WEDDING-API-yYzT218pI4",
-    "region": "경상",
-    "title": "대구 연웨딩갤러리 웨딩박람회",
-    "venue": "대구 중구 명덕로65길 32 연웨딩사옥 1층",
-    "address": "대구 중구 명덕로65길 32 연웨딩사옥 1층",
-    "date": "2026-06-13 ~ 2026-06-14",
-    "tags": [
-      "웨딩홀",
-      "스드메",
-      "혼수",
-      "예물",
-      "예복"
-    ],
-    "summary": "대구 연웨딩갤러리 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
-    "badge": "경상",
-    "affiliateUrl": "https://replyalba.com/pt/yYzT218pI4",
-    "imageUrl": "https://replyalba.com/intros/yeonwed_gall/img/og.jpg",
-    "regionPath": "regions/gyeongsang.html",
-    "detailPath": "fairs/api-yyzt218pi4.html"
-  },
-  {
-    "id": "RA-WEDDING-API-yYzT1XJcRe",
-    "region": "경상",
-    "title": "웨딩하람 웨딩박람회",
-    "venue": "대구광역시 중구 공평로59 (우원빌딩) 59 2층",
-    "address": "대구광역시 중구 공평로59 (우원빌딩) 59 2층",
-    "date": "2026-06-13 ~ 2026-06-14",
-    "tags": [
-      "웨딩홀",
-      "스드메",
-      "혼수",
-      "예물",
-      "예복"
-    ],
-    "summary": "웨딩하람 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
-    "badge": "경상",
-    "affiliateUrl": "https://replyalba.com/pt/yYzT1XJcRe",
-    "imageUrl": "https://replyalba.com/intros/wedding_haram2/img/og.jpg",
-    "regionPath": "regions/gyeongsang.html",
-    "detailPath": "fairs/api-yyzt1xjcre.html"
-  },
-  {
-    "id": "RA-WEDDING-API-IYWvDYHrLO",
-    "region": "경상",
-    "title": "진주 최대규모 웨딩박람회",
-    "venue": "경남 진주시 동진로 230 LG전자베스트샵 진주시청점 특별행사장",
-    "address": "경남 진주시 동진로 230 LG전자베스트샵 진주시청점 특별행사장",
-    "date": "2026-06-13 ~ 2026-06-14",
-    "tags": [
-      "웨딩홀",
-      "스드메",
-      "혼수",
-      "예물",
-      "예복"
-    ],
-    "summary": "진주 최대규모 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
-    "badge": "경상",
-    "affiliateUrl": "https://replyalba.com/pt/IYWvDYHrLO",
-    "imageUrl": "https://replyalba.com/intros/jjwedfair/img/og.jpg",
-    "regionPath": "regions/gyeongsang.html",
-    "detailPath": "fairs/api-iywvdyhrlo.html"
-  },
-  {
-    "id": "RA-WEDDING-API-KcP5ZNSMyq",
-    "region": "경상",
-    "title": "진주웨딩박람회 IN 갤러리아백화점 진주점",
-    "venue": "경남 진주시 진주대로 1095 갤러리아백화점 진주점 6층 삼성전자",
-    "address": "경남 진주시 진주대로 1095 갤러리아백화점 진주점 6층 삼성전자",
-    "date": "2026-06-20 ~ 2026-06-21",
-    "tags": [
-      "웨딩홀",
-      "스드메",
-      "혼수",
-      "예물",
-      "예복"
-    ],
-    "summary": "진주웨딩박람회 IN 갤러리아백화점 진주점 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
-    "badge": "경상",
-    "affiliateUrl": "https://replyalba.com/pt/KcP5ZNSMyq",
-    "imageUrl": "https://replyalba.com/intros/w_jinju/img/og.jpg",
-    "regionPath": "regions/gyeongsang.html",
-    "detailPath": "fairs/api-kcp5znsmyq.html"
-  },
-  {
     "id": "RA-WEDDING-API-yYzT21sNox",
     "region": "경상",
     "title": "창원 롯데백화점 웨딩박람회",
-    "venue": "경남 창원시 성산구 중앙대로 124 롯데백화점 창원점 웨딩특설행사장",
-    "address": "경남 창원시 성산구 중앙대로 124 롯데백화점 창원점 웨딩특설행사장",
-    "date": "2026-06-06 ~ 2026-06-07",
+    "venue": "경남 창원시 성산구 중앙대로 124",
+    "address": "경남 창원시 성산구 중앙대로 124",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -2520,54 +2520,12 @@ window.WEDDING_FAIRS = [
     "detailPath": "fairs/api-yyzt21snox.html"
   },
   {
-    "id": "RA-WEDDING-API-yYzT1YuyEd",
-    "region": "경상",
-    "title": "창원 최대규모 웨딩박람회",
-    "venue": "경남 창원시 성산구 중앙대로100번길 13 LG전자베스트샵 상남본점",
-    "address": "경남 창원시 성산구 중앙대로100번길 13 LG전자베스트샵 상남본점",
-    "date": "2026-06-20 ~ 2026-06-21",
-    "tags": [
-      "웨딩홀",
-      "스드메",
-      "혼수",
-      "예물",
-      "예복"
-    ],
-    "summary": "창원 최대규모 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
-    "badge": "경상",
-    "affiliateUrl": "https://replyalba.com/pt/yYzT1YuyEd",
-    "imageUrl": "https://replyalba.com/intros/cwonfair/img/og.jpg",
-    "regionPath": "regions/gyeongsang.html",
-    "detailPath": "fairs/api-yyzt1yuyed.html"
-  },
-  {
-    "id": "RA-WEDDING-API-KcP5ZLvkwD",
-    "region": "경상",
-    "title": "창원 최대규모 허니문박람회",
-    "venue": "경남 창원시 성산구 마디미서로 30 2층 썸웨드 본사 사옥",
-    "address": "경남 창원시 성산구 마디미서로 30 2층 썸웨드 본사 사옥",
-    "date": "2026-06-06 ~ 2026-06-07",
-    "tags": [
-      "웨딩홀",
-      "스드메",
-      "혼수",
-      "예물",
-      "예복"
-    ],
-    "summary": "창원 최대규모 허니문박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
-    "badge": "경상",
-    "affiliateUrl": "https://replyalba.com/pt/KcP5ZLvkwD",
-    "imageUrl": "https://replyalba.com/intros/cwhoney/img/og.jpg",
-    "regionPath": "regions/gyeongsang.html",
-    "detailPath": "fairs/api-kcp5zlvkwd.html"
-  },
-  {
     "id": "RA-WEDDING-API-yYzT1WSny5",
     "region": "경상",
     "title": "창원 프리마베라 웨딩박람회",
-    "venue": "경상남도 창원시 성산구 용지로 112 청담 순수 창원점(중앙동)",
-    "address": "경상남도 창원시 성산구 용지로 112 청담 순수 창원점(중앙동)",
-    "date": "2026-06-06 ~ 2026-06-14",
+    "venue": "경남 창원시 성산구 용지로 112",
+    "address": "경남 창원시 성산구 용지로 112",
+    "date": "2026-08-29 ~ 2026-08-30",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -2583,12 +2541,12 @@ window.WEDDING_FAIRS = [
     "detailPath": "fairs/api-yyzt1wsny5.html"
   },
   {
-    "id": "RA-WEDDING-1323-창원-최대규모-대형-웨딩박람회",
+    "id": "RA-WEDDING-API-RCclIRsAwb",
     "region": "경상",
-    "title": "창원 최대규모 대형 웨딩박람회",
-    "venue": "경남 창원시 의창구 사화로17번길 11 창원웨딩의전당 특별행사장",
-    "address": "경남 창원시 의창구 사화로17번길 11 창원웨딩의전당 특별행사장",
-    "date": "2026-06-06 ~ 2026-06-07",
+    "title": "창원 CECO 웨딩박람회",
+    "venue": "경상남도 창원시 의창구 원이대로 362",
+    "address": "경상남도 창원시 의창구 원이대로 362",
+    "date": "2026-10-03 ~ 2026-10-04",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -2596,12 +2554,12 @@ window.WEDDING_FAIRS = [
       "예물",
       "예복"
     ],
-    "summary": "창원 최대규모 대형 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "summary": "창원 CECO 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경상",
-    "affiliateUrl": "https://replyalba.com/pt/yYzT1WOAr9",
-    "imageUrl": "https://replyalba.com/intros/cwonfair2/img/og.jpg",
+    "affiliateUrl": "https://replyalba.com/pt/RCclIRsAwb",
+    "imageUrl": "https://replyalba.com/intros/cw_ceco2/img/og.jpg",
     "regionPath": "regions/gyeongsang.html",
-    "detailPath": "fairs/1323.html"
+    "detailPath": "fairs/api-rcclirsawb.html"
   },
   {
     "id": "RA-WEDDING-API-KcP5ZOkpyK",
@@ -2609,7 +2567,7 @@ window.WEDDING_FAIRS = [
     "title": "더그랜드 통영 웨딩박람회",
     "venue": "경상남도 통영시 항북길 12-9 더그랜드 통영",
     "address": "경상남도 통영시 항북길 12-9 더그랜드 통영",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "date": "2026-09-12 ~ 2026-09-13",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -2628,9 +2586,9 @@ window.WEDDING_FAIRS = [
     "id": "RA-WEDDING-1312-포항-라모르-웨딩박람회",
     "region": "경상",
     "title": "포항 라모르 웨딩박람회",
-    "venue": "경북 포항시 북구 학산로 62 8층 LG전자베스트샵 롯데포항점",
-    "address": "경북 포항시 북구 학산로 62 8층 LG전자베스트샵 롯데포항점",
-    "date": "2026-06-06 ~ 2026-06-07",
+    "venue": "경북 포항시 북구 학산로 62 포항 롯데백화점 lg베스트샵",
+    "address": "경북 포항시 북구 학산로 62 포항 롯데백화점 lg베스트샵",
+    "date": "2026-08-29 ~ 2026-08-30",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -2641,9 +2599,177 @@ window.WEDDING_FAIRS = [
     "summary": "포항 라모르 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "경상",
     "affiliateUrl": "https://replyalba.com/pt/yYzT1Zl5xt",
-    "imageUrl": "https://replyalba.com/intros/lamour_ph/img/og.jpg",
+    "imageUrl": "https://replyalba.com/intros/lamour_poh/img/og.jpg",
     "regionPath": "regions/gyeongsang.html",
     "detailPath": "fairs/1312.html"
+  },
+  {
+    "id": "RA-WEDDING-API-KcP5ZLsb9W",
+    "region": "경상",
+    "title": "포항 반하나 허니문박람회",
+    "venue": "경상북도 포항시 학산로 62",
+    "address": "경상북도 포항시 학산로 62",
+    "date": "2026-08-29 ~ 2026-08-30",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "포항 반하나 허니문박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "경상",
+    "affiliateUrl": "https://replyalba.com/pt/KcP5ZLsb9W",
+    "imageUrl": "https://replyalba.com/intros/ktour_pohang/img/og.jpg",
+    "regionPath": "regions/gyeongsang.html",
+    "detailPath": "fairs/api-kcp5zlsb9w.html"
+  },
+  {
+    "id": "RA-WEDDING-API-SI7qoIF7bB",
+    "region": "경상",
+    "title": "대구 라모르 웨딩박람회",
+    "venue": "대구 동구 동부로 149",
+    "address": "대구 동구 동부로 149",
+    "date": "2026-09-05 ~ 2026-09-06",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "대구 라모르 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "경상",
+    "affiliateUrl": "https://replyalba.com/pt/SI7qoIF7bB",
+    "imageUrl": "https://replyalba.com/intros/lamour_dg/img/og.jpg",
+    "regionPath": "regions/gyeongsang.html",
+    "detailPath": "fairs/api-si7qoif7bb.html"
+  },
+  {
+    "id": "RA-WEDDING-API-yYzT1WLOyz",
+    "region": "경상",
+    "title": "대구 대박웨딩박람회",
+    "venue": "대구 북구 유통단지로 80 호텔인터불고 엑스코",
+    "address": "대구 북구 유통단지로 80 호텔인터불고 엑스코",
+    "date": "2026-09-05 ~ 2026-09-06",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "대구 대박웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "경상",
+    "affiliateUrl": "https://replyalba.com/pt/yYzT1WLOyz",
+    "imageUrl": "https://replyalba.com/intros/daegu_daebak/img/og.jpg",
+    "regionPath": "regions/gyeongsang.html",
+    "detailPath": "fairs/api-yyzt1wloyz.html"
+  },
+  {
+    "id": "RA-WEDDING-API-10dzjzMpwbh",
+    "region": "경상",
+    "title": "대구 연웨딩 엑스코인터불고 웨딩박람회",
+    "venue": "대구 북구 유통단지로 80 인터불고엑스코",
+    "address": "대구 북구 유통단지로 80 인터불고엑스코",
+    "date": "2026-08-29 ~ 2026-08-30",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "대구 연웨딩 엑스코인터불고 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "경상",
+    "affiliateUrl": "https://replyalba.com/pt/10dzjzMpwbh",
+    "imageUrl": "https://replyalba.com/intros/yeonwed/img/og.jpg",
+    "regionPath": "regions/gyeongsang.html",
+    "detailPath": "fairs/api-10dzjzmpwbh.html"
+  },
+  {
+    "id": "RA-WEDDING-API-yYzT20Yrjn",
+    "region": "경상",
+    "title": "대구 대결모 대규모 웨딩박람회",
+    "venue": "대구 중구 동문동 38-6",
+    "address": "대구 중구 동문동 38-6",
+    "date": "2026-09-12 ~ 2026-09-13",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "대구 대결모 대규모 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "경상",
+    "affiliateUrl": "https://replyalba.com/pt/yYzT20Yrjn",
+    "imageUrl": "https://replyalba.com/intros/daegyulmo/img/og.jpg",
+    "regionPath": "regions/gyeongsang.html",
+    "detailPath": "fairs/api-yyzt20yrjn.html"
+  },
+  {
+    "id": "RA-WEDDING-API-yYzT1XJcRe",
+    "region": "경상",
+    "title": "웨딩하람 웨딩박람회",
+    "venue": "대구광역시 중구 동덕로 33 13동 1층 13호",
+    "address": "대구광역시 중구 동덕로 33 13동 1층 13호",
+    "date": "2026-09-05 ~ 2026-09-06",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "웨딩하람 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "경상",
+    "affiliateUrl": "https://replyalba.com/pt/yYzT1XJcRe",
+    "imageUrl": "https://replyalba.com/intros/haram2/img/og.jpg",
+    "regionPath": "regions/gyeongsang.html",
+    "detailPath": "fairs/api-yyzt1xjcre.html"
+  },
+  {
+    "id": "RA-WEDDING-API-KcP5ZPec26",
+    "region": "경상",
+    "title": "울산 롯데백화점 웨딩박람회",
+    "venue": "울산 남구 삼산로 288",
+    "address": "울산 남구 삼산로 288",
+    "date": "2026-08-29 ~ 2026-08-30",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "울산 롯데백화점 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "경상",
+    "affiliateUrl": "https://replyalba.com/pt/KcP5ZPec26",
+    "imageUrl": "https://replyalba.com/intros/w_ltus/img/og.jpg",
+    "regionPath": "regions/gyeongsang.html",
+    "detailPath": "fairs/api-kcp5zpec26.html"
+  },
+  {
+    "id": "RA-WEDDING-API-IYWvE1LIpI",
+    "region": "경상",
+    "title": "울산 반하나 허니문박람회",
+    "venue": "울산 북구 진장동 705, 1층",
+    "address": "울산 북구 진장동 705, 1층",
+    "date": "2026-08-29 ~ 2026-08-30",
+    "tags": [
+      "웨딩홀",
+      "스드메",
+      "혼수",
+      "예물",
+      "예복"
+    ],
+    "summary": "울산 반하나 허니문박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
+    "badge": "경상",
+    "affiliateUrl": "https://replyalba.com/pt/IYWvE1LIpI",
+    "imageUrl": "https://replyalba.com/intros/ktour_ulsan/img/og.jpg",
+    "regionPath": "regions/gyeongsang.html",
+    "detailPath": "fairs/api-iywve1lipi.html"
   },
   {
     "id": "RA-WEDDING-API-IYWvDZJUWO",
@@ -2651,7 +2777,7 @@ window.WEDDING_FAIRS = [
     "title": "제주 롯데시티호텔 초대형 웨딩박람회",
     "venue": "제주 제주시 도령로 83 롯데시티호텔 제주 특별행사장",
     "address": "제주 제주시 도령로 83 롯데시티호텔 제주 특별행사장",
-    "date": "2026-06-13 ~ 2026-06-14",
+    "date": "2026-09-05 ~ 2026-09-06",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -2662,7 +2788,7 @@ window.WEDDING_FAIRS = [
     "summary": "제주 롯데시티호텔 초대형 웨딩박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
     "badge": "제주",
     "affiliateUrl": "https://replyalba.com/pt/IYWvDZJUWO",
-    "imageUrl": "https://replyalba.com/intros/jejulot/img/og.jpg",
+    "imageUrl": "https://replyalba.com/intros/jejulot2/img/og.jpg",
     "regionPath": "regions/jeju.html",
     "detailPath": "fairs/api-iywvdzjuwo.html"
   },
@@ -2670,9 +2796,9 @@ window.WEDDING_FAIRS = [
     "id": "RA-WEDDING-690-제주-제이유-웨딩박람회",
     "region": "제주",
     "title": "제주 제이유 웨딩박람회",
-    "venue": "제주 제주시 동광로 34 호텔샬롬 제주",
-    "address": "제주 제주시 동광로 34 호텔샬롬 제주",
-    "date": "2026-06-20 ~ 2026-06-21",
+    "venue": "제주 제주시 동광로 34",
+    "address": "제주 제주시 동광로 34",
+    "date": "2026-09-19 ~ 2026-09-20",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -2691,9 +2817,9 @@ window.WEDDING_FAIRS = [
     "id": "RA-WEDDING-API-IYWvDZeewu",
     "region": "제주",
     "title": "제주 투어민 허니문박람회",
-    "venue": "제주 제주시 동광로 34 호텔샬롬 제주",
-    "address": "제주 제주시 동광로 34 호텔샬롬 제주",
-    "date": "2026-06-20 ~ 2026-06-21",
+    "venue": "제주 제주시 동광로 34",
+    "address": "제주 제주시 동광로 34",
+    "date": "2026-09-19 ~ 2026-09-20",
     "tags": [
       "웨딩홀",
       "스드메",
@@ -2707,26 +2833,5 @@ window.WEDDING_FAIRS = [
     "imageUrl": "https://replyalba.com/intros/bhn_tourminjj/img/og.jpg",
     "regionPath": "regions/jeju.html",
     "detailPath": "fairs/api-iywvdzeewu.html"
-  },
-  {
-    "id": "RA-WEDDING-API-KcP5ZLsb9W",
-    "region": "경상",
-    "title": "포항 반하나 허니문박람회",
-    "venue": "경상북도 포항시 학산로 62 롯데백화점 8층 LG베스트샵",
-    "address": "경상북도 포항시 학산로 62 롯데백화점 8층 LG베스트샵",
-    "date": "2026-06-06 ~ 2026-06-07",
-    "tags": [
-      "웨딩홀",
-      "스드메",
-      "혼수",
-      "예물",
-      "예복"
-    ],
-    "summary": "포항 반하나 허니문박람회 무료입장 신청 정보를 확인하세요. 실제 일정과 혜택은 신청 페이지에서 최종 확인하세요.",
-    "badge": "경상",
-    "affiliateUrl": "https://replyalba.com/pt/KcP5ZLsb9W",
-    "imageUrl": "https://replyalba.com/intros/ktour_pohang/img/og.jpg",
-    "regionPath": "regions/gyeongsang.html",
-    "detailPath": "fairs/api-kcp5zlsb9w.html"
   }
 ];
