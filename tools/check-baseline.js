@@ -52,6 +52,39 @@ if (!fs.existsSync(rssPath)) {
 }
 checks.push({ name: "RSS items", actual: countPattern(fs.readFileSync(rssPath, "utf8"), "<item>"), expected: EXPECTED.rssItems });
 
+// --write: 의도된 데이터 변경(예: 자동 갱신) 후 실측값으로 기준선을 다시 쓴다.
+// EXPECTED 블록과 CLAUDE.md의 Current Baseline 숫자를 함께 갱신한다.
+if (process.argv.includes("--write")) {
+  const actuals = {
+    csvRows: checks[0].actual,
+    activeRows: checks[1].actual,
+    regionPages: checks[2].actual,
+    detailPages: checks[3].actual,
+    sitemapUrls: checks[4].actual,
+    rssItems: checks[5].actual,
+  };
+  const selfPath = path.join(root, "tools", "check-baseline.js");
+  let self = fs.readFileSync(selfPath, "utf8");
+  for (const [key, value] of Object.entries(actuals)) {
+    self = self.replace(new RegExp(`(${key}:\\s*)\\d+`), `$1${value}`);
+  }
+  fs.writeFileSync(selfPath, self, "utf8");
+  const claudeMdPath = path.join(root, "CLAUDE.md");
+  if (fs.existsSync(claudeMdPath)) {
+    let claudeMd = fs.readFileSync(claudeMdPath, "utf8");
+    claudeMd = claudeMd
+      .replace(/(- CSV rows: )\d+/, `$1${actuals.csvRows}`)
+      .replace(/(- Active fair rows: )\d+/, `$1${actuals.activeRows}`)
+      .replace(/(- Region pages: )\d+/, `$1${actuals.regionPages}`)
+      .replace(/(- Detail pages: )\d+/, `$1${actuals.detailPages}`)
+      .replace(/(- Sitemap URLs: )\d+/, `$1${actuals.sitemapUrls}`)
+      .replace(/(- RSS items: )\d+/, `$1${actuals.rssItems}`);
+    fs.writeFileSync(claudeMdPath, claudeMd, "utf8");
+  }
+  console.log("Baseline rewritten to actual counts:", JSON.stringify(actuals));
+  process.exit(0);
+}
+
 let failed = false;
 for (const { name, actual, expected } of checks) {
   if (actual === expected) {

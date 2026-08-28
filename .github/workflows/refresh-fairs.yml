@@ -1,0 +1,61 @@
+name: Refresh fair data
+
+on:
+  schedule:
+    - cron: "0 21 * * *" # 매일 06:00 KST
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Snapshot current CSV
+        run: cp data/fairs.csv /tmp/fairs.previous.csv
+
+      - name: Fetch from Replyalba API
+        env:
+          REPLYALBA_API_ID: ${{ secrets.REPLYALBA_API_ID }}
+          REPLYALBA_API_KEY: ${{ secrets.REPLYALBA_API_KEY }}
+        run: node tools/fetch-replyalba-wedding-api.js
+
+      - name: Sanity-check API payload
+        run: |
+          node -e "
+            const data = require('./data/replyalba-wedding-api.json');
+            if (data.resultYn !== 'Y') throw new Error('API resultYn is not Y: ' + data.resultMsg);
+            const list = Array.isArray(data.resultList)
+              ? data.resultList
+              : Object.values(data.resultList || {}).flatMap((s) => (Array.isArray(s.list) ? s.list : []));
+            if (list.length < 30) throw new Error('Suspiciously few fairs from API: ' + list.length);
+            console.log('API payload OK: ' + list.length + ' fairs');
+          "
+
+      - name: Apply data, add retired redirects, rebuild
+        run: |
+          node tools/apply-replyalba-api.js
+          node tools/update-retired-redirects.js /tmp/fairs.previous.csv
+          npm run build:fairs
+          npm run validate:fairs
+          node tools/check-baseline.js --write
+          npm run check
+
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
+            echo "No changes; skipping commit."
+            exit 0
+          fi
+          git config user.name "fair-refresh-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -m "Refresh fair data from Replyalba API ($(date -u +%Y-%m-%d))"
+          git push
